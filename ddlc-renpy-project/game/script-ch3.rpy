@@ -1,352 +1,192 @@
 label ch3_main:
-
     scene bg club_day
     with dissolve_scene_half
-
     play music t3
-
     show monika 1g at l31
-
-    m "Aw, man..."
-
-    m "I'm the last one here again!"
-
-    mc "Don't worry, I just walked in too."
-
+    m "Ой, ну надо же..."
+    m "Я снова пришла последней!"
+    mc "Не парься, я сам только что зашёл."
     show yuri 1f zorder 3 at f32
-
-    y "Were you practicing piano again?"
-
+    y "Ты снова практиковалась в игре на пианино?"
     show yuri zorder 2 at t32
     show monika zorder 3 at f31
-
-    m 1l "Yeah..."
-
-    m "Ahaha..."
-
+    m 1l "Да..."
+    m "А-ха-ха..."
     show monika zorder 2 at t31
     show yuri zorder 3 at f32
-
-    y 1m "You must have a lot of determination."
-
-    y "Starting this club, and now picking up piano..."
-
+    y 1m "Ты полна решимости."
+    y "Открыла новый клуб, стала учиться игре на пианино..."
     show yuri 1a zorder 2 at t32
     show monika zorder 3 at f31
-
-    m 1a "Well, maybe not determination..."
-
-    m "But I guess passion."
-
-    m "Remember that the club wouldn't be here if it wasn't for all of you."
-
-    m 1b "And I'm super happy that you're all willing to help out for the festival, too!"
-
+    m 1a "Хм, я бы не называла это решимостью..."
+    m "Скорее страстью."
+    m "Не забывайте, что, не будь здесь вас, не было бы и никакого клуба."
+    m 1b "И я просто вне себя от счастья, что вы все согласились помочь мне с выступлением для фестиваля!"
     show natsuki 1z zorder 3 at f33
     show monika zorder 2 at t31
-
-    n "Aaah, I can't wait for the festival!"
-
-    n "It's gonna be great!"
-
+    n "А-а-ах, скорей бы он наступил!"
+    n "Всё будет просто супер!"
     show natsuki zorder 2 at t33
     show monika zorder 3 at f31
-
-    m 1d "Eh?"
-
-    m "Weren't you complaining about it just yesterday, Natsuki?"
-
+    m 1d "А?"
+    m "Разве только вчера это не было поводом твоего негодования?"
     show monika zorder 2 at t31
     show natsuki 2a zorder 3 at f33
-
-    n "Well, yeah."
-
-    n "I'm not talking about {i}our{/i} part of the festival."
-
-    n 4l "But it's a whole day of school where we get to play and eat all kinds of delicious food!"
-
+    n "Ну да."
+    n "Я не имею в виду {i}наше{/i} участие в фестивале."
+    n 4l "Я говорю о дне, когда можно ничего не делать, играть и есть кучу всяких вкусностей!"
     show natsuki zorder 2 at t33
-
-    mc "You sound a bit like Sayori all of a sudden..."
-
+    mc "Почему-то ты сейчас очень похожа на Саёри..."
     show natsuki zorder 3 at f33
-
-    n 4a "Monika! Do they usually have fried squid?"
-
+    n 4a "Моника! Они ведь обычно готовят жареных кальмаров?"
     show natsuki zorder 2 at t33
     show monika 2a zorder 3 at f31
-
-    m "Squid...?"
-
-    m "That's a pretty specific thing to look forward to..."
-
+    m "Кальмаров?.."
+    m "У тебя довольно специфичная причина ждать фестиваль..."
     show monika zorder 2 at t31
     show natsuki 2k zorder 3 at f33
-
-    n "Oh, come on."
-
-    n "Are you saying you don't like squid?"
-
-    n "You, of all people?"
-
+    n "Ой, да ладно."
+    n "Хочешь сказать, что тебе не нравятся кальмары?"
+    n "Вот именно от тебя я этого никак не ожидала."
     show natsuki zorder 2 at t33
     show monika 1d zorder 3 at f31
-
-    m "Eh? I didn't say I don't like it."
-
-    m "Besides, what do you mean by 'you of all people'?"
-
+    m "А? Я не говорила, что они мне не нравятся."
+    m "Кроме того, что значит «именно от тебя»?"
     show monika zorder 2 at t31
     show natsuki 1d zorder 3 at f33
-
-    n "Because!"
-
-    n "It's right in your name!"
-
-    n 4z "Mon-ika!"
-
+    n "А то и значит!"
+    n "Они у тебя в имени!"
+    n 4z "Мон-ика!"
     show natsuki zorder 2 at t33
     show monika 5b zorder 3 at f31
-
-    m "Eh?!"
-
-    m "That's not how you say my name at all!"
-
-    m "Also, that joke makes no sense in translation!"
-
+    m "Э?!"
+    m "В моём имени нет ничего подобного!"
+    m "И вообще, эта шутка теряется при переводе!"
     show monika zorder 2 at t31
     show natsuki zorder 3 at f33
-
     n 4m "...?"
-
     show natsuki zorder 2 at t33
     show monika 4l zorder 3 at f31
-
-    m "Ah...never mind!"
-
-    m "Let's just focus on our own event for now, okay?"
-
+    m "А... неважно!"
+    m "Давайте сосредоточимся на подготовке к мероприятию, хорошо?"
     show monika zorder 2 at t31
     show natsuki 2a zorder 3 at f33
-
-    n "Ehehe."
-
-    n "Fine, fine."
-
-    n "Your reactions aren't as fun as Yuri's or Sayori's, anyway."
-
+    n "Хи-хи-хи."
+    n "Ладно, ладно."
+    n "Твоя реакция всё равно не такая забавная, как у Юри или Саёри."
     show natsuki zorder 2 at t33
     show yuri 2h zorder 3 at f32
-
-    y "Excuse me..."
-
+    y "Прошу прощения..."
     show yuri zorder 2 at t32
-
-    mc "Where is Sayori, anyway...?"
-
-    mc "Oh, there you are."
-
+    mc "А где, собственно, Саёри?.."
+    mc "О, вот ты где."
     hide monika
     hide yuri
     hide natsuki
     with wipeleft
-
-    "Sayori is sitting at a desk in the corner of the room, looking down at nothing."
-
-    "I walk over to her."
-
-    mc "Hey, Sayori."
-
+    "Саёри сидела за партой в углу комнаты, уставившись в пустоту."
+    "Я подошёл к ней."
+    mc "Привет, Саёри."
     show sayori 1k zorder 2 at t11
-
-    "I wave my hand in front of her face."
-
-    s 1n "Eh--?"
-
-    mc "You're spacing out again."
-
-    s "A-Ah..."
-
-    s 4l "Ehehe, sorry..."
-
-    s "Don't mind me."
-
-    s 4y "You can go talk to everyone else."
-
-    mc "Huh..."
-
-    mc "Is everything alright?"
-
-    s 1h "O-Of course!"
-
-    s "Why wouldn't it be?"
-
-    mc "It just feels like you're a little off..."
-
-    mc "Sorry for assuming things."
-
-    s "Jeez, you worry too much about me."
-
-    s 4r "I'm fine, see?"
-
+    "Я помахал рукой у неё перед лицом."
+    s 1n "Э—?"
+    mc "Ты снова витаешь в облаках."
+    s "А-ах..."
+    s 4l "Э-хе-хе, прости..."
+    s "Не обращай на меня внимания."
+    s 4y "Иди поговори с остальными."
+    mc "Хм-м..."
+    mc "У тебя всё хорошо?"
+    s 1h "Р-разумеется!"
+    s "А что может быть не так?"
+    mc "Просто ты ведёшь себя немного странно..."
+    mc "Извини, если навоображал."
+    s "Боже, ты слишком много обо мне беспокоишься."
+    s 4r "Я в порядке, видишь?"
     show sayori at h11
-
-    "Sayori shows me a big smile."
-
-    s 1a "Don't let me distract you from having fun with everyone."
-
-    mc "Well...alright."
-
-    mc "If you say so."
-
+    "Саёри широко мне улыбнулась."
+    s 1a "Не позволяй мне отвлекать тебя и развлекайся с остальными."
+    mc "Ну... ладно."
+    mc "Как скажешь."
     show sayori zorder 1 at thide
-
     hide sayori
-
-    "I worriedly glance at Sayori before turning back toward everyone else."
-
-    "But the conversation has already dispersed, with everyone back at their usual activities."
-
-    "Maybe I should ask Monika if she's noticed anything about Sayori recently..."
-
-    "Since they've been preparing for the festival, they must be spending a lot of time together."
-
-    "I timidly approach Monika, who is shuffling through some papers at her desk."
-
+    "Я взволнованно поглядел на Саёри, прежде чем развернуться и пойти к остальным."
+    "Однако их разговор уже завершился, и все вернулись к своим делам."
+    "Может, стоит спросить Монику о нездоровом поведении Саёри?.."
+    "Раз они готовились к фестивалю, наверняка провели немало времени вместе."
+    "Я неуверенно подошёл к Монике, она как раз разбирала на столе какие-то бумаги."
     show monika 2b zorder 2 at t11
-
-    m "[player]! What's up?"
-
-    mc "Hey, this might sound a little strange, but..."
-
-    mc "Have you noticed anything up with Sayori recently?"
-
-    m 1d "Anything up with her...?"
-
-    m "In what way do you mean?"
-
-    mc "Maybe I'm reading into it a little too much, but she seems a bit downcast today..."
-
-    m "Oh? You think so?"
-
-    m "I can't say I've noticed anything about her..."
-
-    "Monika peers across the room at Sayori, who is idly dragging a rubber eraser up and down her desk."
-
-    m "Maybe there is something on her mind..."
-
-    m 2a "But I'm surprised I'm not the one asking you, [player]."
-
-    m "You certainly know her a lot better than I do."
-
-    mc "Yeah, but she's never really like this..."
-
-    mc "She's always talked to me about things that bothered her."
-
-    mc "But this time, when I asked her, she was really dismissive."
-
-    mc "...Sorry, I know it's not your problem!"
-
-    mc "I just wanted to ask if you knew anything, so I'll drop it now..."
-
-    m 1g "No, no..."
-
-    m "It's important to me, too."
-
-    m 1e "I mean, I'm also friends with her..."
-
-    m "And I also care about the well-being of my club members, you know?"
-
-    m 1i "Maybe I'll try talking to her myself..."
-
-    mc "Eh? Are you sure about that...?"
-
-    mc "She seemed like she wanted to be left alone..."
-
-    m "Are you sure?"
-
-    m "Maybe she just has a hard time bringing it up with the person of interest..."
-
-    mc "Person of interest...?"
-
-    mc "What do you mean by that?"
-
-    m 2e "I'm saying that maybe the thing on her mind is you, [player]."
-
-    mc "Me...?"
-
-    mc "How on Earth would you come to that conclusion?"
-
-    m 1j "Well..."
-
-    m "I probably shouldn't say too much, but..."
-
-    m 1a "Sayori talks about you more than anything else, you know?"
-
-    mc "Eh...?"
-
-    m "She's been so much happier ever since you've joined the club."
-
-    m "It's like an extra light was turned on inside of her."
-
-    mc "What?"
-
-    mc "No way..."
-
-    mc "Sayori...is always like that."
-
-    mc "She's always been full of sunshine."
-
-    mc "It's not any different now than it always has been."
-
-    m 5 "Ehehe."
-
-    m "You're so funny, [player]."
-
-    m "Have you thought that maybe you've always seen her as so cheerful..."
-
-    m "...because that's just how she is when she's around you?"
-
+    m "[player]! Как дела?"
+    mc "Слушай, это может прозвучать немного странно, но..."
+    mc "Не замечала ли ты в последнее время в поведении Саёри что-нибудь необычное?"
+    m 1d "Что-нибудь необычное?.."
+    m "В каком смысле?"
+    mc "Может, я, конечно, выдумываю, но мне она сегодня кажется немного мрачной..."
+    m "О? Вот как?"
+    m "Не могу сказать, что замечала за ней что-нибудь такое..."
+    "Моника украдкой посмотрела в угол комнаты, где Саёри отрешённо водила ластиком вверх-вниз по парте."
+    m "Может, её что-то беспокоит?.."
+    m 2a "Для меня более странно то, что это не я тебя спрашиваю о её состоянии, [player]."
+    m "Ты ведь знаешь её куда лучше меня."
+    mc "Да, но она практически никогда себя так не вела..."
+    mc "Она всегда делится со мной тем, что её беспокоит."
+    mc "Но, когда я её сейчас об этом спросил, она, по-сути, дала мне от ворот поворот."
+    mc "...Извини, я понимаю, что это не твоя проблема!"
+    mc "Я просто хотел узнать, вдруг тебе что-нибудь известно... Забудь."
+    m 1g "Нет, постой..."
+    m "Для меня это не менее важно."
+    m 1e "Ведь я тоже её друг..."
+    m "И я забочусь о благополучии членов своего клуба."
+    m 1i "Давай я сама с ней поговорю..."
+    mc "А? Ты уверена насчёт этого?.."
+    mc "Кажется, она хочет побыть в одиночестве..."
+    m "Так ли это?"
+    m "Может, ей просто трудно быть откровенной с объектом своего интереса?.."
+    mc "Объектом интереса?.."
+    mc "Что ты под этим имеешь в виду?"
+    m 2e "Я говорю о том, что она может думать о тебе, [player]."
+    mc "Обо мне?.."
+    mc "Как ты вообще пришла к такому заключению?"
+    m 1j "Ну-у..."
+    m "Возможно, я скажу лишнее, но..."
+    m 1a "Ты знаешь, что у Саёри все разговоры только о тебе?"
+    mc "А?.."
+    m "Она стала заметно счастливее с тех пор, как ты к нам присоединился."
+    m "Словно яркое пламя вспыхнуло у неё внутри."
+    mc "Что?"
+    mc "Не может быть..."
+    mc "Саёри... всегда была такой."
+    mc "Она постоянно излучала солнечный свет."
+    mc "Она всегда такой была, как тогда, так и сейчас."
+    m 5 "Э-хе-хе."
+    m "[player], ты такой забавный."
+    m "Ты никогда не задумывался, что она такая весёлая..."
+    m "...только когда рядом с ней ты?"
     mc "..."
-
-    m 1n "Ah...I said too much."
-
-    m "I'm sorry...what do I know, anyway?"
-
-    m 1a "I didn't mean to jump to conclusions, so you should just forget about what I said."
-
-    m "I'll try to talk to her, so try not to think about it for now."
-
-    mc "Ah..."
-
-    mc "Alright..."
-
-    "Monika smiles meaningfully."
-
-    "I know she said to forget about it..."
-
-    "But I already know that I won't be able to get her words out of my head."
-
+    m 1n "Ах... Вот тут я точно сболтнула лишнего."
+    m "Извини... с другой стороны, откуда мне знать?"
+    m 1a "Я не должна делать поспешных выводов, так что просто забудь всё, что я сказала."
+    m "Я попытаюсь поговорить с ней, так что не ломай пока сильно над этим голову."
+    mc "Ага..."
+    mc "Хорошо..."
+    "Моника многозначительно улыбнулась."
+    "Знаю, она просила не думать об этом..."
+    "Но я уже понимаю, что мне никак не выкинуть её слова из головы."
     show monika zorder 1 at thide
     hide monika
+    "Моника встала и пошла через комнату туда, где сидела Саёри."
+    "Она присела рядом с ней и мягко начала что-то говорить."
+    "Но говорила она так тихо, что со своего места мне было не услышать, что именно."
+    "Я вздохнул и тяжело сел за парту."
+    "Хоть Саёри и сказала не волноваться о ней и веселиться с остальными..."
+    "Для меня это невозможно, пока она сидит там мрачнее тучи."
+    "Насколько же сильно она мне дорога, если меня это настолько угнетает?"
+    "Теперь у меня ощущение, будто это я веду себя странно..."
+    "Но мне ничего не остаётся, кроме как ждать Монику."
 
-    "Monika stands up from her desk and walks across the room to where Sayori is sitting."
 
-    "I watch her kneel down next to Sayori and gently talk to her."
 
-    "But she's keeping her voice so quiet that I can't hear her from here."
 
-    "I sigh and sit myself down."
-
-    "I know Sayori told me not to worry about her, and to have fun with everyone else..."
-
-    "But that's impossible to do when she's behaving like this."
-
-    "Exactly how much do I care about her, that I'm letting this weigh me down so much?"
-
-    "Now it feels like I'm the one behaving out of the ordinary..."
-
-    "But there's nothing I can do besides wait for Monika."
 
     if n_appeal == 0 and y_appeal == 0:
         jump ch3_start_none
@@ -354,1816 +194,992 @@ label ch3_main:
         jump ch3_start_natsuki
     elif y_appeal > 1:
         jump ch3_start_yuri
-    elif poemwinner[1] == "natsuki":
+    elif poemwinner[1] == 'natsuki':
         jump ch3_start_natsuki
-    elif poemwinner[1] == "yuri":
+    elif poemwinner[1] == 'yuri':
         jump ch3_start_yuri
-    elif poemwinner[0] == "natsuki":
+    elif poemwinner[0] == 'natsuki':
         jump ch3_start_natsuki
-    elif poemwinner[0] == "yuri":
+    elif poemwinner[0] == 'yuri':
         jump ch3_start_yuri
     else:
         jump ch3_start_none
 
 label ch3_start_natsuki:
-
     play music t6 fadeout 1
-
     show natsuki 3c zorder 2 at t11
-
-    n "Hey, you."
-
-    mc "Eh?"
-
-    "I look up to see Natsuki next to me."
-
-    n "Are you just gonna sit there and keep staring at nothing?"
-
-    n "There isn't that much time, so..."
-
-    mc "Ah, sorry."
-
-    mc "I didn't mean to make you worry or anything."
-
-    n 1q "I-It's not like I'm worried!"
-
-    n "I was just..."
-
-    "Natsuki glances down at her side."
-
-    "She's holding a volume of manga in her hand."
-
-    mc "That's right..."
-
-    mc "Something just came up for a minute, but we can get started now."
-
-    mc "I won't make you wait any longer."
-
-    n 5n "Jeez..."
-
-    n "Now you're making me feel like a jerk."
-
-    n "If something's bothering you, then you can just tell me to leave you alone, and I will."
-
-    n 5u "I mean..."
-
-    n "Assuming you didn't feel like talking about it or anything..."
-
-    "She practically mumbles that last part."
-
-    mc "Nah...I'm probably making it seem like a bigger deal than it is."
-
-    mc "I've just been thinking about Sayori, that's all."
-
-    n 1p "S-Sayori...?"
-
-    n "Thinking about her...?"
-
-    mc "Yeah, she seems pretty down today."
-
-    mc "But she didn't want to admit it to me."
-
-    mc "So I can't help but wonder if something happened to her."
-
-    n 1q "Oh..."
-
-    "Natsuki exhales."
-
-    n 4w "Well, first of all..."
-
-    n "You should really work on your phrasing!"
-
-    n 4c "But anyway..."
-
-    n "You're her best friend, right?"
-
-    mc "Yeah, I guess so..."
-
-    n "Yeah."
-
-    n 3k "Then in that case, I think you should trust her a little more."
-
-    n "If she needed you, then you would be the first person she would go to, right?"
-
-    mc "Well... I guess that's true."
-
-    n 3c "I mean, some people just have those days."
-
-    n "You can't always avoid it."
-
-    n "If anything, she probably doesn't want you to worry about her because it's not important."
-
-    mc "Yeah, that's kind of what she said to me..."
-
-    mc "Maybe it's not right for me to go against her wishes."
-
-    n 3a "Exactly."
-
-    n "If she needs you to worry about her, then it'll be a lot more obvious."
-
-    mc "Yeah..."
-
-    mc "I should have thought of it that way from the start."
-
+    n "Эй."
+    mc "Э?"
+    "Я поднял голову, рядом стояла Нацуки."
+    n "Ты так и собираешься сидеть, тупо уставившись в стену?"
+    n "У нас не такие длительные собрания, так что..."
+    mc "Ах, извини."
+    mc "Я не хотел заставлять тебя волноваться."
+    n 1q "С ч-чего бы мне за тебя волноваться?!"
+    n "Я просто..."
+    "Нацуки бросила взгляд в сторону."
+    "В её руке был томик манги."
+    mc "Эм, просто..."
+    mc "Я тут кое над чем голову ломаю, но мы можем начать."
+    mc "Я не заставлю тебя ждать ещё дольше."
+    n 5n "Боже..."
+    n "Прекрасно, теперь я чувствую себя гадиной."
+    n "Если тебя что-то тревожит, просто скажи мне оставить тебя в покое, и я так и сделаю."
+    n 5u "То есть..."
+    n "Если ты не захочешь об этом поговорить или вроде того..."
+    "Последнюю часть она почти прошептала про себя."
+    mc "Да нет... Я, скорее всего, просто раздуваю из мухи слона."
+    mc "Я просто думал о Саёри, вот и всё."
+    n 1p "С-Саёри?.."
+    n "Ты думал о ней?.."
+    mc "Да, она сегодня выглядит какой-то понурой."
+    mc "Но мне она в этом признаваться не хочет."
+    mc "Поэтому я и не могу перестать думать о том, что у неё случилось."
+    n 1q "О..."
+    "Нацуки вздохнула."
+    n 4w "Так, во-первых..."
+    n "Поработай над тем, как излагаешь свои мысли!"
+    n 4c "А во-вторых..."
+    n "Ты ведь её лучший друг, верно?"
+    mc "Ну да..."
+    n "Правильно."
+    n 3k "Тогда ты должен больше ей доверять."
+    n "Если бы она нуждалась в тебе, ты станешь первым, к кому она обратится, разве не так?"
+    mc "Ну... Пожалуй, что так."
+    n 3c "Я хочу сказать, что у каждого человека бывают хмурые дни."
+    n "Ты никуда от них не денешься."
+    n "Скорее всего, она просто не хочет, чтобы ты за неё волновался, потому что ничего серьёзного не случилось."
+    mc "Да, мне она примерно то же самое сказала..."
+    mc "Может, я не прав, что не слушаю её."
+    n 3a "Вот именно."
+    n "Если она захочет, чтобы ты за неё поволновался, это будет очевидно."
+    mc "Ага..."
+    mc "Мне стоило с самого начала об этом подумать."
     show natsuki 3q
+    "Нацуки потеребила книгу у себя в руках."
+    n 1q "Она..."
+    n "Она много для тебя значит, да?.."
+    mc "А..."
+    mc "Ты только не пойми неправильно!.."
+    mc "Мы просто дружим с детства."
+    mc "Это же нормально – волноваться о своих друзьях."
+    mc "Ты, например, тоже за меня волнуешься, так что—"
+    n 4w "Ничего подобного!"
+    n "Блин... если ты оклемался, давай уже начинать!"
+    mc "Да, да..."
 
-    "Natsuki fiddles with the book she's holding in her hands."
 
-    n 1q "She..."
-
-    n "She really means a lot to you, doesn't she...?"
-
-    mc "Ah--"
-
-    mc "Don't get the wrong idea or anything...!"
-
-    mc "We've just been friends for a long time."
-
-    mc "It's normal to be worried about your friends."
-
-    mc "I mean, you were worried about me, so--"
-
-    n 4w "I was not!!"
-
-    n "Jeez...if you're fine, then let's hurry and get started already!"
-
-    mc "Yeah, yeah..."
-
-    if not n_exclusivewatched and poemwinner[2] == "natsuki":
+    if not n_exclusivewatched and poemwinner[2] == 'natsuki':
         call natsuki_exclusive_2_ch3
     else:
         jump ch3_start_none
-
     return
 
 label ch3_start_yuri:
-
-    "Why does it feel like I'm being watched...?"
-
-    "I glance around the room."
-
+    "Почему у меня такое чувство, будто за мной наблюдают?"
+    "Я оглядел комнату."
     show yuri 2t zorder 2 at t11
-
-    "Suddenly, I notice Yuri peering at me from over her book."
-
+    "И тут я заметил, что Юри украдкой поглядывает на меня из-за своей книги."
     show yuri 4b
-
-    "But she looks away just as quickly with a flustered look on her face."
-
-    "I realize that she won't get anywhere like this."
-
-    "I've never really seen Yuri approach anyone or start a conversation on her own accord."
-
-    "So, I have no choice but to approach her myself."
-
-    "By now, it's a little easier for me to do that."
-
-    "I stand up from my desk and sit in one next to her own."
-
+    "Однако она мгновенно отвела взгляд и снова смущённо уткнулась в книгу."
+    "Я понял, что так она никуда не продвинется."
+    "Я ещё ни разу не видел, чтобы Юри подошла к кому-нибудь и по собственному желанию завязала разговор."
+    "Так что мне ничего не оставалось, кроме как взять инициативу в свои руки."
+    "К этому моменту я среди девушек уже вполне освоился."
+    "Я встал из-за своей парты и сел за соседнюю с Юри."
     play music t6 fadeout 1
-
     y 2v "..."
-
-    y "I...didn't mean to bother you or anything..."
-
-    mc "Relax, you didn't even do anything."
-
-    y "But..."
-
-    y "I could tell that you wanted to be alone with your thoughts..."
-
-    mc "Alone with my thoughts...?"
-
-    mc "How were you even able to tell that I was thinking like that?"
-
-    y 1t "Well..."
-
-    y "It's something that I do a lot..."
-
-    y "So it wasn't hard for me to spot based on your posture and expression."
-
-    y 3o "N-Not that I was staring or anything...!"
-
-    y "I didn't do anything creepy like that...!"
-
-    mc "In any case, I guess you were right."
-
-    mc "I'm sorry if I caused you any concern."
-
-    y 1s "Don't apologize..."
-
-    y "Your troubles are only the concern of those who willingly share in that concern."
-
-    y "Of course, there are certainly those who find the most comfort in keeping to themselves..."
-
-    y "But if you would prefer to share what's on your mind, then I would be glad to listen."
-
-    mc "Ah, it's really not that big of a deal..."
-
-    mc "I was just feeling a bit uneasy about Sayori."
-
-    y 2t "Sayori...?"
-
-    mc "Yeah...she seems a little off today, but when I asked her about it, she didn't want to admit it to me."
-
-    mc "So I can't help but wonder if something happened to her."
-
-    y 3u "Oh?"
-
-    y "That's quite romantic..."
-
-    mc "Eh...?"
-
-    y 4c "S-Sorry!"
-
-    y "I didn't mean to say something stupid...!"
-
-    mc "It's not that, I just didn't want you to misunderstand."
-
-    mc "Sayori and I have just been friends for a long time, that's all."
-
-    y 2l "Ah...I see..."
-
-    y 2f "Then perhaps it is unusual for her to be dismissive to you about her feelings..."
-
-    mc "Or maybe I'm just reading into it a little too much..."
-
+    y "Я... не хотела тебе мешать..."
+    mc "Расслабься, ты даже ничего не сделала."
+    y "Но..."
+    y "Я поняла, что ты хотел остаться наедине со своими мыслями..."
+    mc "Наедине со своим мыслями?.."
+    mc "Как ты догадалась?"
+    y 1t "Ум-м..."
+    y "Это состояние, в котором я пребываю довольно часто..."
+    y "Для меня несложно это определить по твоей позе и выражению лица."
+    y 3o "Н-но я не таращилась на тебя, ты не подумай!.."
+    y "Я бы ничего такого неприличного не сделала!.."
+    mc "В любом случае ты права."
+    mc "Извини, если побеспокоил тебя."
+    y 1s "Не извиняйся..."
+    y "Твои трудности – забота лишь тех, кто охотно разделит их с тобой."
+    y "Конечно, есть и такие, кому комфортнее держать тревоги при себе..."
+    y "Но, если ты предпочтёшь поделиться со мной тем, что тебя терзает, я с радостью тебя выслушаю."
+    mc "Ах, да тут нет ничего такого..."
+    mc "Мне просто немного не по себе из-за Саёри."
+    y 2t "Саёри?.."
+    mc "Да... она сегодня какая-то сама не своя, а когда я у неё спросил, что не так, она не захотела со мной делиться."
+    mc "Поэтому я и не могу отделаться от мысли, что с ней что-то произошло."
+    y 3u "О?"
+    y "Как романтично..."
+    mc "А?.."
+    y 4c "П-прости!"
+    y "Я какую-то глупость сейчас сказала!.."
+    mc "Дело не в этом, я просто не хочу, чтобы ты поняла меня неправильно."
+    mc "Просто мы с Саёри дружим очень долго, с самого детства, вот и всё."
+    y 2l "Ах... ясно..."
+    y 2f "Тогда, наверное, для тебя необычно, что она не посвящает тебя в свои чувства..."
+    mc "Или, может, это я навоображал себе бог весть что..."
     y 1u "[player]..."
-
-    y "The world is full of meaning, often hidden deep beneath plain sight."
-
-    y 1s "And there are many untold mysteries behind every person, no matter how well you may know them."
-
-    mc "Ah..."
-
-    mc "So you think that there might be something behind it after all?"
-
-    y 1l "Mm..."
-
-    y "I think that Sayori is a very complex person."
-
-    y 1h "Her mannerisms on the outside don't always match what may be going on inside her head..."
-
-    y "And she may not always know what she wants."
-
-    y "I noticed her strange behavior today, too..."
-
-    y "And I also feel some concern for her."
-
-    y 1f "But in your case, it looked like she was fully occupying your thoughts, wasn't she?"
-
-    mc "Well..."
-
-    mc "I guess that was the case."
-
-    y 3u "Sayori..."
-
-    y "She really...means a lot to you, doesn't she?"
-
-    mc "Ah--I...I guess..."
-
-    mc "But you don't need to put it that way!"
-
-    mc "We're just good friends, that's all..."
-
+    y "Мир полон скрытых смыслов, но, чтобы их обнаружить, нам приходится учиться читать между строк."
+    y 1s "Так же и в каждом человеке, как бы хорошо ты его ни знал, останется много неразгаданных тайн."
+    mc "А..."
+    mc "Получается, ты тоже думаешь, что за этим что-то есть?"
+    y 1l "Ум-м..."
+    y "На мой взгляд, Саёри очень сложная личность."
+    y 1h "Её манеры и причуды не всегда отражают то, что происходит у неё в голове..."
+    y "К тому же Саёри может не всегда понимать, что хочет она сама."
+    y "Я тоже заметила её сегодняшнее неординарное поведение..."
+    y "И мне она также небезразлична."
+    y 1f "Но твоём случае, похоже, она занимает все твои мысли, я права?"
+    mc "Ну..."
+    mc "Пожалуй, что так."
+    y 3u "Саёри..."
+    y "Она и правда... много для тебя значит, да?"
+    mc "А... п-пожалуй..."
+    mc "Но тебе необязательно выражать это так!"
+    mc "Мы просто хорошие друзья, только и всего..."
     y 2t "..."
+    "Юри вдруг пристально посмотрела мне в глаза."
+    "Её лицо было спокойным, а во взгляде читалось любопытство, словно она что-то искала."
+    "Смутившись, я отвёл взгляд."
+    y 2m "Порой..."
+    y "Тайны человека не раскрываются даже перед ним самим."
+    y 2a "И тебе, заботливому и честному..."
+    y "Возможно, ещё предстоит обнаружить в себе чувства, о которых ты не подозревал."
+    y 4b "Т-то есть..."
+    y "Я полагаю, что..."
+    y "Ей бы крупно повезло, если бы..."
+    y "Ты относился к ней... именно так."
+    mc "Юри..."
+    mc "Ты слишком меня переоцениваешь."
+    mc "Я парень простой."
+    mc "И я думаю, что уж свои-то чувства понять вполне способен."
+    mc "Во мне и близко нет твоей утончённости."
+    y 2t "А-ах..."
+    y "Это не... комплимент, не так ли?"
+    mc "Что есть, то есть."
+    mc "Ладно, раз уж мы здесь, может немного почитаем?"
+    y 2s "Ум-м..."
+    y "Если ты не возражаешь."
+    mc "Только за."
+    mc "Мне всё равно надо на что-нибудь отвлечься."
 
-    "Yuri suddenly looks deeply into my eyes."
 
-    "Her expression is gentle and curious, as if she was searching for something."
-
-    "Embarrassed, I avert my gaze."
-
-    y 2m "Sometimes..."
-
-    y "A person's mysteries are untold even to themselves."
-
-    y 2a "And you, as someone honest and caring..."
-
-    y "May uncover feelings you weren't aware were in you."
-
-    y 4b "T-That is..."
-
-    y "I think that..."
-
-    y "She would be a very fortunate person..."
-
-    y "To have you...feel that way about her."
-
-    mc "Yuri..."
-
-    mc "You're giving me too much credit."
-
-    mc "I'm a pretty simple guy."
-
-    mc "So I think I'm pretty good at understanding my own feelings."
-
-    mc "I'm not nearly as sophisticated as you."
-
-    y 2t "A-Ah..."
-
-    y "That's not...a compliment, is it?"
-
-    mc "It is what it is."
-
-    mc "Anyway, as long as we're here, why don't we do some reading?"
-
-    y 2s "Well..."
-
-    y "As long as you're okay with it."
-
-    mc "Yeah."
-
-    mc "I should be taking my mind off this whole thing anyway."
-
-    if not y_exclusivewatched and poemwinner[2] == "yuri":
+    if not y_exclusivewatched and poemwinner[2] == 'yuri':
         call yuri_exclusive_2_ch3
     else:
         jump ch3_start_none
-
     return
 
 label ch3_start_none:
-
     if not renpy.music.get_playing(channel='music') == audio.t3:
         stop music fadeout 1.0
-
     scene bg club_day
     with wipeleft_scene
-
     "..."
-
     if not renpy.music.get_playing(channel='music') == audio.t3:
         play music t3
-
     show monika 4b zorder 2 at t11
-
-    m "Okay, everyone!"
-
-    "After some time passes, Monika calls out to the clubroom."
-
-    m "Why don't we share our poems now?"
-
+    m "Итак, друзья!"
+    "Через некоторое время Моника обратилась к нам."
+    m "Я думаю, настало время поделиться своими стихами!"
     show monika zorder 1 at thide
     hide monika
-
-    "Before I know it, everything is back to normal."
-
-    "Everyone goes to retrieve their poems, and I do the same."
-
-    "I make eye contact with Monika, and she smiles at me."
-
-    "I wonder what she was talking about with Sayori..."
-
+    "Не успел я опомниться, как всё вернулось в норму."
+    "Девушки пошли доставать свои стихи, и я вместе с ними."
+    "Наши с Моникой взгляды встретились, она мне улыбнулась."
+    "Интересно, о чём они с Саёри беседовали..."
     return
 
+
 label ch3_end:
-
     stop music fadeout 1.0
-
     scene bg club_day
     show monika 4b zorder 2 at t32
     with wipeleft_scene
-
     play music t3
-
-    m "...Okay, you three!"
-
-    m "We're all done sharing poems, right?"
-
-    m "Why don't we start figuring out--"
-
+    m "...Так, ребята!"
+    m "Все поделились друг с другом своими стихами?"
+    m "Тогда почему бы нам не начать—"
     show natsuki 3c zorder 3 at f31
-
-    n "Hold on a second!"
-
-    n "Is it just me, or did you say something strange just now?"
-
+    n "Подожди секунду!"
+    n "Я ошибаюсь, или ты сейчас как-то странно выразилась?"
     show natsuki zorder 2 at t31
     show monika zorder 3 at f32
-
-    m 4d "Eh...?"
-
+    m 4d "А?.."
     show monika zorder 2 at t32
     show yuri 1e zorder 3 at f33
-
-    y "Something did sound a bit unusual..."
-
-    y "That's right."
-
-    y 1f "You deviated from your usual catchphrase when addressing the club."
-
+    y "Кое-что действительно прозвучало странно..."
+    y "Точно..."
+    y 1f "Ты изменила свою фирменную фразу при обращении к членам клуба."
     show yuri zorder 2 at t33
     show monika 1n zorder 3 at f32
-
-    m "C-Catchphrase?"
-
-    m "I don't have a catchphrase..."
-
+    m "Ф-фирменную фразу?"
+    m "У меня такой нет..."
     show monika zorder 2 at t32
     show natsuki 4q zorder 3 at f31
-
-    n "Jeez..."
-
-    n "Why is the mood so weird today?"
-
-    n "Look, even Yuri isn't immune to it."
-
+    n "Боже..."
+    n "Почему сегодня царит такая непонятная атмосфера?"
+    n "Глядите, даже у Юри нет к ней иммунитета."
     show natsuki zorder 2 at t31
     show yuri 4b zorder 3 at f33
-
-    y "Uu..."
-
-    y "Stagnating air is common foreshadowing that something terrible is about to happen..."
-
+    y "У-ум..."
+    y "Когда всё замирает, это свидетельствует о том, что вот-вот произойдёт нечто ужасное..."
     show yuri zorder 2 at t33
-
-    mc "In {i}your{/i} books, maybe!"
-
-    mc "Look, the only thing different is that Sayori isn't here."
-
+    mc "В {i}твоих{/i} книгах, может быть!"
+    mc "Слушайте, сегодня единственное отличие в том, что с нами нет Саёри."
     show yuri 2g zorder 3 at f33
-
-    y "Ah..."
-
-    y "...It seems you're right."
-
+    y "Ах..."
+    y "...Похоже, ты прав."
     show yuri zorder 2 at t33
     show monika 2r zorder 3 at f32
-
-    m "Sigh..."
-
-    m 2d "Sayori always helps lighten the mood a little bit, doesn't she?"
-
-    m "It's almost like everyone's balance is thrown off a little when she's not around..."
-
+    m "Эх..."
+    m 2d "Саёри всегда знает, как поднять нам настроение, правда?"
+    m "Такое чувство, что, когда её нет рядом, смещается какой-то естественный баланс..."
     show monika zorder 2 at t32
     show natsuki 3k zorder 3 at f31
-
-    n "Where the heck did she run off to, anyway?"
-
-    n "I thought she just went to pee."
-
+    n "Куда она, вообще, свалила?"
+    n "Я думала, она просто ходила писать."
     show natsuki zorder 2 at t31
     show yuri 1l zorder 3 at f33
-
-    y "Natsuki, please show some decency..."
-
+    y "Нацуки, прояви немного приличия..."
     show yuri zorder 2 at t33
     show natsuki 4w zorder 3 at f31
-
-    n "Oh, come on."
-
+    n "Ой, да ладно."
     show natsuki zorder 2 at t31
-
-    mc "Ah, she actually wasn't feeling too well and went home early..."
-
+    mc "На самом деле она неважно себя чувствовала и пошла домой пораньше..."
     show yuri 2t zorder 3 at f33
-
-    y "Is that so...?"
-
-    y "I hope she's alright..."
-
+    y "Вот как?.."
+    y "Надеюсь, с ней всё в порядке..."
     show yuri zorder 2 at t33
     show natsuki 5c zorder 3 at f31
-
-    n "Seriously?"
-
-    n "Of all the times to not go home with her, you pick the time she's not feeling well?"
-
-    n "So much for you two being all lovey-dovey."
-
+    n "Серьёзно?"
+    n "То есть из всех возможных дней ты решил не идти с ней домой именно когда ей плохо?"
+    n "Значит, это всё, на что способна ваша любовь-морковь."
     show natsuki zorder 2 at t31
-
-    mc "Ah--no!"
-
-    mc "First of all, stop misunderstanding my friendship with Sayori!"
-
-    mc "And second..."
-
-    mc "She's kind of been avoiding me today, so I didn't want to force it..."
-
+    mc "А, ну хватит!"
+    mc "Во-первых, перестаньте превратно истолковывать мои дружеские отношения с Саёри!"
+    mc "А во-вторых..."
+    mc "Она вроде как избегала меня сегодня, и я не хотел навязываться..."
     show yuri 1g zorder 3 at f33
-
-    y "Hooooh?"
-
+    y "О-о-о?"
     show yuri zorder 2 at t33
-
-    mc "{i}That curious expression coming from Yuri, of all people??{/i}"
-
+    mc "{i}Такое любопытствующее выражение состроила именно Юри? Когда я попал в параллельный мир?{/i}"
     show monika 1r zorder 3 at f32
-
-    m "Calm down, guys...!"
-
-    m 1d "I talked to her earlier, and everything is fine."
-
+    m "Успокойтесь, девочки!"
+    m 1d "Я уже поговорила с ней, у неё всё в порядке."
     show monika zorder 2 at t32
-
-    mc "What did she say...?"
-
+    mc "Что она сказала?"
     show monika zorder 3 at f32
     show yuri 1e
-
-    m 1a "Anyway, we need to figure out the rest of the festival preparations, so..."
-
-    m "Let's decide what everyone will be doing this weekend."
-
+    m 1a "Нам же пока надо определиться, что осталось подготовить для фестиваля, поэтому..."
+    m "Давайте решать, кто чем займётся в эти выходные."
     show monika zorder 2 at t32
     show natsuki 4l zorder 3 at f31
-
-    n "I already know what {i}I'm{/i} doing!"
-
+    n "Я уже знаю, чем {i}займусь{/i}!"
     show natsuki zorder 2 at t31
     show monika 2b zorder 3 at f32
-
-    m "That's right."
-
-    m "Natsuki will be making cupcakes."
-
-    m "But we might need a lot of them, and different flavors..."
-
-    m "Can you handle that all by yourself, Natsuki?"
-
+    m "Конечно."
+    m "Нацуки будет печь кексы."
+    m "Но нам понадобится много и с разной начинкой..."
+    m "Нацуки, ты сама сможешь со всем справиться?"
     show monika zorder 2 at t32
     show natsuki zorder 3 at f31
-
-    n 4z "Challenge accepted!"
-
+    n 4z "Вызов принят!"
     show natsuki 4a zorder 2 at t31
     show monika zorder 3 at f32
-
-    m 1a "And as for myself..."
-
-    m "I'm going to be printing and assembling all the poetry pamphlets."
-
-    m "Sayori will be helping me design them."
-
-    m "And as for Yuri..."
-
+    m 1a "Что до меня..."
+    m "Я займусь печатью и подготовкой листовок."
+    m "Саёри поможет с оформлением."
+    m "А Юри..."
     m 1d "..."
-
-    m 3n "Yuri, you can..."
-
-    m "Ah... Um..."
-
+    m 3n "Юри, ты можешь..."
+    m "Ах... Эм-м..."
     show monika zorder 2 at t32
     show natsuki 3c zorder 3 at f31
-
     n "...?"
-
     show natsuki zorder 2 at t31
     show monika 5 zorder 3 at f32
-
-    m "Guys..."
-
-    m "Can you help me come up with something for Yuri...?"
-
+    m "Ребят..."
+    m "Помогите придумать что-нибудь для Юри..."
     show monika zorder 2 at t32
     show yuri 4c zorder 3 at f33
-
-    y "I..."
-
-    y "I'm useless..."
-
+    y "Я..."
+    y "Я бесполезна..."
     show yuri zorder 2 at t33
     show monika 1g zorder 3 at f32
-
-    m "N-No!"
-
-    m "That's not it at all!"
-
-    m "You're the most talented person here, you know!"
-
+    m "Н-нет!"
+    m "Всё совсем не так!"
+    m "Ты вообще из всех нас самая талантливая!"
     show monika zorder 2 at t32
     show natsuki 5g zorder 3 at f31
-
     n "..."
-
     show natsuki zorder 2 at t31
     show monika zorder 3 at f32
-
-    m 1g "N-Now Natsuki's pouting, too??"
-
+    m 1g "Т-теперь и Нацуки надулась?"
     show monika zorder 2 at t32
-
-    mc "Jeez, even I can tell now..."
-
-    mc "I guess I never gave Sayori enough credit, but I can tell things are even harder on you when she's not around."
-
+    mc "Блин, я, кажется, понял..."
+    mc "Я никогда не ценил Саёри по достоинству, но в такие моменты очевидно, что тебе приходится нелегко, когда её нет рядом."
     show monika zorder 3 at f32
-
-    m "Ah..."
-
-    m "That may be the case..."
-
-    m 1i "But if I can't also be a leader on my own, then I won't grow as a person."
-
-    m 2i "So, Yuri...!"
-
-    m 2a "You have beautiful handwriting, you know?"
-
-    m "So you should make some banners and decorations to help set the atmosphere."
-
+    m "Ах..."
+    m "Может, и так..."
+    m 1i "Но если я сама не смогу проявить свои лидерские качества, то как я могу стать лучше?"
+    m 2i "Так что, Юри..."
+    m 2a "У тебя очень красивый почерк."
+    m "Тебе нужно сделать несколько вывесок и декораций, чтобы создать нужную атмосферу."
     show monika zorder 2 at t32
     show yuri 4a zorder 3 at f33
-
-    y "Atmosphere...?"
-
-    y "Um, about that..."
-
-    y "I..."
-
-    y 2r "I love atmosphere!"
-
+    y "Нужную атмосферу?"
+    y "Ум-м, вообще-то..."
+    y "Я..."
+    y 2r "Я бы с радостью этим занялась!"
     show yuri 2l
-
-    "Yuri's expression suddenly changes as she stares at her desk in focus and starts nodding to herself."
-
+    "Выражение лица Юри резко изменилось, когда она сфокусировала взгляд на парте и несколько раз сама себе кивнула."
     show yuri zorder 2 at t33
-
-    mc "Your mind is already racing, I see..."
-
+    mc "Я вижу, тебя уже переполняют идеи..."
     show monika 2b zorder 3 at f32
-
-    m "That's great!"
-
-    m "You'll be a wonderful help, Yuri."
-
-    m 2a "But anyway..."
-
-    m "That just leaves you, [player]."
-
+    m "Вот и замечательно!"
+    m "Ты так сильно нам поможешь, Юри."
+    m 2a "Получается..."
+    m "Остался только ты, [player]."
     show monika zorder 2 at t32
-
-    mc "The one who is truly useless."
-
+    mc "Тот, кто по-настоящему бесполезен."
     show monika 1k zorder 3 at f32
-
-    m "Ahaha! Don't say that."
-
-    m 1b "In fact..."
-
-    m "Both Natsuki and Yuri have some pretty heavy tasks to handle."
-
-    m "It would probably go a long way to give one of them a hand."
-
-    m 1m "You could always help me out, as well..."
-
-    m 1a "I would be really appreciative of that."
-
+    m "А-ха-ха! Не говори так."
+    m 1b "На самом деле..."
+    m "И перед Нацуки, и перед Юри стоят довольно сложные задачи."
+    m "Твоя помощь им наверняка очень пригодится."
+    m 1m "Разумеется, ты бы и мне мог подсобить..."
+    m 1a "Я была бы очень признательна."
     show monika zorder 2 at t32
-
-    mc "Ah--"
-
-    mc "That's..."
-
-    "Is Monika suggesting I spend the weekend with one of my club members?"
-
-    "How on Earth are they going to respond to a suggestion like that...?"
-
+    mc "О—"
+    mc "Я..."
+    "Значит, Моника намекает на то, что я могу провести выходные с одной из девушек клуба?"
+    "Как, интересно, они ответят на такое предложение?.."
     show yuri 1u zorder 3 at f33
-
-    y "Ah..."
-
-    y "I...suppose I wouldn't mind a bit of help..."
-
+    y "Ах..."
+    y "Я... полагаю, мне бы не помешала помощь..."
     show yuri zorder 2 at t33
     show natsuki 3c zorder 3 at f31
-
-    n "Well, even if you don't know how to bake, there's always some dirty work I could give to you."
-
-    n 3q "It's not like Monika's going to give me a choice, and you shouldn't be sitting on your butt anyway..."
-
-    "Natsuki tries to mumble a bunch of excuses like that."
-
+    n "Даже если ты не умеешь готовить, есть куча грязной работы, с которой ты наверняка справишься."
+    n 3q "Моника всё равно не предоставит мне альтернативы, да и ты вряд ли захочешь штаны просиживать..."
+    "Нацуки стала бормотать кучу подобных оправданий."
     show natsuki zorder 2 at t31
     show yuri 2k zorder 3 at f33
-
-    y "Um..."
-
-    y "If I recall, Natsuki..."
-
-    y 2f "You mentioned that you would like to handle the baking on your own."
-
-    y "[player] may not like to be around if you only make him out to be a nuisance..."
-
-    y 2i "So therefore..."
-
-    y "He may be more suited to assisting with the decorations."
-
+    y "Ум-м..."
+    y "Если я правильно помню, Нацуки..."
+    y 2f "Ты как-то сказала, что хотела бы всё готовить сама."
+    y "[player] вряд ли захочет быть рядом, если для тебя он будет пятым колесом в телеге..."
+    y 2i "Следовательно..."
+    y "Работа будет куда более эффективной, если он поможет с декорациями."
     show yuri zorder 2 at t33
     show natsuki 4e zorder 3 at f31
-
-    n "Hold on! I never said that!"
-
-    n 4h "How hard could it be to make a few decorations, anyway?"
-
-    n "Sounds more like you're just making excuses for [player] to--"
-
+    n "Постой-ка! Я никогда такого не говорила!"
+    n 4h "Насколько может быть сложно сделать несколько декораций?"
+    n "От тебя это звучит как нелепое оправдание, чтобы [player]—"
     show natsuki zorder 2 at t31
     show yuri 3n zorder 3 at f33
-
-    y "W-What are you saying?!"
-
-    y "It will be extremely meticulous work..."
-
+    y "К-как ты можешь так говорить?!"
+    y "Это невероятно скрупулёзная работа..."
     show yuri zorder 2 at t33
     show natsuki 5w zorder 3 at f31
-
-    n "And baking isn't?"
-
-    n "Just what do you think--"
-
+    n "Хочешь сказать, что готовка – это раз плюнуть?"
+    n "Да что ты о себе—"
     show natsuki zorder 2 at t31
     show monika 2g zorder 3 at f32
-
-    m "Guys, guys!"
-
-    m "Let's settle down for a moment..."
-
-    m 2d "In the end, I think it's up to [player] to decide how he'd like to contribute."
-
-    m "Besides..."
-
-    m 5 "He hasn't really gotten the chance to spend any time with me yet, you know?"
-
-    m "So I'm sure he's interested in--"
-
+    m "Девочки, ну хватит!"
+    m "Давайте все немного успокоимся..."
+    m 2d "В конце концов, именно [player] должен решить, куда ему внести свой вклад."
+    m "И, кстати..."
+    m 5 "У него ещё не было возможности провести время со мной, знаете ли."
+    m "Так что, я уверена, ему бы было интересно—"
     show monika zorder 2 at t32
     show natsuki zorder 3 at f31
-
-    n 4f "You {i}literally{/i} just said--"
-
+    n 4f "Ты только что {i}сама{/i} сказала—"
     show natsuki zorder 2 at t31
     show yuri 2h zorder 3 at f33
-
-    y "I-I'm surprised as well!"
-
+    y "Я т-тоже поражена!"
     show yuri zorder 2 at t33
     show monika 1l zorder 3 at f32
-
-    m "Sorry, sorry!"
-
-    m "I was just saying, though..."
-
+    m "Простите, простите!"
+    m "Я просто так, к слову..."
     show monika zorder 2 at t32
     show natsuki 4x zorder 3 at f31
-
-    n "Jeez..."
-
-    n "Can we just settle this already?"
-
+    n "Боже..."
+    n "Мы можем уже это решить?"
     show natsuki zorder 2 at t31
     show monika 1e zorder 3 at f32
-
-    m "Yeah..."
-
-    m "[player], you're okay with this, right?"
-
-    m 1a "In the end, it's up to you."
-
+    m "Да..."
+    m "[player], ты же не против?"
+    m 1a "В итоге выбирать тебе."
     show monika zorder 2 at t32
-
-    mc "Ah..."
-
-    mc "Of course."
-
+    mc "А..."
+    mc "Конечно."
     show natsuki 5g zorder 3 at f31
-
-    n "Hmph."
-
+    n "Хмф."
     show natsuki zorder 2 at t31
     show yuri 1f zorder 3 at f33
-
-    y "Very well..."
-
+    y "Согласна..."
     show yuri zorder 2 at t33
     show monika 1a zorder 3 at f32
-
-    m "In that case..."
-
+    m "В таком случае..."
     show monika zorder 2 at t32
-
-    "Everyone looks straight at me."
-
+    "Все пристально смотрят на меня."
     menu:
-
-        "But of course, I'm going to go with--"
-
-        "Natsuki.":
-
+        "Разумеется, я выберу..."
+        "Нацуки.":
             call ch3_end_natsuki
-
-        "Yuri.":
-
+        "Юри.":
             call ch3_end_yuri
-
-        "Monika.":
-
+        "Монику.":
             call ch3_end_monika
-
-        "Sayori...":
-
+        "Саёри...":
             call ch3_end_sayori
-
     scene bg residential_day
     with wipeleft_scene
-
     $ ch4_name = ch4_scene.capitalize()
-
-    "I can't believe this!"
-
-    "[ch4_name] is going to be coming to my house on Sunday...?"
-
+    if ch4_name == "Yuri":
+        $ ch4_name = "Юри"
+    elif ch4_name == "Natsuki":
+        $ ch4_name = "Нацуки"
+    "Не могу поверить!"
+    "Неужели [ch4_name] придёт ко мне домой в воскресенье?.."
     if help_sayori:
-        "Even though I would have preferred to do this with Sayori..."
-
-        "My anxiety still shoots through the roof."
-
-        "I guess I've gotten pretty used to handling her at this point..."
-
-        "But who knows what might end up happening when we're outside of school?"
-
-        "She even told me she was looking forward to it..."
-
-        "I shake my head."
-
-        "Why do I feel nervous that Sayori finds out about this?"
-
-        "It's not like we feel {i}that{/i} way about each other..."
-
-        "Besides, like Monika said, this is about the club."
-
-        "I have nothing to worry about."
-
-        "If I just go with it, then I'll have a good time."
+        "Хоть я и предпочёл бы компанию Саёри..."
+        "Волнение нарастает во мне, словно снежный ком."
+        "Я, конечно, уже немного привык общаться с ней в клубе..."
+        "Но кто знает, что случится, когда мы будем вместе... в другом месте?"
+        "Она даже сказала мне, что с нетерпением этого ждёт..."
+        "Я потряс головой."
+        "И почему я так нервничаю от мысли, что об этом узнает Саёри?"
+        "Не то чтобы у нас с ней были {i}такие{/i} отношения..."
+        "К тому же Моника говорила про помощь клубу."
+        "Мне не о чем волноваться."
+        "Мне просто нужно вести себя естественно, и я отлично проведу время."
     else:
-        "My anxiety shoots through the roof."
-
-        "Even though I've gotten pretty used to handling her at this point..."
-
-        "There's no telling what might end up happening when we're outside of school."
-
-        "More than that...she told me that she was looking forward to it."
-
-        "Is this the chance I have to make something happen between us?"
-
-        "...Or is it too early for that?"
-
-        "Only time will tell..."
-
-        "But until then, I won't be able to take my mind off it."
-
-        "I seriously can't wait!"
-
+        "Волнение нарастает во мне, словно снежный ком."
+        "Я, конечно, уже немного привык общаться с ней в клубе..."
+        "Но кто знает, что случится, когда мы будем вместе... в другом месте?"
+        "Она даже сказала мне, что с нетерпением этого ждёт..."
+        "Разве я не должен воспользоваться этим шансом и продвинуть наши отношения на новую ступень?"
+        "...Или для этого ещё слишком рано?"
+        "Только время подскажет..."
+        "Но до того момента я не смогу перестать думать об этом."
+        "Я действительно не могу ждать!"
     return
 
 label ch3_end_sayori:
-
     $ help_sayori = True
-
-    mc "I mean..."
-
-    mc "If it's going to be anyone, then I prefer helping Sayori."
-
-    mc "I mean, we're already neighbors, and--"
-
+    mc "То есть..."
+    mc "Если вопрос в том, кому помочь, я бы выбрал Саёри."
+    mc "Я хочу сказать, мы живём рядом и все дела..."
     show yuri 2f zorder 3 at f33
-
-    y "But Monika said--"
-
+    y "Но Моника сказала—"
     show yuri zorder 2 at t33
     show natsuki 4w zorder 3 at f31
-
-    n "Monika said that Sayori was helping her!"
-
-    n "Jeez..."
-
-    n 4h "Do you really hate us that much?"
-
+    n "Что Саёри уже помогает ей!"
+    n "Боже..."
+    n 4h "Мы, что, настолько тебе противны?"
     show natsuki zorder 2 at t31
-
-    mc "N-No!"
-
+    mc "Д-да нет же!"
     show monika 1e zorder 3 at f32
-
-    m "Sorry, I didn't mean for this to be difficult..."
-
+    m "Извини, я не хотела всё так усложнять..."
     show monika zorder 2 at t32
-
     menu:
-
-        m "Just think of the club, okay?"
-
-        "Natsuki.":
-
+        m "Просто думай об этом как о помощи клубу, хорошо?"
+        "Нацуки.":
             call ch3_end_natsuki
-
-        "Yuri.":
-
+        "Юри.":
             call ch3_end_yuri
-
-        "Monika." if help_monika == None:
-
+        "Моника." if help_monika == None:
             call ch3_end_monika
-
     return
 
+
 label ch3_end_monika:
-
     $ help_monika = True
-
-    mc "Well, I guess I should probably be helping Monika..."
-
+    mc "Ладно, я думаю, мне стоит помочь Монике..."
     show monika 5 zorder 3 at f32
-
-    m "Yay, you picked me!"
-
+    m "Ура, [player] выбрал меня!"
     show monika zorder 2 at t32
     show natsuki 3e zorder 3 at f31
-
     stop music fadeout 1.0
-
-    n "Hold on one second!"
-
+    n "Минутку!"
     show natsuki zorder 2 at t31
     show yuri 2r zorder 3 at f33
-
-    y "Y-Yeah!"
-
+    y "Д-да!"
     show yuri zorder 2 at t33
     show natsuki zorder 3 at f31
-
     play music t7
-
-    n "Monika, you're the one who needs the least help out of all of us!"
-
+    n "Моника, тебе помощь нужна меньше всего!"
     show natsuki zorder 2 at t31
     show monika 1d zorder 3 at f32
-
-    m "Eh? But..."
-
+    m "А? Но..."
     show monika zorder 2 at t32
     show yuri 1h zorder 3 at f33
-
-    y "I agree with Natsuki."
-
-    y 1l "Not only is your work already most suitable for one person..."
-
-    y "But you already have Sayori as well."
-
+    y "Я согласна с Нацуки."
+    y 1l "С твоей работой вполне можно справиться в одиночку..."
+    y "Кроме того, тебе ещё Саёри помогает."
     show yuri zorder 2 at t33
     show monika zorder 3 at f32
-
-    m 1p "But [player] was the one who..."
-
-    m "Ah..."
-
+    m 1p "Но ведь [player] сам меня..."
+    m "Ах..."
     show monika zorder 2 at t32
     show natsuki 3c zorder 3 at f31
-
-    n "That doesn't matter."
-
-    n "You were the one who scared him into picking you in the first place."
-
-    n 3e "You're the club president, Monika."
-
-    n "You're supposed to make responsible decisions for the club!"
-
+    n "Это не имеет значения."
+    n "Ты так на него надавила, что ему пришлось тебя выбрать."
+    n 3e "Моника, ты же президент клуба."
+    n "Ты обязана принимать ответственные, взвешенные решения!"
     show natsuki zorder 2 at t31
     show yuri 2f zorder 3 at f33
-
-    y "Monika, you shouldn't let any ulterior motives interfere with this decision."
-
+    y "И ты не должна позволять своим скрытым мотивам влиять на них."
     show yuri zorder 2 at t33
     show monika 2i zorder 3 at f32
-
-    m "Ulterior motives?"
-
-    m "W-What are you saying, Yuri?"
-
-    m "In fact, it sounds like you guys are the ones with ulterior motives!"
-
+    m "Скрытым мотивам?"
+    m "Ч-что ты такое говоришь, Юри?"
+    m "Вообще, девчата, это звучит так, будто у вас есть скрытые мотивы!"
     show monika zorder 2 at t32
     show natsuki 1x zorder 3 at f31
-
-    n "{i}Excuse{/i} me?"
-
+    n "{i}Прошу прощения{/i}?"
     show natsuki zorder 2 at t31
     show monika zorder 3 at f32
-
-    m "Otherwise...this wouldn't have been made into such a big deal in the first place!"
-
+    m "Иначе... вся эта ситуация изначально не раздулась бы в такую большую проблему!"
     show monika zorder 2 at t32
     show yuri 3r zorder 3 at f33
-
-    y "That's...completely false, Monika!"
-
+    y "Всё... совсем не так, Моника!"
     show yuri zorder 2 at t33
     show natsuki 3e zorder 3 at f31
-
-    n "Yeah!"
-
-    n "We have a lot of work to do, you know!"
-
-    n "We won't do as good of a job if you make us work alone."
-
+    n "Вот именно!"
+    n "Нам дела надо делать, знаешь ли!"
+    n "У нас ничего путного не выйдет, если мы будем работать в одиночку."
     show natsuki zorder 2 at t31
     show monika 1p zorder 3 at f32
-
-    m "Ah...maybe...that's true..."
-
+    m "Ах... может... вы и правы..."
     show monika zorder 2 at t32
     show yuri 2l zorder 3 at f33
-
-    y "Think of the club, Monika..."
-
-    y "If we want our event to succeed, then we need to appropriately distribute our resources."
-
+    y "Подумай о клубе, Моника..."
+    y "Если мы хотим, чтобы мероприятие прошло успешно, нам надо правильно распределить имеющиеся ресурсы."
     show yuri zorder 2 at t33
     show monika 3n zorder 3 at f32
-
-    m "Um..."
-
-    m "Ah..."
-
+    m "М-м-м..."
+    m "Ах..."
     show monika zorder 2 at t32
     show natsuki 4x zorder 3 at f31
-
-    n "So are you going to do the right thing, {i}President{/i}?"
-
+    n "Итак, {i}госпожа президент{/i}, вы примете правильное решение?"
     show natsuki zorder 2 at t31
     show monika 1p zorder 3 at f32
-
-    m "Okay, okay!"
-
-    m "I get it!"
-
+    m "Хорошо, хорошо!"
+    m "Я поняла!"
     stop music fadeout 1.0
-
     show natsuki 4g
     show yuri 2g
-
-    m 1r "Sigh..."
-
-    m 1g "It's...technically most logical for [player] to help one of you two."
-
-    m "So..."
-
-    m 1c "I guess...that's what we'll do."
-
+    m 1r "Эх..."
+    m 1g "Чисто технически... будет логично, если [player] поможет одной из вас двоих."
+    m "Поэтому..."
+    m 1c "Полагаю... так мы и поступим."
     show monika zorder 2 at t32
-
     play music t3
-
     menu:
-
-        m "Do you have a preference, [player]?"
-
-        "Natsuki.":
-
+        m "[player], у тебя есть предпочтения?"
+        "Нацуки.":
             call ch3_end_natsuki
-
-        "Yuri.":
-
+        "Юри.":
             call ch3_end_yuri
-
-        "Sayori..." if help_sayori == None:
-
+        "Саёри..." if help_sayori == None:
             call ch3_end_sayori
-
     return
 
 label ch3_end_natsuki:
-
-    $ ch4_scene = "natsuki"
-
-    mc "Well, baking sounds like it could be fun..."
-
-    mc "And you guys made it sound like a lot of work, so it could probably use two people."
-
+    $ ch4_scene = 'natsuki'
+    mc "Что ж, готовка звучит довольно весело..."
+    mc "Кроме того, вы сказали, что тут много работы, так что второй человек не помешает."
     show natsuki 4l zorder 3 at f31
-
-    n "Don't worry!"
-
-    n "Baking is a ton of fun!"
-
-    n "You'll definitely agree!"
-
+    n "Не волнуйся!"
+    n "Готовка – это сплошное развлечение!"
+    n "Тебе точно понравится!"
     show natsuki zorder 2 at t31
     show monika 1d zorder 3 at f32
-
-    m "Eh?"
-
-    m "Just a minute ago you were saying that--"
-
+    m "А?"
+    m "Но только минуту назад ты говорила, что—"
     show monika zorder 2 at t32
     show natsuki 1q zorder 3 at f31
-
-    n "Th-That's because--!"
-
+    n "Э-это потому, что—!"
     n "..."
-
-    n "...Never mind, okay?"
-
+    n "...Да какая разница?"
     show natsuki zorder 2 at t31
     show monika 2a zorder 3 at f32
-
-    m "Well, anyway..."
-
-    m "You'll be fine by yourself, right, Yuri?"
-
+    m "Ладно, тогда..."
+    m "Юри, ты одна справишься?"
     show monika zorder 2 at t32
     show yuri 1j zorder 3 at f33
-
-    y "Of course."
-
-    y "I'm used to it, after all..."
-
+    y "Конечно."
+    y "В конце концов, я уже привыкла..."
     show yuri 1g zorder 2 at t33
     show monika 1e zorder 3 at f32
-
     m "..."
-
     show monika zorder 2 at t32
-
     mc "..."
-
     show monika zorder 3 at f32
-
-    m 1n "That's...good..."
-
-    "Even though Yuri is being melodramatic, it's a little hard to not feel bad..."
-
+    m 1n "Хорошо..."
+    "Хоть Юри выразилась несколько мелодраматично, трудно ей не посочувствовать..."
     show monika 1m zorder 2 at t32
     show natsuki 3a zorder 3 at f31
-
-    n "So, that's everything, right?"
-
-    n "Anything else we need to talk about?"
-
+    n "Получается, это всё, да?"
+    n "Нам нужно ещё что-нибудь обсудить?"
     show natsuki zorder 2 at t31
     show monika 1a zorder 3 at f32
-
-    m "No, I think that's it..."
-
-    m "Are you guys excited?"
-
+    m "Нет, думаю мы закончили..."
+    m "Как настрой?"
     show monika zorder 2 at t32
     show natsuki 1z zorder 3 at f31
-
-    n "Yes!"
-
-    n "Everything except the performance is gonna be awesome!"
-
+    n "Не могу дождаться!"
+    n "Всё, кроме выступления, пройдёт обалденно!"
     show natsuki 1a zorder 2 at t31
-
-    mc "I don't think that really counts..."
-
+    mc "Его можно вообще не считать..."
     show monika zorder 3 at f32
-
-    m "What about you, [player]?"
-
+    m "[player], а у тебя как ощущения?"
     show monika zorder 2 at t32
-
-    mc "Me?"
-
-    mc "Ah, I guess you could say I'm interested to see how it'll turn out..."
-
+    mc "У меня?"
+    mc "Ну, мне, конечно, интересно посмотреть, как всё получится..."
     show monika 2b zorder 3 at f32
-
-    m "That's good enough for me!"
-
-    m "What about you, Yuri?"
-
-    m 2d "...Yuri?"
-
+    m "Для меня этого достаточно!"
+    m "А ты что скажешь, Юри?"
+    m 2d "...Юри?"
     show monika zorder 2 at t32
     show natsuki 3c zorder 3 at f31
-
-    n "She's still sulking."
-
+    n "Она всё ещё хандрит."
     show natsuki zorder 2 at t31
     show yuri 4b zorder 3 at f33
-
     y "..."
-
     show yuri zorder 2 at t33
     show natsuki 5n zorder 3 at f31
-
     n "..."
-
-    "Natsuki starts pouting, too."
-
-    n "It's not..."
-
-    n 5m "I mean, it's not that big of a deal or anything..."
-
+    "Нацуки тоже начинает дуться."
+    n "Это же..."
+    n 5m "Я имею в виду, что это ведь не такое уж большое дело..."
     show natsuki zorder 2 at t31
-
-    mc "Well, it might not be just that..."
-
+    mc "Проблема может быть не только в этом..."
     show natsuki zorder 3 at f31
-
     n "...?"
-
     show natsuki zorder 2 at t31
-
-    mc "I think that Yuri might just be feeling a little underappreciated in general."
-
-    mc "Having to come up with something for her to do, and then nobody offering to help."
-
+    mc "Мне кажется, Юри чувствует, что её недостаточно ценят."
+    mc "Сначала не придумали, чем её занять, потом не предложили помощь."
     show natsuki zorder 3 at f31
-
-    n 5q "That doesn't mean..."
-
+    n 5q "Но это же не значит, что..."
     n "..."
-
-    n 5r "Uu..."
-
+    n 5r "Хм-м..."
     show natsuki 5u
-
-    "Natsuki glances back and forth between everyone with a worried expression."
-
-    n 1u "Look..."
-
-    "Natsuki goes over and puts her hands down on Yuri's shoulders."
-
-    n 1h "Yuri."
-
-    n "You really are the most talented one here."
-
-    n "And..."
-
-    n "And you're going to help make the event a lot more fun and welcoming."
-
-    n 1q "I mean, the cupcakes will probably help a lot too..."
-
-    n 3h "But you're gonna make the atmosphere special."
-
-    n "That'll be really important for the way that people feel during the performances."
-
-    n "So..."
-
-    n 4w "You need to stop being dumb and give yourself a little more credit!"
-
-    "Natsuki releases her hands and turns around to face the other direction."
-
+    "Беспокойный взгляд Нацуки заметался между всеми нами."
+    n 1u "Слушай..."
+    "Нацуки подошла к Юри и положила руки ей на плечи."
+    n 1h "Юри."
+    n "Ты действительно самая талантливая среди нас."
+    n "И..."
+    n "И с твоей помощью это мероприятие получится куда более весёлым и привлекательным."
+    n 1q "Я хочу сказать, что кексы, наверное, тоже помогут..."
+    n 3h "Но именно ты сделаешь атмосферу праздника особенной."
+    n "А это очень важно, учитывая то, как волнуются люди перед выступлением."
+    n "Так что..."
+    n 4w "Прекрати глупить и подними немного свою самооценку!"
+    "Нацуки отпустила плечи Юри и отвернулась."
     show natsuki zorder 2 at t31
     show yuri zorder 3 at f33
-
     y 4a "..."
-
-    y "You didn't...really mean that, did you?"
-
+    y "Ты ведь... ты не всерьёз это сказала, да?"
     show yuri zorder 2 at t33
     show natsuki 5u zorder 3 at f31
-
-    n "Um..."
-
-    n "N-Not really, but..."
-
+    n "М-м-м..."
+    n "Не совсем, но..."
     show natsuki zorder 2 at t31
-
-    "Yuri isn't the only one surprised."
-
-    "Monika and I are also taken aback by Natsuki's words."
-
-    "Natsuki, of all people, to be saying such encouraging things."
-
-    "But I begin to understand."
-
-    "Natsuki was trying to sound like Sayori."
-
-    "Even if it didn't work perfectly, I can tell that she tried to say something Sayori would say at a time like this."
-
-    "Because Sayori always helps everyone smile and feel good about themselves."
-
+    "Юри не единственная, кого шокировал поступок Нацуки."
+    "Мы с Моникой тоже потеряли дар речи."
+    "Чтобы именно Нацуки выдала такую вдохновляющую речь..."
+    "Но я начал понимать."
+    "Нацуки старалась сымитировать Саёри."
+    "Даже если у неё это не совсем получилось, я вижу, что она пыталась сказать то, что в такой момент сказала бы Саёри."
+    "У Саёри всегда получается вызвать у всех улыбку и заставить почувствовать уверенность в себе."
     show yuri 2l zorder 3 at f33
-
-    y "I'm sorry...for being dumb."
-
-    y 2i "I'm going to do my best."
-
-    y "And all of us are going to make it a really great event."
-
+    y "Простите... что вела себя так глупо."
+    y 2i "Я сделаю всё, что в моих силах."
+    y "И мы все организуем грандиозное мероприятие."
     show yuri zorder 2 at t33
     show natsuki zorder 3 at f31
-
-    n 5j "Yeah."
-
+    n 5j "Точно."
     show natsuki zorder 2 at t31
     show monika 2k zorder 3 at f32
-
-    m "Yeah!"
-
-    m 2b "I hope to see everyone do their best."
-
-    m "But with that..."
-
-    m "There's nothing more for today."
-
-    m "So I guess it's time for us to head out."
-
+    m "Да!"
+    m 2b "Я надеюсь увидеть, как все стараются."
+    m "И с этим..."
+    m "На сегодня, кажется, всё."
+    m "Полагаю, можно выдвигаться по домам."
     show monika zorder 2 at t32
     show natsuki 3k zorder 3 at f31
-
-    n "Okay, but I'm staying here a bit longer."
-
-    n "I barely got to do any reading today, so..."
-
+    n "Хорошо, но я здесь ещё ненадолго задержусь."
+    n "Я не успела почти ничего почитать..."
     show natsuki zorder 2 at t31
     show monika 2a zorder 3 at f32
-
-    m "Fair enough, there's nothing wrong with that."
-
+    m "Конечно, я не возражаю."
     hide natsuki
     hide monika
     hide yuri
     with wipeleft
-
-    "Everyone packs up their things."
-
-    "I start to follow Monika and Yuri out the door as they chat between each other."
-
+    "Все стали собираться."
+    "Моника с Юри, о чём-то болтая, вышли из клуба, я последовал за ними."
     play music t6 fadeout 1
-
     show natsuki 4g zorder 2 at t11
-
-    n "Um, where are you going?"
-
-    mc "Eh...?"
-
-    n 4c "We still need to figure out our plans for this weekend."
-
-    n "You literally would've gotten home and realized that you didn't even have a way to contact me."
-
-    mc "Oh, that's true..."
-
-    mc "I have no idea how that slipped my mind."
-
-    n 2c "Jeez, good thing I stopped you."
-
-    n "I'm giving you my number, okay?"
-
-    n 2q "You'd better not make it weird or anything!"
-
-    mc "Why would I do that...?"
-
-    n 1s "Hmph..."
-
-    "Natsuki gives me her number."
-
-    n 1c "Okay..."
-
-    n "I'm coming over on Sunday."
-
-    n "I'll bring all the ingredients."
-
-    mc "Wait!"
-
-    mc "You're coming to {i}my{/i} house?"
-
-    n 2c "Well, yeah."
-
-    n "What's wrong with that?"
-
-    mc "I mean..."
-
-    mc "I just figured that since I'm the one helping, I would be going to your house..."
-
-    n "Yeah, right."
-
-    n 5x "Like I could have a guy over my house..."
-
-    n "My dad would kill me."
-
-    mc "Really?"
-
-    mc "That's kinda strict, if you ask me."
-
-    n 5r "Yeah, how do you think I feel?"
-
-    n "I can't do anything when my dad is home..."
-
-    n 2q "Anyway...I just needed to complain for a second."
-
-    n 2c "We have each other's numbers now."
-
-    n "That's all I needed from you."
-
-    n "I guess I'll text you when I'm coming over."
-
-    mc "Alright, fine by me."
-
-    n "Yeah."
-
-    n 4a "I'm really gonna show you why I love baking so much."
-
-    n "So you'd better look forward to it."
-
-    mc "Oh?"
-
-    mc "Didn't you say you were just going to give me the dirty work?"
-
-    n 1r "Well--!"
-
-    n "I was...just saying that."
-
-    n 1q "It's not like I could act like...in front of everyone..."
-
-    n "That I was looking forward to this."
-
-    mc "Wait, really??"
-
-    n 5w "Well, kind of!"
-
-    n "Just because...I never got to bake with someone else before."
-
-    n 5h "That's all it is, so..."
-
-    mc "Alright, I get it."
-
-    mc "Sorry for overreacting."
-
-    mc "Anyway, I'll be heading out now."
-
-    mc "See you on Sunday."
-
-    n 5m "Ah--"
-
+    n "Эй, куда это ты собрался?"
+    mc "А?.."
+    n 4c "Нам всё ещё нужно составить план на выходные."
+    n "Ты бы сейчас пришёл домой и понял, что у тебя нет со мной связи."
+    mc "О, и правда..."
+    mc "Не пойму, как это вылетело у меня из головы."
+    n 2c "Значит, хорошо, что я тебя остановила."
+    n "Я дам тебе свой телефон, идёт?"
+    n 2q "И не подумай ничего странного!"
+    mc "С чего бы?.."
+    n 1s "Хмф..."
+    "Нацуки продиктовала номер."
+    n 1c "Ладно..."
+    n "Я зайду к тебе в воскресенье."
+    n "И принесу все необходимые ингредиенты."
+    mc "Подожди!"
+    mc "Ты придёшь ко {i}мне{/i} домой?"
+    n 2c "Ну да."
+    n "А что-то не так?"
+    mc "Я имел в виду..."
+    mc "Раз помогаю я, логичнее будет мне пойти к тебе..."
+    n "Ага, конечно."
+    n 5x "Будто я могу пригласить в дом парня..."
+    n "Отец меня убьёт."
+    mc "Серьёзно?"
+    mc "Какой-то он слишком строгий, на мой взгляд."
+    n 5r "Согласна, но ты можешь представить себе, на что это похоже?"
+    n "Когда отец дома, я толком ничего делать не могу..."
+    n 2q "Короче... мне просто нужно было выговориться."
+    n 2c "Теперь у нас есть телефоны друг друга."
+    n "Это всё, что мне от тебя было нужно."
+    n "Я напишу тебе, когда буду подходить."
+    mc "Давай."
+    n "Угу."
+    n 4a "Тогда ты и узнаешь, почему я так люблю готовку."
+    n "Так что жди и надейся."
+    mc "О?"
+    mc "Разве ты не сказала, что собираешься загрузить меня грязной работой?"
+    n 1r "Э-э-э—!"
+    n "Я просто... так выразилась."
+    n 1q "Я же не могла... перед всеми..."
+    n "Показать, что очень этого жду."
+    mc "Что, серьёзно?"
+    n 5w "Ну, вроде как!"
+    n "Просто потому, что... мне ещё никогда не приходилось готовить с кем-то."
+    n 5h "Вот и вся причина, поэтому..."
+    mc "Хорошо, я понимаю."
+    mc "Прости за такую бурную реакцию."
+    mc "В общем, я пойду, наверное."
+    mc "Увидимся в воскресенье."
+    n 5m "Ах—"
     n "..."
-
-    n 5u "...Never mind."
-
+    n 5u "...Неважно."
     return
 
 label ch3_end_yuri:
-
-    $ ch4_scene = "yuri"
-
-    mc "Well, I'll probably be most useful helping out Yuri..."
-
+    $ ch4_scene = 'yuri'
+    mc "Хм-м, думаю, я буду наиболее полезен, если помогу Юри..."
     show yuri zorder 3 at f33
-
-    y 2n "M-Me...?"
-
+    y 2n "М-мне?.."
     show yuri zorder 2 at t33
     show natsuki zorder 3 at f31
-
-    n 4e "Are you serious?"
-
-    n "Why would you--"
-
+    n 4e "Ты серьёзно?"
+    n "Зачем тебе—"
     show natsuki zorder 2 at t31
     show monika zorder 3 at f32
-
-    m 1i "Natsuki."
-
-    m "I can already tell you're about to say something mean."
-
+    m 1i "Нацуки."
+    m "Я уже вижу, что ты собираешься сказать нечто неприятное."
     show monika zorder 2 at t32
     show natsuki zorder 3 at f31
-
-    n 5r "N-No..."
-
-    n "I was just saying--"
-
-    n "Ugh..."
-
+    n 5r "В-вовсе нет..."
+    n "Я просто хотела сказать—"
+    n "У-ух..."
     show natsuki zorder 2 at t31
     show monika zorder 3 at f32
-
-    m 2a "So, you'll be helping Yuri then, [player]?"
-
+    m 2a "Получается, ты будешь помогать Юри, [player]?"
     show monika zorder 2 at t32
-
-    mc "Yeah."
-
-    mc "That's what I'm going to do."
-
+    mc "Ага."
+    mc "Раз ей нужна моя помощь."
     show yuri zorder 3 at f33
-
-    y 1u "I'm glad."
-
-    y "I have a bad habit of overthinking these sorts of things..."
-
-    y "So I think your assistance will be very useful."
-
+    y 1u "Я рада."
+    y "У меня плохая привычка слишком заморачиваться над такими вещами..."
+    y "Поэтому твоя помощь будет как нельзя кстати."
     show yuri zorder 2 at t33
     show monika zorder 3 at f32
-
-    m "That's great to hear."
-
-    m "Natsuki, will you be able to handle the baking yourself?"
-
+    m "Рада это слышать."
+    m "Нацуки, ты одна справишься с готовкой?"
     show monika zorder 2 at t32
     show natsuki zorder 3 at f31
-
-    n 3w "I mean, yeah."
-
-    n "I already said I would be fine."
-
+    n 3w "Да, да."
+    n "Я уже сказала, что всё в порядке."
     show natsuki zorder 2 at t31
     show monika zorder 3 at f32
-
-    m 1i "Okay, okay..."
-
-    "Everyone can tell that Natsuki is feeling a little sour."
-
+    m 1i "Хорошо..."
+    "Всем было понятно, что Нацуки немного обиделась."
     show monika zorder 2 at t32
-
-    mc "So...is that everything we needed to go over?"
-
+    mc "Так... это всё, что нам надо было обсудить?"
     show monika zorder 3 at f32
-
-    m 1a "Yeah, that should be about it."
-
-    m 2a "Are you guys excited?"
-
+    m 1a "Да, вроде больше ничего не осталось."
+    m 2a "Как настрой, ребята?"
     show monika zorder 2 at t32
     show yuri zorder 3 at f33
-
-    y 1i "Well, 'excited' may not be the right word..."
-
-    y "But I suppose I'm looking forward to it a little bit."
-
+    y 1i "Не могу сказать, что я в восторге..."
+    y "Но, полагаю, мне не терпится узнать, как всё пройдёт."
     show yuri zorder 2 at t33
     show monika zorder 3 at f32
-
-    m "Do you feel the same way, [player]?"
-
+    m "А ты что думаешь, [player]?"
     show monika zorder 2 at t32
-
-    mc "Me?"
-
-    mc "Ah, I guess you could say I'm interested to see how it'll turn out..."
-
+    mc "Я?"
+    mc "Ну, думаю, можно сказать, мне интересно, что у нас выйдет..."
     show monika zorder 3 at f32
-
-    m 2b "That's good enough for me!"
-
-    m 2a "What about you, Natsuki?"
-
+    m 2b "Для меня этого более чем достаточно!"
+    m 2a "Что насчёт тебя, Нацуки?"
     show monika zorder 2 at t32
     show natsuki zorder 3 at f31
-
     n 5s "..."
-
     show monika zorder 2 at t32
     show yuri zorder 3 at f33
-
-    y 2h "Natsuki!"
-
+    y 2h "Нацуки!"
     show yuri zorder 2 at t33
     show natsuki zorder 3 at f31
-
-    n 1o "What??"
-
-    n 1m "Why is everyone yelling at me?"
-
-    n "I didn't even do anything...!"
-
+    n 1o "Что?!"
+    n 1m "Почему все кричат на меня?"
+    n "Я ничего плохого не сделала!.."
     show natsuki 1n zorder 2 at t31
     show yuri zorder 3 at f33
-
-    y 3n "N-no--!"
-
-    y "That's not what I meant at all!"
-
-    y 3o "A-Ah..."
-
-    "Yuri anxiously glances between everyone in the room."
-
-    y 2w "I-I'm sorry for this!"
-
-    y 2v "I don't really know why [player] picked me..."
-
-    y "And also..."
-
-    y 2t "Your cupcakes are the best cupcakes I've ever had!"
-
-    y "They go really well with my tea!"
-
-    y "And nothing that I do for the event will compare to that, so..."
-
-    y 4b "So..."
-
+    y 3n "Н-нет—!"
+    y "Я совсем не это имела в виду!"
+    y 3o "Ах..."
+    "Беспокойный взгляд Юри заметался между всеми нами."
+    y 2w "М-мне очень жаль!"
+    y 2v "Я не знаю, почему [player] выбрал меня..."
+    y "И ещё..."
+    y 2t "Твои кексики самые лучшие из всех, что я когда-либо пробовала!"
+    y "Есть их, запивая чаем, – сплошное удовольствие!"
+    y "И всё, что бы я ни сделала для мероприятия, с ними не сравнится, поэтому..."
+    y 4b "Поэтому..."
     show yuri zorder 2 at t33
     show natsuki zorder 3 at f31
-
-    n 3q "I get it, I get it."
-
-    n 3h "I'm kinda surprised, though..."
-
+    n 3q "Ладно, ладно, я поняла."
+    n 3h "Хотя я немного удивлена..."
     show natsuki zorder 2 at t31
     show yuri zorder 3 at f33
-
-    y "W-Why?"
-
+    y "Почему?"
     show yuri zorder 2 at t33
     show natsuki zorder 3 at f31
-
-    n 3q "Um..."
-
-    n "Well, I'm the one acting immature..."
-
-    n "I already know that."
-
-    n 5h "But you're trying to cheer me up all of a sudden..."
-
+    n 3q "М-м-м..."
+    n "Эх, это ведь я веду себя как ребёнок..."
+    n "Я всё прекрасно осознаю."
+    n 5h "Но почему-то вдруг именно ты решаешь меня приободрить..."
     show natsuki zorder 2 at t31
     show yuri zorder 3 at f33
-
-    y "I-I know I'm not very good at it..."
-
-    y 2v "I'm sorry if I said something bad!"
-
-    "Natsuki isn't the only one surprised."
-
-    "Monika and I are also taken aback by Yuri's words."
-
-    "When she already has trouble with words, trying to cheer someone up must be far out of her own comfort zone."
-
-    "But I begin to understand."
-
-    "Yuri was trying to sound like Sayori."
-
-    "Even if it didn't work perfectly, I can tell that she tried to say something Sayori would say at a time like this."
-
-    "Because Sayori always helps everyone smile and feel good about themselves."
-
+    y "Я з-знаю, у меня не очень хорошо выходит..."
+    y 2v "Прости, если сказала что-то дурное!"
+    "Не только Нацуки поразилась словам Юри."
+    "Нас c Моникой она тоже застала врасплох."
+    "Ей и без того сложно даются слова, но, когда она пытается кого-то поддержать, это выходит далеко за границы её зоны комфорта."
+    "Однако я начинаю понимать."
+    "Юри старалась сымитировать Саёри."
+    "Даже если у неё это не совсем получилось, я вижу, что она пыталась сказать то, что в такой момент сказала бы Саёри."
+    "У Саёри всегда получается вызвать у всех улыбку и заставить почувствовать уверенность в себе."
     show yuri zorder 2 at t33
     show natsuki zorder 3 at f31
-
-    n 1h "No..."
-
-    n "I kinda appreciated it."
-
-    n 1u "I'm sorry...for making a big deal out of nothing."
-
-    n 1m "But I'm going to say this."
-
+    n 1h "Да нет..."
+    n "Я даже признательна тебе."
+    n 1u "Извини что... раздула проблему из ничего."
+    n 1m "Но кое-что я всё-таки скажу."
     show natsuki zorder 2 at t31
     show yuri zorder 3 at f33
-
     y 2e "...?"
-
     show yuri zorder 2 at t33
     show natsuki zorder 3 at f31
-
-    n 4e "You better bet that my cupcakes are going to be the best part of the whole event!"
-
+    n 4e "Можешь что угодно ставить на то, что мои кексики будут лучшей частью мероприятия!"
     show natsuki 4a zorder 2 at t31
     show yuri zorder 3 at f33
-
-    y 2f "Ah..."
-
-    y 1s "...I believe you."
-
+    y 2f "Ах..."
+    y 1s "...Я не сомневаюсь."
     show yuri zorder 2 at t33
     show monika zorder 3 at f32
-
-    m 2b "Yeah!"
-
-    m "I hope to see everyone do their best."
-
-    m "But with that..."
-
-    m "There's nothing more for today."
-
-    m "So I guess it's time for us to head out."
-
+    m 2b "Вот и славно!"
+    m "Я надеюсь увидеть, как все стараются."
+    m "И с этим..."
+    m "На сегодня, кажется, всё."
+    m "Полагаю, можно выдвигаться по домам."
     show monika zorder 2 at t32
     show natsuki zorder 3 at f31
-
-    n "Alright, let's get out of here, then."
-
+    n "Ясно, пора отсюда сваливать."
     hide monika
     hide natsuki
     hide yuri
     with wipeleft
-
-    "Everyone packs up their things."
-
-    "I start to follow Monika and Natsuki out the door as they chat between each other."
-
+    "Все стали собираться."
+    "Моника с Юри, о чём-то болтая, вышли из клуба, я последовал за ними."
     play music t6 fadeout 1
-
     show yuri 2t zorder 2 at t11
-
-    y "U-Um--!"
-
-    mc "Eh?"
-
-    "I turn around."
-
-    y "Sorry..."
-
-    y 2s "I realized that I don't have any way of contacting you this weekend..."
-
-    mc "Oh, you're right."
-
-    mc "I can't believe that slipped my mind."
-
-    mc "Should I give you my phone number?"
-
-    y 1a "I think...that would be the best way, yes."
-
-    mc "Alright, then..."
-
-    "Yuri and I exchange phone numbers."
-
-    y "Okay."
-
-    y "Then, I'll be stopping by your house on Sunday..."
-
-    mc "Eh?"
-
-    mc "My house?"
-
-    y 2t "I-Is that a problem...?"
-
-    mc "No, not at all..."
-
-    mc "I just thought that I would be the one going to your house, since I'm the one helping you."
-
-    y "Ah, I suppose that makes sense..."
-
-    y "But, if you don't mind..."
-
-    y 1u "I think I would prefer going to your house."
-
-    mc "Alright."
-
-    mc "In that case, it won't be a problem."
-
-    "I decide not to press Yuri for a reason."
-
-    "It's not like it should matter much either way, so I'll just need to make sure my room is clean."
-
-    mc "I hope I manage to make myself useful in some way..."
-
-    mc "I'm not nearly as creative as you are."
-
-    y 1a "Don't underestimate yourself, [player]."
-
-    y "I think that we'll make a very productive team."
-
-    y 1u "Even if you only chose me because you felt bad or something..."
-
-    mc "Wait...!"
-
-    mc "You don't actually think that, do you?"
-
+    y "У-ум—!"
+    mc "А?"
+    "Я обернулся."
+    y "Прости..."
+    y 2s "Я поняла, что у меня нет твоего телефона, чтобы созвониться на выходных..."
+    mc "О, точно."
+    mc "Не могу поверить, что это вылетело у меня из головы."
+    mc "Мне дать тебе свой номер?"
+    y 1a "Думаю... так будет лучше всего, да."
+    mc "Момент..."
+    "Мы с Юри обменялись номерами."
+    y "Хорошо."
+    y "Тогда я зайду к тебе в воскресенье..."
+    mc "А?"
+    mc "Ко мне домой, в смысле?"
+    y 2t "Т-тебе будет неудобно?.."
+    mc "Нет, совсем нет..."
+    mc "Я просто думал, что раз я помогаю, то мы будем у тебя дома."
+    y "Ах, наверное, это логично..."
+    y "Но, если ты не возражаешь..."
+    y 1u "Я бы предпочла пойти к тебе домой."
+    mc "Без проблем."
+    mc "Я буду только рад гостям."
+    "По очевидным причинам я решил не давить на Юри."
+    "В любом случае разницы в месте встрече никакой нет, мне просто надо будет прибраться в своей комнате."
+    mc "Надеюсь, я смогу быть полезен..."
+    mc "Я не настолько творческая личность."
+    y 1a "Не недооценивай себя, [player]."
+    y "Уверена, из нас получится очень продуктивная команда."
+    y 1u "Даже если ты меня выбрал просто из жалости..."
+    mc "Стоп!.."
+    mc "Ты ведь на самом деле так не думаешь, да?"
     y 4b "..."
-
-    y "I...don't know."
-
-    y "It's difficult to come up with any other reason you may have chosen me..."
-
-    mc "You're forgetting the one reason with the most common sense!"
-
-    mc "I chose to help you because that's what I want to do."
-
-    y 2v "B-But..."
-
-    "Yuri thinks to herself with an extremely tense expression."
-
-    mc "Yuri...you're overthinking this."
-
-    mc "You wanted me to point out when you're overthinking, right?"
-
-    y "Eh...?"
-
-    y 4 "I...didn't realize..."
-
-    mc "I'm telling you, I want to."
-
-    mc "That's all there is to it."
-
-    mc "Do you believe me?"
-
-    y 1t "I..."
-
-    "Yuri thinks really hard again."
-
-    "She looks straight into my eyes for a long while."
-
-    y 3l "...I believe you!"
-
-    "As if it took her tremendous effort, Yuri finally says that and relaxes her expression."
-
-    y 3s "And I'm really looking forward to Sunday."
-
-    mc "Yeah..."
-
-    mc "I am too."
-
+    y "Я... не знаю."
+    y "Мне сложно придумать иную причину, почему ты решил выбрать меня..."
+    mc "Ты забыла о причине, к которой можно прийти, используя здравый смысл!"
+    mc "Я выбрал тебя, потому что так захотел."
+    y 2v "Н-но..."
+    "Юри задумалась, её лицо приняло невероятно напряжённое выражение."
+    mc "Юри... ты слишком заморачиваешься."
+    mc "Ты просила меня указывать тебе на такие моменты, помнишь?"
+    y "Э?.."
+    y 4 "Я... я даже не заметила..."
+    mc "Уверяю тебя, это то, чего я сам хочу."
+    mc "И никаких скрытых смыслов тут больше нет."
+    mc "Ты мне веришь?"
+    y 1t "Я..."
+    "Юри снова напряжённо задумалась."
+    "Она некоторое время пристально смотрела мне в глаза."
+    y 3l "...Я верю тебе!"
+    "Юри произнесла эти слова так, словно на это потребовались чудовищные усилия, но затем наконец расслабилась."
+    y 3s "И я с нетерпением жду воскресенья."
+    mc "Да..."
+    mc "Я тоже."
     show yuri zorder 1 at thide
     hide yuri
-
-    "After that exchange, I make my way out the door, and Yuri follows."
-
+    "После нашего странного диалога я вышел из класса, Юри шла следом."
     return
-
+# Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

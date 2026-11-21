@@ -4,9 +4,9 @@ image noface1:
     block:
         block:
             choice:
-                "images/sayori/noface1.png"
+                'images/sayori/noface1.png'
             choice:
-                "images/sayori/noface1b.png"
+                'images/sayori/noface1b.png'
         block:
             choice:
                 0.075
@@ -19,27 +19,20 @@ image noface1:
             choice:
                 0.6
         repeat
-
 image noface2:
-    "images/sayori/noface2.png"
+    'images/sayori/noface2.png'
     xalign 0.95 yalign 0.47
 
 label ch23_main:
-
     if renpy.random.randint(0,15) == 0 and not seen_eyes_this_chapter:
         $ quick_menu = False
-
         scene white
         show noface1
         show noface2
         with dissolve_scene_half
-
-        play sound "sfx/gnid.ogg"
-
-        $ pause(7)
-
+        play sound 'sfx/gnid.ogg'
+        pause 7
         $ quick_menu = True
-
         scene bg club_day2
         show yuri 2 zorder 2 at i11
     else:
@@ -47,623 +40,364 @@ label ch23_main:
         with dissolve_scene_half
 
     play music t6
-
     show yuri 2y5 zorder 2 at t11
-
-    y "Hi, [player]!"
-
-    y "I've been waiting for you."
-
-    y 2d "Are you ready to continue reading?"
-
-    y "I brought my best tea today--"
-
+    y "Привет, [player]!"
+    y "Я ждала тебя."
+    y 2d "Ты готов продолжить чтение?"
+    y "Сегодня я приготовила свой лучший чай—"
     show yuri 2f
     show natsuki 4w zorder 3 at f33
-
-    n "Monika!"
-
-    n "I told you not to--"
-
-    n 1g "Ugh..."
-
-    n "Is she really late again?"
-
+    n "Моника!"
+    n "Я же говорила тебе не—"
+    n 1g "Эх..."
+    n "Офигеть, она снова опаздывает?"
     show natsuki zorder 2 at t33
     show yuri zorder 3 at f32
-
-    y 1h "Inconsiderate as usual, Natsuki."
-
+    y 1h "Бесцеремонна, как всегда, Нацуки."
     show yuri zorder 2 at t32
     show natsuki zorder 3 at f33
-
-    n 4c "Excuse me?"
-
+    n 4c "Прошу прощения?"
     show natsuki zorder 2 at t33
     show yuri zorder 3 at f32
-
-    y 1r "Must you always interrupt my conversations with your incessant yelling?"
-
+    y 1r "Ты так и будешь ежесекундно прерывать меня своим криком?"
     show yuri zorder 2 at t32
     show natsuki zorder 3 at f33
-
-    n 1o "What are you talking about?!"
-
-    n 1q "You say that like I do it on a regular basis or something."
-
-    n "I just wasn't paying attention, okay? I'm sorry."
-
-    n 4u "Seriously... What's gotten into you lately?"
-
+    n 1o "О чём ты говоришь?!"
+    n 1q "Тебя послушать, получается, будто я постоянно так делаю."
+    n "Я просто не обращала внимания. Извини."
+    n 4u "Серьёзно... Что с тобой в последнее время?"
     if n_appeal >= 2:
-        n "Look..."
-
-        n "I did some thinking about yesterday."
-
-        n 2q "I was a little more hostile than I meant to be..."
-
-        n 1q "I guess I really felt threatened or something."
-
-        n 1h "But I know this is something we're doing together."
-
-        n 1q "Another new member wouldn't hurt, as long as they're cool..."
-
-        n 5w "And I guess another girl would be nice this time..."
-
-        n 5u "So..."
-
+        n "Послушай..."
+        n "Я тут думала о вчерашних событиях..."
+        n 2q "Я была немного на взводе..."
+        n 1q "Наверное, я чувствовала угрозу или что-то типа того."
+        n 1h "Но я понимаю, что это наше общее дело."
+        n 1q "Новички не навредят, если они будут клёвыми..."
+        n 5w "И, думаю, было бы здорово, если на этот раз к нам присоединится девочка..."
+        n 5u "Так что..."
         show natsuki zorder 2 at t33
         show yuri zorder 3 at f32
-
         $ style.say_dialogue = style.normal
-
-        y 2u "Natsuki..."
-
+        y 2u "Нацуки..."
         $ style.say_dialogue = style.edited
-
-        y 1f "Nobody cares."
-
-        y "Why don't you go look for some coins under the vending machines or something?"
-
+        y 1f "Всем наплевать."
+        y "Почему бы тебе не пойти поискать монетки под торговыми автоматами или ещё чем-нибудь себя занять?"
         $ style.say_dialogue = style.normal
-
         show yuri zorder 2 at t32
         show natsuki zorder 3 at f33
-
-        n 1p "--!"
-
+        n 1p "—!"
         n 1r "..."
-
         n 12f "..."
-
         show natsuki at thide
         hide natsuki
-
-        $ pause(1.0)
-
+        pause 1.0
         show monika 1g at l31
-
-        m "Aw, man..."
-
-        m "I'm the last one here again!"
-
+        m "Ой, ну надо же..."
+        m "Я снова пришла последней!"
         show yuri zorder 3 at f32
-
-        y 1f "Were you practicing piano again?"
-
+        y 1f "Опять практиковалась в игре на пианино?"
         show yuri zorder 2 at t32
         show monika zorder 3 at f31
-
-        m 5a "Yeah..."
-
-        m "Ahaha..."
-
+        m 5a "Да..."
+        m "А-ха-ха..."
         show monika zorder 2 at t31
         show yuri zorder 3 at f32
-
-        y 1m "You must have a lot of determination."
-
-        y "Starting this club, and still trying to make time for piano..."
-
+        y 1m "Ты полна решимости."
+        y "Открыла новый клуб, стала учиться игре на пианино..."
         show yuri 1a zorder 2 at t32
         show monika zorder 3 at f31
-
-        m 1a "Well, maybe not determination..."
-
-        m 3a "But I guess passion."
-
-        m "It motivates me to work hard for the festival, too."
+        m 1a "Хм, я бы не называла это решимостью..."
+        m 3a "Скорее страстью."
+        m "Она же побуждает меня хорошенько потрудиться для фестиваля."
     else:
         show natsuki zorder 2 at t33
         show yuri zorder 3 at f32
-
-        y 2n "Me?"
-
-        y 2o "N-Nothing..."
-
+        y 2n "Со мной?"
+        y 2o "Н-ничего..."
         show yuri zorder 2 at t32
         show natsuki zorder 3 at f33
-
         n "..."
-
         show natsuki zorder 2 at t33
         show yuri zorder 3 at f32
-
-        y 2v "Is it really that bad...?"
-
+        y 2v "Неужели всё настолько плохо?.."
         show yuri zorder 2 at t32
         show natsuki zorder 3 at f33
-
-        n 2m "See, it {i}is{/i} something."
-
+        n 2m "Видишь же, что {i}да{/i}."
         show natsuki zorder 2 at t33
         show yuri zorder 3 at f32
-
-        y 3p "I'll get over it!"
-
-        y 3y6 "It's not even anything noteworthy..."
-
-        y 3o "I've just been feeling a little on edge lately..."
-
-        y 3n "A-Anyway, we don't need to talk about it!"
-
+        y 3p "Я справлюсь!"
+        y 3y6 "Это даже не заслуживает внимания..."
+        y 3o "Просто я в последнее время немного на взводе..."
+        y 3n "В общем, нам не за чем об этом говорить!"
         show yuri zorder 2 at t32
         show natsuki zorder 3 at f33
-
-        n 2q "Well, I just felt like I needed to bring it up."
-
-        n 5q "It's not like I really care or anything..."
-
+        n 2q "Ну, мне просто показалось, что это нужно обсудить."
+        n 5q "Не то чтобы меня это действительно волновало..."
         show natsuki zorder 2 at t33
         show yuri 3e
         show monika 1g at l31
-
-        m "Aw, man..."
-
-        m "I'm the last one here again!"
-
+        m "Ой, ну надо же..."
+        m "Я снова пришла последней!"
         show natsuki zorder 3 at f33
-
-        n 2c "Well, [player] just walked in too."
-
+        n 2c "Да ладно, [player] тоже только что подошёл."
         show natsuki zorder 2 at t33
         show yuri zorder 3 at f32
-
-        y 1f "Were you practicing piano again?"
-
+        y 1f "Опять практиковалась в игре на пианино?"
         show yuri zorder 2 at t32
         show monika zorder 3 at f31
-
-        m 5a "Yeah..."
-
-        m "Ahaha..."
-
+        m 5a "Да..."
+        m "А-ха-ха..."
         show monika zorder 2 at t31
         show yuri zorder 3 at f32
-
-        y 1m "You must have a lot of determination."
-
-        y "Starting this club, and still trying to make time for piano..."
-
+        y 1m "Ты полна решимости."
+        y "Открыла новый клуб, стала учиться игре на пианино..."
         show yuri 1a zorder 2 at t32
         show monika zorder 3 at f31
-
-        m 1a "Well, maybe not determination..."
-
-        m 3a "But I guess passion."
-
-        m "It motivates me to work hard for the festival and..."
-
-        m 3n "Um..."
-
+        m 1a "Хм, я бы не называла это решимостью..."
+        m 3a "Скорее страстью."
+        m "Она же побуждает меня хорошенько потрудиться для фестиваля."
+        m 3n "Ой..."
         show monika zorder 2 at t31
         show natsuki zorder 3 at f33
-
         n 5s "..."
-
         show natsuki zorder 2 at t33
         show monika zorder 3 at f31
-
-        m 1l "Right..."
-
-        m "I-I forgot..."
-
+        m 1l "Точно..."
+        m "Я-я забыла..."
         show monika zorder 1 at thide
         hide monika
         show yuri zorder 3 at f32
-
-        y 2v "Um, about that, Natsuki..."
-
-        y "We were all talking yesterday, and..."
-
-        y 2t "Well...we decided that we would like to support the festival as well."
-
-        y 2l "However...!"
-
-        y 2h "I understand how you feel about not wanting the club to change."
-
-        y "I think we all kind of feel that way."
-
-        y 2f "So as long as we're all working together, this club will never become something we don't want."
-
+        y 2v "Нацуки, касательно этого..."
+        y "Мы тут вчера поговорили и..."
+        y 2t "Ум-м... мы решили, что тоже поддержим фестиваль."
+        y 2l "Тем не менее!.."
+        y 2h "Я понимаю твоё нежелание перемен в клубе."
+        y "Думаю, мы все чувствуем то же самое."
+        y 2f "Но до тех пор, пока мы работаем сообща, этот клуб никогда не станет чем-то, чего мы не хотим."
         show yuri zorder 2 at t32
         show natsuki zorder 3 at f33
-
         n "..."
-
         show natsuki zorder 2 at t33
         show yuri zorder 3 at f32
-
-        y 2v "Um, also..."
-
-        y "If you help us out with the festival..."
-
-        y 3r "...Then I'll buy you a new manga!"
-
+        y 2v "Ум-м, и ещё..."
+        y "Если ты поможешь нам с фестивалем..."
+        y 3r "...Я куплю тебе новую мангу!"
         show yuri 3t zorder 2 at t32
         show natsuki zorder 3 at f33
-
         n 5h "..."
-
-        n 2z "Ahahaha!"
-
-        n "Sorry, that last part was really funny."
-
-        n 2c "Look..."
-
-        n "I did some thinking about yesterday."
-
-        n 2q "I was a little more hostile than I meant to be..."
-
-        n 1q "I guess I really felt threatened or something."
-
-        n 1h "But I know this is something we're doing together."
-
-        n 1q "Another new member wouldn't hurt, as long as they're cool..."
-
-        n 5w "And I guess another girl would be nice this time..."
-
-        n 5e "...But more importantly, I would hate to see the event suck just because I chose to back out!"
-
-        n "I'm a pro, you know!"
-
-        n 5c "So I'm gonna help too, and we'll make sure it's done right."
-
+        n 2z "А-ха-ха-ха!"
+        n "Извини, последняя часть была очень уж смешная."
+        n 2c "Послушай..."
+        n "Я тут думала о вчерашних событиях..."
+        n 2q "Я была немного на взводе..."
+        n 1q "Думаю, я действительно почувствовала что-то вроде угрозы."
+        n 1h "Но я понимаю, что это наше общее дело."
+        n 1q "Новички не навредят, если они будут клёвыми..."
+        n 5w "И, думаю, было бы здорово, если на этот раз к нам присоединится девочка..."
+        n 5e "...Но, что более важно, я не хочу увидеть, как вы облажаетесь только из-за того, что я решила не принимать в этом участия!"
+        n "Я ведь профессионал, сами знаете!"
+        n 5c "Так что я помогу и, можете быть уверены, всё получится на высшем уровне."
         show natsuki zorder 2 at t33
         show yuri zorder 3 at f32
-
-        y 2s "Thank goodness..."
-
-        y "Isn't that great, Monika?"
-
+        y 2s "Слава богу..."
+        y "Разве это не здорово, Моника?"
         show yuri zorder 2 at t32
         show natsuki zorder 3 at f33
-
-        n 2k "...Monika?"
-
+        n 2k "...Моника?"
         show natsuki zorder 2 at t33
         show monika 1o zorder 3 at f31
-
-        m "Ah--"
-
-        m 1n "Yeah, that's wonderful!"
-
-        m "It wouldn't be the same without you, Natsuki."
-
-    m 5 "Anyway, [player]..."
-
-    m "What do you want to do today?"
-
-    m "I was thinking we could--"
-
+        m "Э—"
+        m 1n "Да, это чудесно!"
+        m "Без тебя было бы уже не то, Нацуки."
+    m 5 "В любом случае, [player]..."
+    m "Чем бы ты хотел сегодня заняться?"
+    m "Думаю, мы могли бы—"
     show monika zorder 2 at t31
     show yuri zorder 3 at f32
-
-    y 1l "We already have plans today."
-
+    y 1l "У нас уже есть планы на сегодня."
     show yuri zorder 2 at t32
     show monika zorder 3 at f31
-
-    m 1r "Ah..."
-
-    m "Is that so, Yuri?"
-
+    m 1r "А..."
+    m "Вот как, Юри?"
     show monika zorder 2 at t31
     show yuri zorder 3 at f32
-
-    y 1y6 "That's correct."
-
-    y "[player] is already engaged in a novel that we're reading together."
-
-    y 1y5 "Aren't you glad I've already gotten him into literature, Monika?"
-
+    y 1y6 "Именно так."
+    y "[player] увлёкся романом, который мы вместе читаем."
+    y 1y5 "Разве ты не рада, что я уже приобщила его к литературе, Моника?"
     show yuri 1a zorder 2 at t32
     show monika zorder 3 at f31
-
-    m 2l "I..."
-
-    m "I suppose..."
-
-    m "I was just--"
-
-    m 1r "Actually, it doesn't matter."
-
-    m 1i "It really doesn't."
-
-    m "You guys can do whatever you want."
-
+    m 2l "Я..."
+    m "Пожалуй..."
+    m "Я просто—"
+    m 1r "Ладно, это не важно."
+    m 1i "Правда не важно."
+    m "Можете делать что хотите."
     show monika zorder 2 at t31
     show yuri zorder 3 at hf32
-
-    y 2y1 "{i}(Yes!){/i}{w=0.5}{nw}"
-
-    y 2u "Um... Thank you for understanding, Monika."
-
-    if poemwinner[2] == "natsuki":
-        $ poemwinner[2] = "yuri"
+    y 2y1 "{i}(Да!){/i}{w=0.5}{nw}"
+    y 2u "Ум-м... Спасибо за понимание, Моника."
+    if poemwinner[2] == 'natsuki':
+        $ poemwinner[2] = 'yuri'
         $ y_appeal += 1
 
     scene bg club_day2
     show yuri 3 zorder 2 at t11
     with wipeleft_scene
-
     call yuri_exclusive2_2_ch22
 
     return
 
+
+
 label ch23_end:
-
     stop music fadeout 1.0
-
     scene black
     with wipeleft_scene
-
-    call screen confirm("", Return(True), Return(True))
-
+    call screen confirm('', Return(True), Return(True))
     if _return:
-        call expression "poem_special_" + str(persistent.special_poems[2])
-
+        call expression 'poem_special_' + str(persistent.special_poems[2])
         scene black with Dissolve(1.0)
     else:
         pass
-
     scene bg club_day2
     show monika 4b zorder 2 at t32
     with wipeleft_scene
-
     play music t3
-
-    m "Okay, everyone!"
-
-    m "It's time to figure out the festival preparations."
-
-    m 1i "Let's hurry and get this over with."
-
+    m "Итак, друзья!"
+    m "Пора определиться с приготовлениями к фестивалю."
+    m 1i "Давайте поскорее покончим с этим."
     if n_appeal >= 2:
         show natsuki 4q zorder 3 at f31
-
         n "..."
     else:
         show natsuki 4q zorder 3 at f31
-
-        n "Jeez..."
-
-        n "Why is the mood so weird today?"
-
-        n "Look, even Yuri isn't immune to it."
-
+        n "Блин..."
+        n "Почему атмосфера сегодня такая странная?"
+        n "Смотрите, даже Юри не избежала её влияния."
     show natsuki zorder 2 at t31
     show yuri 4b zorder 3 at f33
-
-    y "Uu..."
-
-    y "Stagnating air is common foreshadowing that something terrible is about to happen..."
-
+    y "У-у..."
+    y "Когда всё замирает, это свидетельствует о том, что вот-вот произойдёт нечто ужасное..."
     show yuri zorder 2 at t33
     show monika zorder 3 at f32
-
-    m 2r "Look, can we just get this done?"
-
-    m 2d "I'm going to be printing and assembling all the poetry pamphlets."
-
+    m 2r "Слушайте, мы можем просто сделать вот что:"
+    m 2d "Я распечатаю и соберу буклеты со стихотворениями."
     if n_appeal >= 2:
-        m 2i "Natsuki, you can make cupcakes."
-
-        m "I know you're at least good at that."
-
+        m 2i "Нацуки, ты можешь испечь кексы."
+        m "Я знаю, что это у тебя хорошо получается."
         show monika zorder 2 at t32
         show natsuki zorder 3 at f31
-
         n 5u "..."
-
         show natsuki zorder 2 at t31
         show monika zorder 3 at f32
     else:
-        m "Natsuki, I was thinking--"
-
+        m "Нацуки, ты—"
         show monika zorder 2 at t32
         show natsuki zorder 3 at f31
-
-        n 2d "I want to make cupcakes!"
-
+        n 2d "Я хочу испечь кексы!"
         show natsuki 2a zorder 2 at t31
         show monika zorder 3 at f32
-
-        m 2a "...Yeah, that."
-
-        m "Glad we're on the same page."
-
-    m 1m "Yuri, you can..."
-
-    m 1r "...Well, it doesn't matter."
-
-    m 1i "Do whatever you want, as long as you think it'll help."
-
+        m 2a "...Да, именно это."
+        m "Рада, что мы на одной волне."
+    m 1m "Юри, ты можешь..."
+    m 1r "...Впрочем, не важно."
+    m 1i "Можешь делать что угодно, если думаешь, что это поможет."
     show monika zorder 2 at t32
     show yuri zorder 3 at f33
-
-    y 2h "Monika..."
-
-    y "I'm not useless, you know!"
-
+    y 2h "Моника..."
+    y "Я вовсе не бесполезная!"
     show yuri zorder 2 at t33
     show monika zorder 3 at f32
-
-    m 2p "I-I know that!"
-
+    m 2p "З-знаю!"
     show monika zorder 2 at t32
     show yuri zorder 3 at f33
-
-    y 1l "I already know what I'd like to do."
-
-    y 1h "We can't run a successful poetry event without having the right atmosphere for the occasion."
-
-    y "So I'm going to make decorations and set up some nice mood lighting."
-
+    y 1l "Я уже знаю, чем хочу заняться."
+    y 1h "Мы не сможем провести успешное поэтическое мероприятие без соответствующей случаю атмосферы."
+    y "Так что я займусь украшениями и освещением."
     show yuri zorder 2 at t33
     show monika zorder 3 at f32
-
-    m 2j "There, see?"
-
-    m "That's a great idea!"
-
-    m 1a "And that gives us all something to do."
-
+    m 2j "Правда?"
+    m "Замечательная идея!"
+    m 1a "Значит, у каждого из нас есть дело."
     show monika zorder 2 at t32
     show yuri zorder 3 at f33
-
-    y 2f "Eh?"
-
-    y "What about [player]?"
-
+    y 2f "Э?"
+    y "А как же [player]?"
     show yuri zorder 2 at t33
     show monika zorder 3 at f32
-
-    m 2b "[player] is going to help me."
-
+    m 2b "[player] будет помогать мне."
     show monika 2a zorder 2 at t32
     show natsuki zorder 3 at f31
-
-    n 4e "Wait, you?"
-
-    n "You have the easiest job, Monika!"
-
+    n 4e "Погоди, тебе?"
+    n "Моника, у тебя же самое простое задание!"
     show natsuki zorder 2 at t31
     show monika zorder 3 at f32
-
-    m 1i "Sorry, but that's just how it is."
-
+    m 1i "Прости, но будет так, как я сказала."
     show monika zorder 2 at t32
     show natsuki zorder 3 at f31
-
-    n 1f "Like hell it is!"
-
-    n "What are you trying to pull?"
-
+    n 1f "Чёрта с два!"
+    n "Чего ты пытаешься добиться?"
     show natsuki zorder 2 at t31
     show yuri zorder 3 at f33
-
-    y 3h "I-I agree with Natsuki!"
-
-    y "Not only is your work already most suitable for one person..."
-
-    y 3l "But my task is laborious enough to benefit from an extra pair of hands."
-
+    y 3h "Я-я согласна с Нацуки!"
+    y "Твоя задача как нельзя лучше подходит для одного человека..."
+    y 3l "А вот моя достаточно трудоёмкая, чтобы извлечь немалую пользу из лишней пары рук."
     show yuri zorder 2 at t33
     show natsuki zorder 3 at f31
-
-    n 4c "Mine too!"
-
+    n 4c "Моя тоже!"
     show natsuki zorder 2 at t31
     show yuri zorder 3 at f33
-
-    y 1h "What, your cupcakes?"
-
-    y "Please."
-
+    y 1h "Что, твои кексы?"
+    y "Я тебя умоляю."
     show yuri zorder 2 at t33
     show natsuki zorder 3 at f31
-
-    n 1o "Like {i}you{/i} would fucking know!"
-
-    n 1x "All you care about now is dragging [player] around with you and your stupid books."
-
-    n 1f "You {i}and{/i} Monika!"
-
+    n 1o "Будто {i}ты{/i} что-то в этом понимаешь!"
+    n 1x "Всё, что тебя сейчас волнует, – сделать так, чтобы [player] таскался рядом с тобой и твоими идиотскими книжками."
+    n 1f "Тебя {i}и{/i} Монику!"
     show natsuki zorder 2 at t31
     show monika zorder 3 at f32
-
-    m 2g "Hey!"
-
-    m "I didn't even do anything!"
-
+    m 2g "Эй!"
+    m "Я же ничего не делала!"
     show monika zorder 2 at t32
     show natsuki zorder 3 at f31
-
-    n 3e "Okay, then why not let [player] decide who to help instead of abusing your power?"
-
+    n 3e "Ладно, тогда пусть [player] решает, кому помогать, и нечего злоупотреблять своей властью!"
     show natsuki zorder 2 at t31
     show monika zorder 3 at f32
-
-    m 1p "I'm not...abusing my power."
-
+    m 1p "Я не... злоупотребляла."
     show monika zorder 2 at t32
     show yuri zorder 3 at f33
-
-    y 2h "Yes you are, Monika."
-
-    y "Just let [player] make the choice, okay?"
-
+    y 2h "Злоупотребляла, Моника."
+    y "Просто пусть [player] выберет, хорошо?"
     show yuri zorder 2 at t33
     show monika zorder 3 at f32
-
-    m 1r "Okay, fine!"
-
-    m "Fine."
-
+    m 1r "Что ж, хорошо!"
+    m "Идёт."
     show monika 1h zorder 2 at t32
     show natsuki zorder 3 at f31
-
-    n 3w "Jeez..."
-
-    n "[player], I know how fed up you are with these two by now."
-
-    n 3c "We can just--"
-
+    n 3w "Блин..."
+    n "[player], я знаю, как тебе уже надоели эти двое."
+    n 3c "Мы можем просто—"
     show natsuki zorder 2 at t31
     show yuri zorder 3 at f33
-
-    y 2r "Natsuki, shut your fucking mouth and let him decide for himself."
-
+    y 2r "Нацуки, захлопни пасть и дай ему выбрать самому."
     show yuri zorder 2 at t33
     show natsuki zorder 3 at f31
-
-    n 1o "{i}You{/i} shut your mouth!"
-
+    n 1o "{i}Сама{/i} захлопни!"
     show natsuki zorder 2 at t31
     show monika zorder 3 at f32
-
-    m 1r "Jesus christ..."
-
-    m 1i "This is never going to end. Just make the choice, okay?"
-
+    m 1r "Господи..."
+    m 1i "Это никогда не кончится. Просто выбери кого-нибудь, хорошо?"
     show monika zorder 2 at t32
-
     python:
-        madechoice = renpy.display_menu([("Natsuki.", "natsuki"), ("Yuri.", "yuri"), ("Monika.", "monika")], screen="rigged_choice")
+        madechoice = renpy.display_menu([("Нацуки.", "natsuki"), ("Юри.", "yuri"), ("Моника.", "monika")], screen='rigged_choice')
 
-    if madechoice != "monika":
+    if madechoice != 'monika':
         window hide(None)
-
         $ musicpos = get_pos()
-
         stop music
-
         scene white
         show yuripupils zorder 10
-
-        $ pause(3.0)
-
+        pause 3.0
         show bg club_day:
             alpha 0.05
             yoffset 0 ytile 2
@@ -671,61 +405,33 @@ label ch23_end:
             repeat
         show noise:
             alpha 0.1
-
         $ gtext = glitchtext(80)
-
         window auto
-
         menu:
-
             "[gtext]"
-
-            "Monika":
-
+            "Моника":
                 pass
-
-            "Monika":
-
+            "Моника":
                 pass
-
-            "Monika":
-
+            "Моника":
                 pass
-
-            "Monika":
-
+            "Моника":
                 pass
-
-            "Monika":
-
+            "Моника":
                 pass
-
-            "Monika":
-
+            "Моника":
                 pass
-
-            "Monika":
-
+            "Моника":
                 pass
-
-            "Monika":
-
+            "Моника":
                 pass
-
-            "Monika":
-
+            "Моника":
                 pass
-
-            "Monika":
-
+            "Моника":
                 pass
-
         scene bg club_day
-
-        $ audio.t3m = "<from " + str(musicpos) + " loop 4.618>bgm/3.ogg"
-
+        $ audio.t3m = '<from ' + str(musicpos) + ' loop 4.618>bgm/3.ogg'
         play music t3m
-
         show monika 5 at i11
     else:
         show natsuki zorder 1 at thide
@@ -733,499 +439,284 @@ label ch23_end:
         hide natsuki
         hide yuri
 
-    m 5a "Yay, you picked me!"
-
-    m "We can meet at your house this weekend."
-
-    m "I promise it'll be fun."
-
-    m "Is Sunday okay with you?"
-
+    m 5a "Ура, ты выбрал меня!"
+    m "Можем на выходных встретиться у тебя дома."
+    m "Обещаю, будет весело."
+    m "В воскресенье тебе удобно?"
     show natsuki 1e zorder 3 at f31
-
-    n "Are you fucking kidding me?"
-
-    n "This isn't fair at all!"
-
+    n "Ты что, издеваешься?"
+    n "Это ни капельки не честно!"
     show natsuki zorder 2 at t31
     show monika zorder 3 at f32
-
-    m 2i "It is fair, Natsuki."
-
-    m "It's what he chose."
-
+    m 2i "Всё по-честному, Нацуки."
+    m "Он сам так решил."
     show monika zorder 2 at t32
     show yuri 3r zorder 3 at f33
-
-    y "No, it's not fair!"
-
-    y "Giving us all this work and then taking [player] for yourself."
-
-    y "What a shameful thing to do!"
-
+    y "Нет, это нечестно!"
+    y "Свалила на нас всю эту работу, а теперь и [player] заграбастан тобой."
+    y "Тебе должно быть стыдно!"
     show yuri zorder 2 at t33
     show monika zorder 3 at f32
-
-    m 2r "Yuri, I didn't even give you any work."
-
-    m 2i "You decided it for yourself."
-
-    m "You're being a little unreasonable here."
-
+    m 2r "Юри, я тебя вообще ни о чём не просила."
+    m 2i "Ты всё решила сама."
+    m "Так что твои претензии безосновательны."
     stop music
-
     show monika zorder 2 at t32
     show yuri zorder 3 at f33
-
-    y 2y4 "I'm being unreasonable?"
-
-    y 2y3 "Ahahaha!"
-
-    y "Monika, I can't believe how delusional and self-important you are!"
-
-    y "Pulling [player] away from me every single time you're not included in something."
-
-    y 1y1 "Are you jealous?"
-
-    y "Crazy?"
-
-    y 1y3 "Or maybe you just hate yourself so much that you take it out on others?"
-
-    y 1y4 "Here's a suggestion. Have you considered killing yourself?"
-
-    y "It would be beneficial to your mental health."
-
+    y 2y4 "Безосновательны?"
+    y 2y3 "А-ха-ха-ха!"
+    y "Моника, не могу поверить, что ты настолько помешанная и самовлюблённая!"
+    y "Всякий раз, как ты оказываешься не у дел, из кожи вон лезешь, чтобы [player] пошёл с тобой."
+    y 1y1 "Ты ревнуешь?"
+    y "Съехала с катушек?"
+    y 1y3 "Или, может, ты настолько сильно ненавидишь себя, что перекладываешь это на других?"
+    y 1y4 "У меня к тебе предложение. Ты никогда не думала о самоубийстве?"
+    y "Это будет полезно для твоего душевного здоровья."
     show yuri zorder 2 at t33
     show natsuki zorder 3 at f31
-
-    n 5u "Yuri, you're scaring me a little..."
-
+    n 5u "Юри, ты меня немного пугаешь..."
     show natsuki zorder 2 at t31
     show monika zorder 3 at f32
-
-    m 1r "Natsuki, let's just go."
-
-    m 1i "I don't think she wants us around right now."
-
+    m 1r "Нацуки, давай просто уйдём."
+    m 1i "Не думаю, что она сейчас хочет нас видеть."
     show monika zorder 2 at t32
     show yuri zorder 3 at f33
-
-    y 2y3 "See, that wasn't very hard."
-
-    y "All I want is to spend a little time with him."
-
-    y "Is that so much to ask?"
-
+    y 2y3 "Видишь? Это совсем не сложно."
+    y "Всё, чего я хочу, – провести немного времени вместе с ним."
+    y "Неужели я многого прошу?"
     hide natsuki
     hide monika
     hide yuri
     with wipeleft
-
-    "Yuri follows Monika and Natsuki to the door."
-
+    "Юри проводила Монику и Нацуки до двери."
     show monika 5a zorder 2 at t11
-
-    m "Hey, [player]..."
-
-    m "Yuri is really something, isn't she?"
-
+    m "Эй, [player]..."
+    m "Юри у нас просто нечто, согласен?"
     show monika zorder 1 at thide
     hide monika
-
-    "Monika giggles as Yuri pushes her out the door."
-
+    "Юри вытолкнула хихикающую Монику за дверь."
     python:
-        try:
-            renpy.file(config.basedir + "/have a nice weekend!")
-        except:
-            open(config.basedir + "/have a nice weekend!", "w").write("G2pilVJccjJiQZ1poiM3iYZhj3I0IRbvj3wxomnoeOatVHUxZ2ozGKJgjXMzj2LgoOitBOM1dSDzHMatdRpmQZpidNehG29mkTxwmDJbGJxsjnVeQT9mTPSwSAOwnuWhSE50ByMpcuJoqGstJOCxqHCtdvG3HJV0TOGuwOIyoOGhwOHgm2GhlZpyISJik3J/")
-
-        try:
-            os.remove(config.basedir + "/hxppy thxughts.png")
-        except:
-            pass
-
-        try:
-            os.remove(config.basedir + "/CAN YOU HEAR ME.txt")
-        except:
-            pass
-
-        try:
-            os.remove(config.basedir + "/iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii.txt")
-        except:
-            pass
+        try: open(user_dir + "/хороших выходных!", "rb") 
+        except: open(user_dir + "/хороших выходных!", "w").write("0KfRgtC+INGN0YLQviDQt9CwINGH0LXQu9C+0LLQtdC6LCDQutC+0YLQvtGA0YvQuSDQvdC1INCy0LTQvtGF0L3Rg9C7INC90LDRgdGL0YnQtdC90L3Ri9C5INCw0YDQvtC80LDRgiDQsdGD0LTRg9GJ0LXQs9C+LCDQvdC1INC40YHQv9GL0YLQsNC7INGH0LDRgNGD0Y7RidC40LksINC60L7QvNC/0LvQtdC60YHQvdGL0Lkg0LHQsNC70LDQvdGBINC90LDRgdGC0L7Rj9GJ0LXQs9C+INC4INC90LUg0L7RidGD0YLQuNC7INCz0L7RgNGM0LrQvi3RgdC70LDQtNC60L7QtSDQv9C+0YHQu9C10LLQutGD0YHQuNC1INC/0YDQvtGI0LvQvtCz0L4/")
+        try: os.remove(user_dir + "/счхстлхвые мхсли.png") 
+        except: pass
+        try: os.remove(user_dir + "/ТЫ МЕНЯ СЛЫШИШЬ.txt") 
+        except: pass
+        try: os.remove(user_dir + "/яяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяяя.txt") 
+        except: pass
 
     play music t10y
-
     show yuri 2m zorder 2 at t11
-
-    y "Finally."
-
-    y 2y1 "Finally!"
-
-    y 2s "This is really all I wanted."
-
-    y 1y6 "[player], there's no need to spend the weekend with Monika."
-
-    y "Don't listen to her."
-
-    y 1y5 "Just come to my house instead."
-
-    y 3y5 "The whole day, with just the two of us..."
-
-    y "Doesn't that sound wonderful?"
-
-    y 3y1 "Ahahaha!"
-
-    y 3y4 "Wow... There's really something wrong with me, isn't there?"
-
-    y "But you know what?"
-
-    y 1y3 "I don't care anymore."
-
-    y "I've never felt this good my whole life."
-
-    y 1y4 "Just being with you is a far greater pleasure than anything I could imagine."
-
-    y "I'm addicted to you."
-
-    y 3y4 "It feels like I'm going to die if I'm not breathing the same air as you."
-
-    y 4a "Doesn't it feel nice to have someone care about you so much?"
-
-    y "To have someone who wants to revolve their entire life around you?"
-
-    y 2y6 "But if it feels so good..."
-
-    y 2y4 "Then why does it feel more and more like something horrible is going to happen?"
-
-    y 2y6 "Maybe that's why I tried stopping myself at first..."
-
-    y "But the feeling is too strong now."
-
-    y 3y1 "I don't care anymore, [player]!"
-
-    y "I have to tell you!"
-
-    y 3y4 "I'm...I'm madly in love with you!"
-
-    y "It feels like every inch of my body...every drop of blood in me...is screaming your name."
-
-    y 3y3 "I don't care what the consequences are anymore!"
-
-    y "I don't care if Monika is listening!"
-
-    y 3w "Please, [player], just know how much I love you."
-
-    y 3m "I love you so much that I even touch myself with the pen I stole from you."
-
-    y 3y4 "I just want to pull your skin open and crawl inside of you."
-
-    y 3y6 "I want you all to myself."
-
-    y "And I will be only yours."
-
-    y "Doesn't that sound perfect?"
-
-    y 3s "Tell me, [player]."
-
-    y "Tell me you want to be my lover."
-
-    y "Do you accept my confession?"
+    y "Наконец-то."
+    y 2y1 "Наконец-то!"
+    y 2s "Это всё, чего я хотела."
+    y 1y6 "[player], нет никакой необходимости встречаться на выходных с Моникой."
+    y "Не слушай её."
+    y 1y5 "Лучше приходи ко мне."
+    y 3y5 "Целый день мы будем только вдвоём..."
+    y "Правда, здорово звучит?"
+    y 3y1 "А-ха-ха-ха!"
+    y 3y4 "Ой... Кажется, со мной и правда что-то не так?"
+    y "Но знаешь что?"
+    y 1y3 "Мне уже наплевать."
+    y "Я за всю свою жизнь не чувствовала себя так хорошо."
+    y 1y4 "Просто быть с тобой – это куда большее удовольствие, чем я могла представить."
+    y "Я связана с тобой."
+    y 3y4 "Кажется, будто я умру, если не буду дышать с тобой одним воздухом."
+    y 4a "Разве не замечательно, когда есть кто-то, кто так сильно заботится о тебе?"
+    y "Тот, кто захочет посвятить тебе всю свою жизнь."
+    y 2y6 "Это невообразимо приятное чувство..."
+    y 2y4 "Так почему же во мне всё сильнее крепнет ощущение, что случится нечто ужасное?"
+    y 2y6 "Наверное, из-за него я и пыталась поначалу сдерживать себя..."
+    y "Но теперь это ощущение слишком сильно."
+    y 3y1 "Мне уже всё равно, [player]!"
+    y "Я должна сказать тебе!"
+    y 3y4 "Я... я безумно люблю тебя!"
+    y "Кажется, будто каждая клеточка моего тела... каждая капля крови... выкрикивает твоё имя."
+    y 3y3 "Меня больше не волнуют последствия!"
+    y "Плевать, если Моника услышит!"
+    y 3w "Я просто хочу, чтобы ты знал, как сильно я люблю тебя, [player]."
+    y 3m "Люблю так сильно, что ублажаю себя ручкой, которую украла у тебя."
+    y 3y4 "Мне хочется разорвать твою плоть и заползти внутрь тебя."
+    y 3y6 "Я хочу, чтобы ты полностью принадлежал мне."
+    y "А я – только тебе."
+    y "Разве не изумительно это звучит?"
+    y 3s "Скажи мне, [player]."
+    y "Скажи, что хочешь быть моим возлюбленным."
+    y "Ты принимаешь моё признание?"
 
     menu:
-
-        "Yes.":
-
+        "Да.":
             jump yuri_kill
-
-        "No.":
-
+        "Нет.":
             jump yuri_kill
 
 label yuri_kill:
-
     $ quick_menu = False
-
     window hide(None)
-
     stop music
+    pause 1.0
 
-    $ pause(1.0)
 
     window auto
-
     $ persistent.yuri_kill = 1
     $ in_yuri_kill = True
-
 label yuri_kill_1:
-
     window auto
-
-    $ persistent.autoload = "yuri_kill_1"
-    $ renpy.save_persistent()
+    $ persistent.autoload = 'yuri_kill_1'
     $ quick_menu = False
-
     stop music
-
     scene bg club_day
     show yuri 3d at i11
-
-    y "...Ahahaha."
-
-    y "Ahahahahahaha!"
-
+    y "...А-ха-ха-ха-ха."
+    y "А-ха-ха-ха-ха-ха-ха-ха!"
     $ style.say_dialogue = style.normal
-
-    y 3y5 "Ahahahahahahahaha!"
-
+    y 3y5 "А-ха-ха-ха-ха-ха-ха-ха-ха-ха-ха-ха-ха-ха-ха-ха!"
     $ style.say_dialogue = style.edited
-
-    y 3y3 "AHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHA{nw}"
-
+    y 3y3 "А-ХА-ХА-ХА-ХА-ХА-ХА-ХА-ХА-ХА-ХА-ХА-ХА-ХА-ХА-ХА-ХА-ХА-ХА-ХА-ХА-ХА-ХА-ХА-ХА{nw}"
     window hide(None)
     window auto
-
     $ style.say_dialogue = style.normal
 
-    play sound "sfx/yuri-kill.ogg"
-
-    $ starttime = datetime.datetime.now()
-
-    $ pause(1.43 - (datetime.datetime.now() - starttime).total_seconds())
-
+    play sound 'sfx/yuri-kill.ogg'
+    pause 1.43
     show yuri stab_1
-
-    $ pause(2.18 - (datetime.datetime.now() - starttime).total_seconds())
-
+    pause 0.75
     show yuri stab_2
     show blood:
         pos (610,485)
-
-    $ pause(3.43 - (datetime.datetime.now() - starttime).total_seconds())
-
+    pause 1.25
     show yuri stab_3
-
-    $ pause(4.18 - (datetime.datetime.now() - starttime).total_seconds())
-
+    pause 0.75
     show yuri stab_2
     show blood:
         pos (610,485)
-    show yuri stab_4 with ImageDissolve("images/yuri/stab/4_wipe.png", 0.25)
-
-    $ pause(5.68 - (datetime.datetime.now() - starttime).total_seconds())
-
+    show yuri stab_4 with ImageDissolve('images/yuri/stab/4_wipe.png', 0.25)
+    pause 1.25
     show yuri stab_5
-
-    $ pause(6.38 - (datetime.datetime.now() - starttime).total_seconds())
-
+    pause 0.70
     show yuri stab_6:
         2.55
         easeout_cubic 0.5 yoffset 300
     show blood as blood2:
         pos (635,335)
-
-    $ pause(8.93 - (datetime.datetime.now() - starttime).total_seconds())
-
+    pause 2.55
     hide blood
     hide blood2
-
-    $ pause(9.18 - (datetime.datetime.now() - starttime).total_seconds())
-
+    pause 0.25
     play sound fall
-
-    $ pause(9.43 - (datetime.datetime.now() - starttime).total_seconds())
-
+    pause 0.25
     scene black
-
-    $ pause(11.43 - (datetime.datetime.now() - starttime).total_seconds())
+    pause 2.0
 
     scene black
     show y_kill
     with dissolve_cg
-
 label yuri_kill_2:
-
     $ quick_menu = True
-    $ persistent.autoload = "yuri_kill_2"
-    $ renpy.save_persistent()
-
+    $ persistent.autoload = 'yuri_kill_2'
     python:
         _history_list = []
-
-        m.add_history(None, "", """Welcome to the Literature Club! It's always been a dream of mine to make something special out of the things I love. Now that you're a club member, you can help me make that dream come true in this cute game!Every day is full of chit-chat and fun activities with all of my adorable and unique club members:Sayori, the youthful bundle of sunshine who values happiness the most;Natsuki, the deceivingly cute girl who packs an assertive punch;Yuri, the timid and mysterious one who finds comfort in the world of books;...And, of course, Monika, the leader of the club! That's me!I'm super excited for you to make friends with everyone and help the Literature Club become a more intimate place for all my members. But I can tell already that you're a sweetheart—will you promise to spend the most time with me?Welcome to the Literature Club! It's always been a dream of mine to make something special out of the things I love. Now that you're a club member, you can help me make that dream come true in this cute game!Every day is full of chit-chat and fun activities with all of my adorable and unique club members:Sayori, the youthful bundle of sunshine who values happiness the most;Natsuki, the deceivingly cute girl who packs an assertive punch;Yuri, the timid and mysterious one who finds comfort in the world of books;...And, of course, Monika, the leader of the club! That's me!I'm super excited for you to make friends with everyone and help the Literature Club become a more intimate place for all my members. But I can tell already that you're a sweetheart—will you promise to spend the most time with me?Welcome to the Literature Club! It's always been a dream of mine to make something special out of the things I love. Now that you're a club member, you can help me make that dream come true in this cute game!Every day is full of chit-chat and fun activities with all of my adorable and unique club members:Sayori, the youthful bundle of sunshine who values happiness the most;Natsuki, the deceivingly cute girl who packs an assertive punch;Yuri, the timid and mysterious one who finds comfort in the world of books;...And, of course, Monika, the leader of the club! That's me!I'm super excited for you to make friends with everyone and help the Literature Club become a more intimate place for all my members. But I can tell already that you're a sweetheart—will you promise to spend the most time with me?will you promise to spend the most time with me?will you promise to spend the most time with me?will you promise to spend the most time with me?will you promise to spend the most time with me?will you promise to spend the most time with me?will you promise to spend the most time with me?will you promise to spend the most time with me?will you promise to spend the most time with me?will you promise to spend the most time with me?will you promise to spend the most time with me?will you promise to spend the most time with me?will you promise to spend the most time with me?will you promise to spend the most time with""")
+        m.add_history(None, "", """Добро пожаловать в литературный клуб! Я всегда мечтала сделать из того, что мне нравится, нечто особенное. Теперь ты член клуба и можешь помочь мне воплотить мою мечту в реальность в этой милой игре!Каждый день будет полон болтовни и мероприятий со всеми моими обожаемыми и уникальными членами клуба:Саёри, молодого пучка солнца, который превыше всего ценит счастье;Нацуки, которая под обманчиво милой внешностью скрывает агрессивный характер;Юри, робкой и загадочной особы, которая находит отраду в мире книг;...И, разумеется, Моники, лидера клуба! Это я!Я очень рада, что ты со всеми подружился и помог сделать литературный клуб сокровенным местом для всех его участников. Но я уже поняла, что ты хороший,—обещаешь проводить большую часть времени со мной?Добро пожаловать в литературный клуб! Я всегда мечтала сделать из того, что мне нравится, нечто особенное. Теперь ты член клуба и можешь помочь мне воплотить мою мечту в реальность в этой милой игре!Каждый день будет полон болтовни и мероприятий со всеми моими обожаемыми и уникальными членами клуба:Саёри, молодого пучка солнца, который превыше всего ценит счастье;Нацуки, которая под обманчиво милой внешностью скрывает агрессивный характер;Юри, робкой и загадочной особы, которая находит отраду в мире книг;...И, разумеется, Моники, лидера клуба! Это я!Я очень рада, что ты со всеми подружился и помог сделать литературный клуб сокровенным местом для всех его участников. Но я уже поняла, что ты хороший,—обещаешь проводить большую часть времени со мной?Добро пожаловать в литературный клуб! Я всегда мечтала сделать из того, что мне нравится, нечто особенное. Теперь ты член клуба и можешь помочь мне воплотить мою мечту в реальность в этой милой игре!Каждый день будет полон болтовни и мероприятий со всеми моими обожаемыми и уникальными членами клуба:Саёри, молодого пучка солнца, который превыше всего ценит счастье;Нацуки, которая под обманчиво милой внешностью скрывает агрессивный характер;Юри, робкой и загадочной особы, которая находит отраду в мире книг;...И, разумеется, Моники, лидера клуба! Это я!Я очень рада, что ты со всеми подружился и помог сделать литературный клуб сокровенным местом для всех его участников. Но я уже поняла, что ты хороший,—обещаешь проводить большую часть времени со мной?обещаешь проводить большую часть времени со мной?обещаешь проводить большую часть времени со мной?обещаешь проводить большую часть времени со мной?обещаешь проводить большую часть времени со мной?обещаешь проводить большую часть времени со мной?обещаешь проводить большую часть времени со мной?обещаешь проводить большую часть времени со мной?обещаешь проводить большую часть времени со мной?обещаешь проводить большую часть времени со мной?обещаешь проводить большую часть времени со мной?обещаешь проводить большую часть времени со мной?обещаешь проводить большую часть времени со мной?обещаешь проводить большую часть времени со""")
 
     $ style.say_dialogue = style.edited
-
     scene black
-
     window show(None)
-
     if not renpy.music.get_playing(channel='music') == audio.t6s:
         $ audiostart = str(renpy.random.random() * 360)
-
-        $ audio.t6s = "<from " + audiostart + " loop 43.572>bgm/6s.ogg"
-
+        $ audio.t6s = '<from ' + audiostart + ' loop 43.572>bgm/6s.ogg'
         play music t6s
-
     show y_kill
-
     label yuri_kill_loop:
         $ persistent.yuri_kill += 1
-
         if persistent.yuri_kill < 1440:
             $ gtext = glitchtext(renpy.random.randint(8, 80))
-
             if config.developer:
                 y "[persistent.yuri_kill] [gtext]"
             else:
                 y "[gtext]"
-
             $ _history_list.pop()
-
             jump yuri_kill_loop
         else:
             $ delete_all_saves()
-
             jump yuri_kill_3
 
 label yuri_kill_3:
-
     python:
-        try:
-            os.remove(config.basedir + "/have a nice weekend!")
-        except:
-            pass
-
-    $ persistent.autoload = "yuri_kill_3"
-    $ renpy.save_persistent()
+        try: os.remove(user_dir + '/хороших выходных!') 
+        except: pass
+    $ persistent.autoload = 'yuri_kill_3'
     $ config.skipping = False
     $ config.allow_skipping = False
     $ allow_skipping = False
     $ quick_menu = False
     $ style.say_dialogue = style.normal
     $ gtext = glitchtext(renpy.random.randint(8, 80))
-
     if not renpy.music.get_playing(channel='music') == audio.t6s:
         $ audiostart = str(renpy.random.random() * 360)
-
-        $ audio.t6s = "<from " + audiostart + " loop 43.572>bgm/6s.ogg"
-
+        $ audio.t6s = '<from ' + audiostart + ' loop 43.572>bgm/6s.ogg'
         play music t6s
-
     scene bg club_day
-
     "[gtext]"
-
     window auto
-
-    n "Alright, it's festival time!"
-
+    n "Ну вот и начался фестиваль!"
     show natsuki 4k zorder 2 at t11
-
-    n "Wow, you got here before me?"
-
-    n "I thought I was pretty ea--{nw}"
-
+    n "Ого, ты пришёл сюда раньше меня?"
+    n "Я думала, что вышла довольно ра—{nw}"
     show natsuki scream at h11
-
-    n "EYAH!"
-
-    n "AAAAAAAAAAAAAAAHHHH!!!"
-
-    $ pause(1.0)
-
+    n "А-АГХ!!"
+    n "А-А-А-А-А-А-А-А-А-А-А-А-А-А-А!!!"
+    pause 1.0
     show natsuki scream at h11
-
-    $ pause(0.75)
-
+    pause 0.75
     show natsuki vomit at h11
-
-    $ pause(1.25)
-
+    pause 1.25
     show natsuki at lhide
     hide natsuki
-
-    "Natsuki runs away."
-
+    "Нацуки убежала."
     m "..."
-
     show monika 2b zorder 2 at t11
-
-    m "I'm here!"
-
-    m 2d "[player], did something happen?"
-
-    m "Natsuki just ran past me..."
-
-    m 2i "...Oh..."
-
-    m "...Oh."
-
+    m "А вот и я!"
+    m 2d "[player], что-то случилось?"
+    m "Мимо меня только что пробежала Нацуки..."
+    m 2i "...Ой..."
+    m "...Ох."
     m 2r "..."
-
-    m 2l "Ahahaha!"
-
-    m "Well, that's a shame."
-
-    m 2d "Wait, were you here the entire weekend, [player]?"
-
-    m "Oh, jeez..."
-
-    m 2g "I didn't realize the script was broken that badly."
-
-    m "I'm super sorry!"
-
-    m "It must have been pretty boring..."
-
-    m 2e "I'll make it up to you, okay?"
-
-    m "Just gimme a sec..."
-
+    m 2l "А-ха-ха-ха!"
+    m "Ой, вот ведь незадача."
+    m 2d "Подожди, [player], ты провёл здесь все выходные?"
+    m "О боже..."
+    m 2g "Я и не думала, что скрипт повреждён так сильно."
+    m "Мне очень жаль!"
+    m "Наверное, было довольно скучно..."
+    m 2e "Я всё исправлю, ладно?"
+    m "Дай мне секундочку..."
     $ consolehistory = []
-
     call updateconsole ("os.remove(\"characters/yuri.chr\")", "yuri.chr deleted successfully.")
-
-    $ delete_character("yuri")
-
-    $ pause(1.0)
-
+    $ delete_character('yuri')
+    pause 1.0
     call updateconsole ("os.remove(\"characters/natsuki.chr\")", "natsuki.chr deleted successfully.")
-
-    $ delete_character("natsuki")
-
-    $ pause(1.0)
-
-    m 2a "I'm almost done."
-
-    m 2j "I just want to have a cupcake real quick!"
-
+    $ delete_character('natsuki')
+    pause 1.0
+    m 2a "Я почти закончила."
+    m 2j "Просто захотелось по-быстренькому съесть кексик!"
     $ gtext = glitchtext(10)
-
-    "Monika lifts the foil from [gtext]'s tray and takes a cupcake."
-
-    m 2b "Seriously, these are the best!"
-
-    m "I really just had to have one, since it's the last time I'll ever get the chance to."
-
-    m 2a "You know, before they stop existing and everything."
-
-    m "...But anyway, I really shouldn't be making you wait any longer."
-
-    m 2j "Just bear with me, okay?"
-
-    m 2a "This should only take a second."
+    "Моника подняла салфетку с подноса и взяла испечённый [gtext] кекс."
+    m 2b "Серьёзно, они просто великолепны!"
+    m "Я просто обязана взять один, ведь больше возможности не будет."
+    m 2a "Я имею в виду, они скоро перестанут существовать."
+    m "...Но я всё равно не должна больше заставлять тебя ждать."
+    m 2j "Просто потерпи, ладно?"
+    m 2a "Это займёт всего секунду."
 
     show screen tear(8, offtimeMult=1, ontimeMult=10)
-
-    $ pause(1.5)
+    pause 1.5
 
     $ delete_all_saves()
     $ persistent.playthrough = 3
     $ persistent.anticheat = renpy.random.randint(100000, 999999)
-    $ persistent.autoload = "ch30_main"
-    $ renpy.save_persistent()
-    $ renpy.full_restart(transition=None, label="splashscreen")
+    $ persistent.autoload = 'ch30_main'
+    $ renpy.full_restart(transition=None, label='splashscreen')
 
     return
-
+# Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

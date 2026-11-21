@@ -1,935 +1,479 @@
 label yuri_exclusive_1:
-
     scene bg club_day
     with wipeleft_scene
-
-    "I'm really curious to talk to Yuri a little bit more..."
-
-    "But at the same time, I would feel bad for distracting her from reading."
-
-    "I catch a glimpse of the cover of her book."
-
-    "It looks like the same book that she lent to me..."
-
-    "More than that, she seems to be on the first few pages."
-
+    "Я очень хотел бы поговорить с Юри немного дольше..."
+    "Но в то же время мне не хотелось отвлекать её от чтения."
+    "Я бросил взгляд на обложку её книги."
+    "Похоже, это такая же книга, как и та, которую она дала мне..."
+    "Кроме того, она, кажется, на первых её страницах."
     play music t6 fadeout 1.0
-
     show yuri 4a zorder 2 at t11
-
-    y "Ah..."
-
-    "Crap--"
-
-    "I think she noticed me looking at her..."
-
-    "She sneaks another glance at me, and our eyes meet for a split second."
-
+    y "Ах..."
+    "Чёрт..."
+    "Наверное, заметила, что я смотрел на неё..."
+    "Она ещё раз глянула на меня украдкой, и наши взгляды на мгновение встретились."
     y 4b "..."
-
-    "But that only makes her hide her face deeper in her book."
-
-    mc "Sorry..."
-
-    mc "I was just spacing out..."
-
-    "I mutter this, sensing I made her uncomfortable."
-
-    y 1i "Oh..."
-
-    y "It's fine..."
-
-    y 1a "If I was focused, then I probably wouldn't have noticed in the first place."
-
-    y "But I'm just re-reading a bit of this, so..."
-
-    mc "That's the book that you gave me, right?"
-
-    y "Mhm."
-
-    y "I wanted to re-read some of it."
-
-    y 2q "Not for any particular reason...!"
-
-    mc "Just curious, how come you have two copies of the same book?"
-
-    y "Ah..."
-
-    y "Well, when I stopped at the bookstore yesterday--"
-
-    y 3o "Ah, that's not what I meant..."
-
-    y "I mean--"
-
-    y 1w "I...just happened to buy two of them."
-
-    mc "Ah, I see."
-
-    "There's something fairly obvious here that Yuri isn't telling me, but I decide to let it go."
-
-    mc "I'll definitely start reading it soon!"
-
-    y 2u "I'm glad to hear..."
-
-    y "Once it starts to pick up, you might have a hard time putting it down."
-
-    y 2c "It's a very engaging and relatable story."
-
-    mc "Is that so...?"
-
-    mc "What's it about, anyway?"
-
-    y 1f "Well..."
-
-    y "Mmm..."
-
-    "Yuri closes the book and scans her eyes over the back."
-
-    "The book is titled \"Portrait of Markov\"."
-
-    "There's an ominous-looking eye symbol on the front cover."
-
-    y 1a "Alright..."
-
-    y "I just wanted to make sure I don't accidentally give anything away."
-
-    y "Basically, it's about this girl in high school who moves in with her long-lost younger sister..."
-
-    y "But as soon as she does so, her life gets really strange."
-
-    y 1m "She gets targeted by these people who escaped from a human experiment prison..."
-
-    y "And while her life is in danger, she needs to desperately choose who to trust."
-
-    y 1i "No matter what she does, she ends up destroying most of her relationships and her life starts to fall apart..."
-
-    mc "That's kind of--!"
-
-    "That's kind of dark, isn't it?"
-
-    "Yuri made it sound like it was going to be a nice story, so that dark turn came from nowhere."
-
-    y 1c "Ahaha."
-
-    "Yuri gently giggles, all of a sudden."
-
-    y "Are you not a fan of that sort of thing, [player]?"
-
-    mc "No, it's not that..."
-
-    mc "I mean, I can definitely enjoy those kinds of stories, so don't worry."
-
-    y 2u "I hope so..."
-
-    "Yeah... I totally forgot that Yuri is into those things."
-
-    "She's so shy and reclusive on the outside, but her mind seems to be completely different."
-
-    y "It's just that those kinds of stories..."
-
-    y 1a "They challenge you to look at life from a strange new perspective."
-
-    y "When horrible things happen not just because someone wants to be evil..."
-
-    y 1m "But because they have their own goals, or their own philosophy that they believe in."
-
-    y "Then suddenly, when you thought you related to the protagonist..."
-
-    y "They're made out to be the naive one for letting their one-sided morals interfere with the villain's plans."
-
-    y 3v "I'm...I'm rambling, aren't I...?"
-
-    y "Not again..."
-
-    y 4b "I'm sorry..."
-
-    mc "Hey, don't apologize...!"
-
-    mc "I haven't lost interest or anything."
-
-    y "Well..."
-
-    y "I guess it's alright, then..."
-
-    y 4a "But I feel like I should let you know that I have this problem..."
-
-    y "When I let things like books and writing fill my thoughts..."
-
-    y "I kind of forget to pay attention to other people..."
-
-    y 3t "So I'm sorry if I end up saying something strange!"
-
-    y "And please stop me if I start talking too much!"
-
-    mc "That's--"
-
-    mc "I really don't think you need to worry..."
-
-    mc "That just means you're passionate about reading."
-
-    mc "The least I can do is listen."
-
-    mc "It's a literature club, after all..."
-
-    y 4a "Ah--"
-
-    y "That's..."
-
-    y "Well, that's true..."
-
-    mc "In fact..."
-
-    mc "I might as well get started reading it, right?"
-
-    y 3n "Y-You don't have to!"
-
-    mc "Ahaha, what are you saying?"
-
-    mc "Just a moment ago, you said you were looking forward to it."
-
+    "Но это заставило её только ниже склониться над книгой."
+    mc "Извини..."
+    mc "Я просто задумался..."
+    "Пробормотал я, чувствуя, что смутил её."
+    y 1i "О..."
+    y "Всё в порядке..."
+    y 1a "Если бы я была сосредоточена, то, скорее всего, ничего бы и не заметила."
+    y "Но я просто перечитываю отрывок, так что..."
+    mc "Это ведь та же книга, что ты дала мне раньше?"
+    y "Ум-м..."
+    y "Мне просто захотелось кое-что перечитать."
+    y 2q "Безо всякой причины!.."
+    mc "Просто интересно, откуда у тебя две одинаковые книги?"
+    y "Ах..."
+    y "Когда вчера я заглянула в книжный магазин..."
+    y 3o "Ой, я не это хотела сказать..."
+    y "Я имела в виду..."
+    y 1w "Просто... так получилось, что я купила две."
+    mc "А, понятно."
+    "Очевидно, что Юри чего-то недоговаривает, но я решил не обращать на это внимания."
+    mc "Я обязательно скоро примусь за чтение!"
+    y 2u "Мне приятно это слышать..."
+    y "Как только возьмёшься, оторваться будет уже непросто."
+    y 2c "Это очень увлекательная история, вызывающая множество ассоциаций."
+    mc "Вот как?.."
+    mc "Кстати, а о чём она?"
+    y 1f "Ну..."
+    y "Ум-м..."
+    "Юри закрыла книгу и пробежалась глазами по синопсису на задней обложке."
+    "Книга называлась «Портрет Маркова»."
+    "С обложки на меня смотрел зловещего вида символ в виде глаза."
+    y 1a "Ладно..."
+    y "Я просто хотела удостовериться, что ничего не упущу."
+    y "В общем, это о старшекласснице, которая переезжает к своей младшей сестре, с которой давно не общалась..."
+    y "Но вскоре после этого её жизнь становится донельзя странной."
+    y 1m "Она становится целью заключённых, сбежавших из тюрьмы, в которой проводят эксперименты на людях..."
+    y "И вот, когда её жизнь в опасности, ей приходится выбирать, кому доверять."
+    y 1i "Что бы она ни делала, в результате она обрывает почти все свои связи и её жизнь начинает разваливаться..."
+    mc "Это довольно..."
+    "Довольно мрачно, правда?"
+    "Сначала у меня сложилось впечатление, что это отличная история, но из ниоткуда полезшая чернуха стала для меня полнейшей неожиданностью."
+    y 1c "А-ха-ха."
+    "Юри вдруг робко хихикнула."
+    y "Тебе подобные истории не нравятся, [player]?"
+    mc "Нет, не то чтобы..."
+    mc "В смысле, я могу получать удовольствие от таких историй, так что не волнуйся."
+    y 2u "Надеюсь..."
+    "Да... Я и забыл, насколько Юри этим увлечена."
+    "Внешне робкая и нелюдимая, но в душе она, кажется, совсем другая."
+    y "Это просто такой тип историй..."
+    y 1a "Они заставляют тебя взглянуть на жизнь по-новому."
+    y "Когда плохие вещи происходят не из-за того, что кто-то хочет быть злым..."
+    y 1m "Но из-за того, что мир полон ужасных людей и мы никогда не можем знать, кто кем окажется."
+    y "А потом вдруг, когда ты уже соотносишь себя с главным героем..."
+    y "Он делает что-нибудь наивное, позволяя своей однобокой морали помешать планам злодея."
+    y 3v "Я... Я опять заболталась, да?.."
+    y "Только не снова..."
+    y 4b "Прости..."
+    mc "Эй, не нужно извиняться!.."
+    mc "Я вовсе не утратил из-за этого интерес."
+    y "Ум-м..."
+    y "Тогда, наверное, всё нормально..."
+    y 4a "Но я чувствую, что ты должен знать об одной моей проблеме..."
+    y "Когда я позволяю вещам вроде книг и письма целиком заполнить мои мысли..."
+    y "Я напрочь забываю об окружающих..."
+    y 3t "Поэтому прошу прощения, если в результате скажу что-то странное!"
+    y "И, пожалуйста, останови меня, если я начну говорить слишком много!"
+    mc "Это..."
+    mc "Я не думаю, что тебе стоит так сильно переживать по этому поводу..."
+    mc "Это просто показывает, что ты увлечена чтением."
+    mc "Меньшее, что я могу сделать, – это выслушать."
+    mc "Ведь мы в литературном клубе..."
+    y 4a "Ах..."
+    y "Это..."
+    y "Пожалуй, что так..."
+    mc "И вообще..."
+    mc "Я же тоже могу начать читать её, верно?"
+    y 3n "Т-ты не обязан!"
+    mc "А-ха-ха, о чём это ты?"
+    mc "Совсем недавно ты говорила, что очень ждёшь этого."
     y 3o "..."
-
-    mc "Let me just get the book..."
-
-    "I quickly retrieve the book that I had put into my bag."
-
-    mc "Alright...it's fine if I sit here, right?"
-
-    "I slip into the seat next to Yuri's."
-
-    y 3n "Ah...!"
-
-    y "Yeah..."
-
-    mc "Are you sure?"
-
-    mc "You seem a little apprehensive..."
-
-    y "That's..."
-
-    y 4b "I'm sorry..."
-
-    y "It's not that I don't want you to!"
-
-    y "It's just something I'm not very used to..."
-
-    y "That is, reading in company with someone."
-
-    mc "I see..."
-
-    mc "Well, just tell me if I end up distracting you or anything."
-
-    y "A-Alright..."
-
+    mc "Дай мне только её достать..."
+    "Я быстро вытащил книгу, которую убрал в портфель."
+    mc "Так... можно мне сесть здесь?"
+    "Я пересел на соседнее с Юри место."
+    y 3n "Ах!.."
+    y "Конечно..."
+    mc "Точно?"
+    mc "Ты кажешься несколько настороженной..."
+    y "Это..."
+    y 4b "Извини..."
+    y "Это не значит, что я не хочу!"
+    y "Я просто не привыкла к такому..."
+    y "В смысле, читать в компании с кем-нибудь."
+    mc "Ясно..."
+    mc "Тогда просто скажи, если я буду отвлекать."
+    y "Л-ладно..."
     show yuri zorder 1 at thide
     hide yuri
-
-    "I open the book and start the prologue."
-
-    "I soon understand what Yuri means about reading in company."
-
-    "It's as if I can feel her presence over my shoulder as I read."
-
-    "It's not a particularly bad thing."
-
-    "Maybe a little distracting, but the feeling is somewhat comforting."
-
-    "Yuri is in the corner of my eye."
-
-    "I realize that she's not actually looking at her own book."
-
-    "I glance over."
-
-    "It looks like she's reading from my book instead--"
-
+    "Я открыл книгу и принялся за пролог."
+    "Вскоре я понял, что Юри подразумевала под чтением в компании."
+    "Казалось, будто она заглядывает мне через плечо."
+    "Это не особо мешало."
+    "Может, немного отвлекало, но чувство было отчасти приятным."
+    "Краешком глаза я видел Юри."
+    "И понял, что смотрит она не в свою книгу."
+    "Я посмотрел ещё раз."
+    "Похоже, вместо этого она читает мою..."
     show yuri 3n zorder 2 at t11
-
-    y "S-Sorry!"
-
-    y "I was just--!"
-
-    mc "Yuri, you really apologize a lot, don't you?"
-
-    y "I...I do?"
-
-    y 4a "I don't really mean to..."
-
-    y "Sorry..."
-
-    y 4c "I mean--!"
-
-    mc "Ahaha."
-
-    mc "Here, this should work, right?"
-
-    "I slide my desk until it's up against Yuri's, then hold my book more between the two of them."
-
-    y 2v "Ah..."
-
-    y "I suppose so..."
-
-    "Yuri timidly closes her own copy."
-
-    "Once we each lean in a little bit, our shoulders are almost touching."
-
-    "It feels like my left arm is in the way, so instead I use my right hand to hold the book open."
-
-    mc "Ah, I guess that makes it kind of difficult to turn the page..."
-
-    y "Here..."
-
+    y "П-прости!"
+    y "Я просто—!"
+    mc "Юри, тебе не кажется, что ты слишком много извиняешься?"
+    y "Р... Разве?"
+    y 4a "Я не хотела..."
+    y "Прости..."
+    y 4c "В смысле—!"
+    mc "А-ха-ха."
+    mc "Вот, так будет лучше, верно?"
+    "Я пододвинул парту к парте Юри и положил книгу посередине."
+    y 2v "Ах..."
+    y "Наверное..."
+    "Юри нерешительно закрыла свою книгу."
+    "Когда мы оба чуть наклонились вперёд, наши плечи почти соприкоснулись."
+    "Пользоваться левой рукой в таком положении было неудобно, так что я придерживал книгу, чтобы та не закрылась, правой."
+    mc "Кажется, переворачивать страницы так будет довольно трудно..."
+    y "Вот..."
     $ persistent.clear[2] = True
-
-    $ renpy.save_persistent()
-
     scene y_cg1_base with dissolve_cg
-
-    "Yuri takes her left arm and holds the left side of the book between her thumb and forefinger."
-
-    mc "Ah..."
-
-    "I do the same with my right arm, on the right side of the book."
-
-    "That way, I turn a page, and Yuri slides it under her thumb after it flips to her side."
-
-    "But in holding it like this..."
-
-    "We're huddled even closer together than before."
-
-    "It's actually kind of distracting me...!"
-
-    "It's as if I can feel the warmth of Yuri's face, and she's in the corner of my vision..."
-
+    "Юри протянула левую руку и зажала левую сторону книги большим и указательным пальцами."
+    mc "А..."
+    "Я точно так же взялся правой рукой за правую сторону книги."
+    "Так я буду переворачивать страницы, а Юри – прижимать их большим пальцем, когда они окажутся на её стороне."
+    "Но, держа книгу таким образом..."
+    "Мы прижались друг к другу ещё теснее, чем раньше."
+    "И это довольно сильно отвлекало!.."
+    "Я словно чувствовал тепло лица Юри и постоянно видел её периферическим зрением..."
     show y_cg1_exp1 at cgfade
-
-    y "...Are you ready?"
-
-    mc "Eh?"
-
-    y "To turn the page..."
-
-    mc "Ah...sorry!"
-
-    mc "I think I got a bit distracted for a second..."
-
-    "I glance over at Yuri's face again, and our eyes meet."
-
-    "I don't know how I'll be able to keep up with her..."
-
-    y "Ah..."
-
+    y "...Ты уже всё?"
+    mc "Э?"
+    y "Переворачивай страницу..."
+    mc "А... прости!"
+    mc "Кажется, я на секунду отвлёкся..."
+    "Я снова посмотрел на лицо Юри, и наши взгляды встретились."
+    "Не уверен, что смогу за ней угнаться..."
+    y "Ах..."
     show y_cg1_exp2 at cgfade
-
-    y "That's okay."
-
-    y "You're not as used to reading, right?"
-
-    y "I don't mind being patient if it takes you a bit longer..."
-
-    y "It's probably the least I can do..."
-
-    y "Since you've been so patient with me..."
-
-    mc "Y-Yeah..."
-
-    mc "Thanks."
-
+    y "Ничего."
+    y "Ты ещё не привык столько читать, верно?"
+    y "Я не против немного подождать, если у тебя это получается медленнее..."
+    y "Наверное, это меньшее, что я могу сделать..."
+    y "Поскольку ты был так терпелив со мной..."
+    mc "Д-да..."
+    mc "Спасибо."
     hide y_cg1_exp1
     hide y_cg1_exp2
-
-    "We continue reading."
-
-    "Yuri no longer asks me if I'm ready to turn the page."
-
-    "Instead, I just assume that she finishes the page before me, so I turn it by my own volition."
-
-    "We continue the first chapter in silence."
-
-    "Even so, turning each page almost feels like an intimate exchange..."
-
-    "My thumb gently letting go of the page, letting it flutter over to her side as she catches it under her own thumb."
-
-    mc "Hey, Yuri..."
-
-    mc "This might be a silly thought, but..."
-
-    mc "The main character kind of reminds me of you a little bit."
-
+    "Мы продолжили чтение."
+    "Юри больше не спрашивала, готов ли я перевернуть страницу."
+    "Вместо этого, предположив, что она читает быстрее меня, я перелистывал по своему желанию."
+    "Мы продолжали в молчании читать первую главу."
+    "Тем не менее каждое переворачивание страницы воспринималось почти как интимный разговор..."
+    "Мой большой палец мягко отпускал страницу, позволяя ей перепорхнуть на другую сторону, где её ловил большой палец Юри."
+    mc "Слушай, Юри..."
+    mc "Возможно, это глупая мысль, но..."
+    mc "Главная героиня немного напоминает мне тебя."
     show y_cg1_exp1 at cgfade
-
-    y "You...think so?"
-
-    y "How does she?"
-
-    mc "Well, I guess she's more blunt in a lot of ways..."
-
-    mc "But she also second-guesses all of the things that she says and does."
-
-    mc "Like she's afraid she'll do something wrong."
-
-    mc "It's not like I can see into your head or anything..."
-
-    mc "But they're kind of reminiscent of some of your mannerisms."
-
-    y "I-I see..."
-
+    y "Ты... так думаешь?"
+    y "И чем же?"
+    mc "Ну, мне кажется, что во многих отношениях она излишне прямолинейная..."
+    mc "Но она как следует обдумывает всё, что говорит и делает."
+    mc "Будто бы боится ошибиться."
+    mc "Конечно, тебе в голову я заглянуть не могу..."
+    mc "Но это напоминает мне некоторые твои манеры."
+    y "П-понятно..."
     scene bg club_day
     show yuri 2t zorder 2 at i11
     with dissolve_cg
-
-    "Yuri remains silent for a moment."
-
-    y "But [player]..."
-
-    y "That's probably..."
-
-    y "...a terrible thing to have in common with her!"
-
-    y 4b "Uuuh, that's so embarrassing that you think that..."
-
-    mc "W-Wait!"
-
-    mc "I didn't mean it in a bad way or anything!"
-
-    mc "Sorry, I really didn't know you were self-conscious about that sort of thing..."
-
+    "Какое-то время Юри молчала."
+    y "Но, [player]..."
+    y "Быть похожей на неё..."
+    y "...По-моему, это ужасно!"
+    y 4b "Ум-м, меня очень смущает, что ты думаешь так..."
+    mc "П-постой!"
+    mc "Я не имел в виду ничего плохого!"
+    mc "Прости, я не знал, что ты настолько чувствительна к такого рода вещам..."
     y "..."
-
-    mc "I guess I more meant that it's kind of cute..."
-
-    y 3q "A-Ah--"
-
-    y "What are you saying all of a sudden...?"
-
-    y "I...!"
-
+    mc "И вообще, я подразумевал, что это довольно мило..."
+    y 3q "А-ах—"
+    y "Чего это ты вдруг?.."
+    y "Я!.."
     show monika 4 at l31
-
-    m "Okay, everyone!"
-
+    m "Итак, друзья!"
     show yuri 3n at h11
-
     y "...!"
-
     show monika zorder 3 at f31
-
-    m "I think it's about time we share today's poems with each other."
-
-    m "We might not have enough time if we wait too long."
-
+    m "Думаю, пора поделиться друг с другом сегодняшними стихотворениями."
+    m "Если будем затягивать, нам может не хватить времени."
     show monika zorder 2 at t31
     show yuri zorder 3 at f11
-
-    y 3w "Ah..."
-
-    "Yuri exhales, spared from finishing her thought."
-
+    y 3w "Ах..."
+    "Юри выдохнула, не став заканчивать мысль."
     show yuri zorder 2 at t11
     show monika zorder 3 at f31
-
-    m 1 "Is that alright, Yuri?"
-
-    m "You look kind of down..."
-
-    m "I'm sorry if you haven't been looking forward to this..."
-
+    m 1 "Всё нормально, Юри?"
+    m "Ты выглядишь подавленной..."
+    m "Прости, если ты этого не ждала..."
     show monika zorder 2 at t31
     show yuri zorder 3 at f11
-
-    y 3v "Ah, it's not..."
-
-    y "...It's fine."
-
+    y 3v "Нет, дело не в этом..."
+    y "...Всё в порядке."
     show yuri zorder 2 at t11
     show monika zorder 1 at thide
     hide monika
-
-    "Yuri releases her hand from the book, causing it to close on top of my thumb."
-
-    mc "Alright..."
-
-    mc "I guess I'll do some more reading tonight."
-
-    mc "Or would you prefer I only read it with you?"
-
-    y 2f "Um...!"
-
-    y "I...guess I don't have too much of a preference either way..."
-
-    mc "Hmm..."
-
-    mc "In that case, I'll read a little more tonight."
-
-    mc "It'll be more fun to read with you after it picks up a bit, you know?"
-
-    y 2a "That's good reasoning."
-
-    y "In that case, feel free to finish the first two chapters in your own time."
-
-    mc "Alright!"
-
+    "Юри убрала руку с книги, отчего та закрылась, хлопнув меня по пальцу."
+    mc "Ладно..."
+    mc "Думаю, я ещё почитаю сегодня вечером."
+    mc "Или ты предпочитаешь, чтобы я читал только вместе с тобой?"
+    y 2f "Эм!.."
+    y "Думаю... у меня нет никаких предпочтений..."
+    mc "Хм-м..."
+    mc "Тогда я сегодня вечером ещё немного почитаю."
+    mc "Будет веселее читать вместе с тобой, уже немного распробовав."
+    y 2a "Отличная причина."
+    y "Тогда можешь дочитать первые две главы в своём темпе."
+    mc "Отлично!"
     show yuri zorder 1 at thide
     hide yuri
-
-    "I stand up."
-
-    "I make a mental note of where I left off in the book, then slip it back into my bag."
-
+    "Я встал."
+    "Запомнив, где остановился, я убрал книгу в портфель."
     return
 
 label yuri_exclusive_2:
-
     $ y_exclusivewatched = True
-
     play music t6 fadeout 1.0
-
     scene bg club_day
     with wipeleft_scene
-
-    mc "Hey, Yuri."
-
+    mc "Слушай, Юри."
     show yuri 2f zorder 2 at t11
-
-    y "Eh?"
-
-    mc "Ah..."
-
-    "I suddenly notice that Yuri is reading a different book from the one we've been reading together."
-
-    mc "Sorry! I didn't mean to interrupt..."
-
-    y 2m "Ah, no..."
-
-    y "I was kind of just waiting for you..."
-
+    y "Да?"
+    mc "О..."
+    "Я вдруг заметил, что Юри читает не ту книгу, что мы читали вместе."
+    mc "Извини! Не хотел тебя отрывать..."
+    y 2m "Ах, ничего..."
+    y "Я как бы ждала тебя..."
     show yuri 2a
-
-    mc "Ah, if that's the case..."
-
+    mc "А, ну тогда..."
 label yuri_exclusive_2_ch3:
-
-    mc "Why don't we go ahead and get started?"
-
-    y 2c "Yes, let's!"
-
-    y 3a "Actually, I have a request..."
-
-    y "...Do you mind if I make some tea first?"
-
-    mc "Not at all."
-
-    y 1c "Thanks very much."
-
-    y 1a "If there's one thing that can make my reading time here any better, it's a nice cup of tea."
-
-    y "Not to mention for yourself, as well."
-
-    show yuri zorder 1 at thide
-
-    hide yuri
-
-    "Yuri stands up and makes her way to the closet."
-
-    "I follow and watch as she retrieves a small water pitcher from the shelf - the kind with a filter inside."
-
-    show yuri 1f zorder 2 at t11
-
-    y "Can you hold this for a second?"
-
-    mc "Sure..."
-
-    "Yuri hands me the water pitcher and also fetches an electric kettle."
-
-    y "I'm going to plug this in at the teacher's desk, and then we'll go get some water."
-
+    mc "Почему бы нам не начать?"
+    y 2c "Да, давай!"
+    y 3a "На самом деле у меня есть просьба..."
+    y "...Не возражаешь, если я сперва заварю чай?"
+    mc "Ни капельки."
+    y 1c "Большое спасибо."
+    y 1a "Если что и может сделать чтение приятнее, так это чашка ароматного чая."
+    y "Да ещё и заваренного собственноручно."
     show yuri zorder 1 at thide
     hide yuri
-
-    "She walks past me and sets the kettle down on the teacher's desk."
-
-    "I simply watch her movements."
-
-    "To my surprise, the way she moves really contrasts her speaking mannerisms."
-
-    "Especially because of her long legs, Yuri appears elegant and methodical."
-
+    "Юри встала и подошла к кладовке."
+    "Я прошёл следом и увидел, как она достала с полки небольшой кувшин с фильтром внутри."
     show yuri 1f zorder 2 at t11
-
-    y "Okay, may I have the water pitcher?"
-
-    y 1a "Thanks. I'll be right back."
-
-    mc "Ah, I might as well walk with you..."
-
-    y 1s "Yeah...why not?"
-
-    y "Shall we go, then?"
-
-    mc "Yeah..."
-
+    y "Можешь подержать?"
+    mc "Конечно..."
+    "Юри передала кувшин мне и достала электрический чайник."
+    y "Я подключу его в розетку у стола учителя, а потом мы сходим за водой."
+    show yuri zorder 1 at thide
+    hide yuri
+    "Она прошла мимо меня и поставила чайник на учительский стол."
+    "Я просто наблюдал за её действиями."
+    "К моему удивлению, то, как она двигалась, резко контрастировало с манерой говорить."
+    "Главным образом из-за своих длинных ног Юри производила впечатление элегантной и скрупулёзной особы."
+    show yuri 1f zorder 2 at t11
+    y "Так, можешь подать мне кувшин?"
+    y 1a "Спасибо, я скоро вернусь."
+    mc "Э... я могу пойти с тобой..."
+    y 1s "Действительно... почему нет?"
+    y "Тогда пойдём?"
+    mc "Ага..."
     show monika 2a at l31
-
-    m "Hm? Where are you two off to?"
-
+    m "А? Куда это вы вдвоём?"
     show yuri 2e
-
-    mc "Eh?"
-
-    mc "We're just...Yuri was going to make some tea, so..."
-
-    "I suddenly realize how weird it sounds to explain this to Monika."
-
-    mc "We're just filling the water pitcher..."
-
+    mc "Э?"
+    mc "Мы просто... Юри собиралась заварить чай, и..."
+    "Я вдруг понял, насколько странно звучит такое объяснение для Моники."
+    mc "Мы только набрать воды..."
     show monika zorder 3 at f31
-
-    m "Ah, okay!"
-
-    m 4j "Sorry, I was just a bit curious..."
-
-    m "That's kind of a one-person job, isn't it?"
-
+    m "А, хорошо!"
+    m 4j "Простите моё излишнее любопытство..."
+    m "Но разве один человек с этим не справится?"
     show monika 4a zorder 2 at t31
-
-    mc "That's--"
-
+    mc "Это—"
     show yuri zorder 3 at f11
-
-    y 1k "Monika, please mind your own business for once."
-
-    y "Or do you want to tell me there's something wrong with helping involve [player] in club activities?"
-
+    y 1k "Моника, пожалуйста, занимайся своими делами."
+    y "Или ты хочешь сказать, это неправильно, что [player] тоже будет вовлечён в деятельность клуба?"
     show yuri zorder 2 at t11
     show monika zorder 3 at f31
-
-    m 1g "E-Eh...?"
-
+    m 1g "Э-э?.."
     show monika zorder 2 at t31
-
-    mc "--!"
-
-    "My mouth gapes."
-
+    mc "—!"
+    "Я разинул рот."
     show monika zorder 3 at f31
-
-    m 5a "I..."
-
-    m "I suppose there's nothing wrong with that..."
-
+    m 5a "Я..."
+    m "Я полагаю, в этом нет ничего плохого..."
     show monika zorder 2 at t31
     show yuri zorder 3 at f11
-
-    y 2l "Hmph..."
-
-    y "Then let's go, [player]."
-
+    y 2l "Хмф..."
+    y "Тогда идём, [player]."
     show yuri zorder 2 at t11
-
-    mc "Ah..."
-
-    "Yuri quickly exits the room, and I follow."
-
+    mc "А..."
+    "Юри стремительно вышла из комнаты, и я последовал за ней."
     stop music fadeout 1.0
-
     scene bg corridor
     show yuri 4c zorder 2 at t11
     with wipeleft_scene
-
-    "Once in the hallway, she suddenly puts her forehead against the wall."
-
-    y "I spoke without thinking..."
-
-    y "How could I say something like that...?"
-
-    mc "Yuri..."
-
-    y 4b "I just..."
-
-    y "Something about the way she said that..."
-
-    y "It made me feel so...irritated."
-
-    y "What's wrong with me...?"
-
-    mc "No, Yuri."
-
-    mc "I think...you did the right thing!"
-
-    mc "I wasn't expecting it, but..."
-
-    mc "It's also not right for Monika to judge people like that."
-
+    "Оказавшись в коридоре, она вдруг прислонилась лбом к стене."
+    y "Я говорила не подумав..."
+    y "Как я могла сказать нечто подобное?.."
+    mc "Юри..."
+    y 4b "Просто..."
+    y "Нечто в том, как она это сказала..."
+    y "Меня это прямо-таки... взбесило."
+    y "Что со мной такое?.."
+    mc "Нет, Юри."
+    mc "Я думаю... ты поступила правильно!"
+    mc "Я такого не ожидал, но..."
+    mc "Моника тоже не в праве вот так указывать людям, что делать."
     play music t9
-
     y 4a "[player]..."
-
-    y "How come even when I do something bad..."
-
-    y "You're being nice to me?"
-
-    mc "Because."
-
-    mc "Nothing that you do is as bad as you make it seem in your head."
-
-    mc "Nobody's perfect."
-
-    mc "We have emotions, and we can't always hide them away."
-
-    mc "But you always amplify things in your head..."
-
-    mc "Your mind turns a light rain shower into a hurricane."
-
-    y 3q "Ah..."
-
-    y "N-No..."
-
-    y "Wouldn't you hate me for something as terrible as that...?"
-
-    mc "Why would I hate you?"
-
-    mc "I can't hate someone for having emotions..."
-
-    mc "What kind of friend would do that?"
-
-    y 4c "Friend...you say?"
-
-    y "Ah...um..."
-
-    "Yuri lifts her head."
-
+    y "Почему даже когда я делаю что-то плохое..."
+    y "...ты добр ко мне?"
+    mc "Потому что."
+    mc "Ничто из того, что ты сделала, и близко не так плохо, как тебе кажется."
+    mc "Никто не идеален."
+    mc "У нас есть эмоции, и мы не всегда можем их спрятать."
+    mc "Но у себя в голове ты вечно всё раздуваешь..."
+    mc "Твой разум превращает лёгкий дождик в ураган."
+    y 3q "Ах..."
+    y "Н-нет..."
+    y "Разве ты не презираешь меня за столь ужасный поступок?.."
+    mc "Почему я должен тебя презирать?"
+    mc "Нельзя презирать человека за то, что у него есть чувства..."
+    mc "Какой друг так поступит?"
+    y 4c "Ты сказал... друг?"
+    y "Ах... ум-м..."
+    "Юри подняла голову."
     y 3w "[player]..."
-
-    y 3t "I really like...being friends with you!"
-
-    mc "Ahaha..."
-
-    mc "Thanks, Yuri."
-
-    mc "I like being friends with you too..."
-
-    "I feel kind of awkward saying something like that..."
-
-    "But I'm doing my best to help Yuri feel better."
-
-    mc "Anyway...!"
-
-    y 3u "Ah-- Yeah..."
-
-    y "Shall we go?"
-
-    mc "Yeah."
-
+    y 3t "Я очень рада... что ты мой друг!"
+    mc "А-ха-ха..."
+    mc "Спасибо, Юри."
+    mc "Я тоже рад, что дружу с тобой..."
+    "Говоря это, я чувствовал себя ужасно неловко..."
+    "Но я готов на всё, чтобы поднять Юри настроение."
+    mc "Несмотря ни на что!.."
+    y 3u "Ах— Да..."
+    y "Пойдём?"
+    mc "Ага."
     show yuri zorder 1 at thide
     hide yuri
-
-    "Yuri and I walk to the nearest water fountain."
-
-    "Once we fill up the water pitcher, we return to the classroom."
-
+    "Мы с Юри дошли до ближайшего питьевого фонтанчика."
+    "Наполнив кувшин, мы сразу вернулись в класс."
     play music t6 fadeout 1.0
-
     scene bg club_day
     show yuri 1a zorder 2 at t11
     with wipeleft_scene
-
-    y "[player], do you like oolong tea?"
-
-    mc "Ah, yeah."
-
-    mc "Anything is fine."
-
-    y "Very well."
-
-    "Yuri sets the temperature on the kettle to 200 degrees."
-
-    y 1f "Now it's time to get the teapot."
-
-    mc "You really do this properly, don't you?"
-
-    y 1u "Of course..."
-
-    y "I shouldn't do any less when I'm making tea for others."
-
-    mc "Even if I'm not an expert on tea or anything...?"
-
-    y 2m "Huhu."
-
-    y 2a "In that case, you'll only be even more impressed."
-
-    mc "Ah...perhaps I will!"
-
+    y "[player], ты любишь чай улун?"
+    mc "Ну да."
+    mc "Вообще, любой подойдёт."
+    y "Отлично."
+    "Юри выставила на чайнике температуру 93 градуса."
+    y 1f "Теперь черёд заварочного чайника."
+    mc "Ты и правда соблюдаешь все правила?"
+    y 1u "Разумеется..."
+    y "Я не должна ничего упускать, когда хочу угостить кого-то чаем."
+    mc "Несмотря на то что я не жду от этого чая ничего особенного?.."
+    y 2m "Хе-хе."
+    y 2a "Если так, ты будешь впечатлён ещё сильнее."
+    mc "Ха-ха... вероятно, так и будет!"
     show yuri zorder 1 at thide
     hide yuri
-
-    "Yuri fetches the teapot and begins measuring the tea leaves."
-
-    "To my surprise, she even starts humming a little to herself."
-
+    "Юри достала заварочный чайник и начала отмерять чайные листья."
+    "К моему удивлению, она даже начала напевать что-то себе под нос."
     show yuri 1c zorder 2 at t11
-
-    mc "You must be in a good mood now..."
-
-    y 1a "Is that so?"
-
-    y "I was letting it show..."
-
-    y "And you noticed."
-
-    y 2u "I was doing a bit of thinking..."
-
-    y "And I decided that I would try expressing myself a little bit more."
-
-    y "It turns out it's not very hard for me to do..."
-
-    y 1c "When it's you who's around, anyway."
-
-    mc "Ah..."
-
-    mc "That's great, Yuri!"
-
-    mc "Just don't push yourself too much."
-
-    y 3u "You're always worrying about me, [player]..."
-
-    y "It's very endearing."
-
-    mc "That's..."
-
-    "Yuri wasn't kidding..."
-
-    "I don't even know if I can keep up with this...!"
-
-    "I watch Yuri pour a cup of tea for each of us."
-
-    y 1a "[player], I have another request."
-
-    y "Do you mind if we sit on the floor today?"
-
-    mc "Eh? Why's that?"
-
-    y 1h "It's a little bit easier on my back..."
-
-    y "I can read with my back against the wall rather than bending over at my desk."
-
-    mc "Ah, sorry, I didn't realize."
-
-    y 1a "No worries."
-
-    y "I just have back pain fairly regularly, so I do my best to manage it."
-
-    mc "Is that so?"
-
-    mc "I wonder why that is..."
-
-    y 1f "It's most likely because my--"
-
-    y 1n "Ah--"
-
-    y 1o "M-My..."
-
-    mc "Your posture, right?"
-
-    mc "Always hunched over like that while reading..."
-
-    y 2p "Yes!"
-
-    y 2q "I have terrible reading posture!"
-
-    y "So that's why we should sit on the floor."
-
-    mc "Fair enough."
-
-    mc "I'll go ahead and get the book."
-
+    mc "Похоже, ты сейчас в прекрасном настроении..."
+    y 1a "Вот как?"
+    y "Я не сильно старалась это скрыть..."
+    y "А ты заметил."
+    y 2u "Я тут поразмыслила..."
+    y "И решила попробовать более явно выражать свои чувства."
+    y "Оказывается, это вовсе не сложно..."
+    y 1c "Во всяком случае, когда рядом ты."
+    mc "Э..."
+    mc "Это замечательно, Юри!"
+    mc "Только не надо слишком сильно себя заставлять."
+    y 3u "Ты всегда переживаешь за меня, [player]..."
+    y "Это очень мило."
+    mc "Ну..."
+    "Юри не шутила..."
+    "Не знаю, смогу ли с этим справиться!.."
+    "Я смотрел, как Юри разливает чай по чашкам."
+    y 1a "[player], у меня ещё одна просьба."
+    y "Ты не возражаешь, если сегодня мы посидим на полу?"
+    mc "А? Зачем это?"
+    y 1h "Моей спине так легче..."
+    y "Я предпочитаю читать, привалившись спиной к стене, а не склонившись над партой."
+    mc "О, извини, я не знал."
+    y 1a "Не волнуйся."
+    y "Просто у меня регулярно болит спина, и я делаю всё возможное, чтобы справиться с этим."
+    mc "Вот как?"
+    mc "Интересно, в чём причина?.."
+    y 1f "Скорее всего, это из-за моей—"
+    y 1n "Ох—"
+    y 1o "М-моей..."
+    mc "Твоей осанки, да?"
+    mc "Ты постоянно сутулишься во время чтения..."
+    y 2p "Да!"
+    y 2q "У меня ужасная поза для чтения!"
+    y "Поэтому нам надо сесть на пол."
+    mc "Справедливо."
+    mc "Схожу за книгой."
     show yuri zorder 1 at thide
     hide yuri
-
-    "I retrieve the book from my bag."
-
-    mc "Ah, I have some chocolate as well..."
-
-    "It's a bag of small chocolate candies that I kept hidden from Sayori's candy radar."
-
-    "I take it, since it'll go well with the tea."
-
-    "Yuri and I then sit against the wall, teacups at our sides."
-
-    "As if in sync, we assume the same reading position as last time, each holding one half of the book."
-
-    "Except this time..."
-
-    "Our bodies are even closer to each other."
-
+    "Я достал из портфеля книгу."
+    mc "О, у меня тут есть немного шоколада..."
+    "Маленький кулёк шоколадных конфет, который я уберёг от радара сладостей Саёри."
+    "Я взял их, потому что они отлично заходят с чаем."
+    "Мы с Юри сели у стены, поставив чашки по бокам от нас."
+    "Будто синхронизировавшись, мы приняли ту же позу для чтения, что и в прошлый раз. Каждый держал свою половину книги."
+    "Но на этот раз..."
+    "Наши тела были ещё ближе друг к другу."
     show yuri 2h zorder 2 at t11
-
-    y "I can't see too well..."
-
-    mc "--!"
-
+    y "Мне плохо видно..."
+    mc "...!"
     show yuri 2e at d11
-
-    "Yuri slides closer until our shoulders are touching."
-
-    "How am I supposed to focus on reading like this...?!"
-
-    "Yuri was always kind of cute, but..."
-
-    "When she's being less apprehensive, it's almost more than I can handle!"
-
-    y 2f "Your teacup..."
-
-    "Yuri hands me my teacup."
-
-    "Holding it with my hand that's not holding the book, I end up in a position that makes it even harder to focus."
-
-    "Because now I need to worry about making sure I don't accidentally touch her chest...!"
-
-    "Meanwhile, Yuri hasn't noticed a single thing."
-
-    "She wears her intense reading expression, and I can only presume the world around her has faded away."
-
-    "I use all of my willpower to focus on reading."
-
+    "Юри придвигалась всё ближе, пока наши плечи не соприкоснулись."
+    "Ну и как мне сосредоточиться на чтении?!"
+    "Юри всегда довольно милая, но..."
+    "Когда она становится менее настороженной, это почти переходит пределы того, что я могу вынести!"
+    y 2f "Твой чай..."
+    "Юри подала мне мою чашку."
+    "Взяв её свободной от книги рукой, я оказался в положении, сосредоточиться в котором было ещё труднее."
+    "Из-за того, что теперь мне надо было следить, как бы ненароком не коснуться её груди!.."
+    "Юри же ничего не замечала."
+    "Она сосредоточенно уткнулась в книгу, и, могу предположить, окружающий мир для неё просто перестал существовать."
+    "Я призвал всю свою силу воли, чтобы самому сфокусироваться на чтении."
     "..."
-
-    "After a few minutes, I finally manage to relax a little."
-
-    "I put the teacup between my legs and fumble with the chocolate wrapper."
-
-    mc "Ah, sorry..."
-
-    "I briefly let go of the book to finish opening the wrapper."
-
-    mc "You can have as much as you want."
-
-    y 2s "Ah, that's..."
-
-    y "That's okay, I won't take any..."
-
-    mc "Eh? Are you sure?"
-
-    y 2v "Well..."
-
-    y "If I touch it, then it might get smudges on the pages..."
-
-    mc "Ah, you're right..."
-
-    mc "I didn't even think about that."
-
-    mc "My bad..."
-
-    y 2a "No need to apologize."
-
-    y "I'll hold the book, okay?"
-
-    mc "Are you sure...?"
-
-    y "Of course."
-
+    "Спустя несколько минут мне наконец удалось немного расслабиться."
+    "Я поставил чашку между ног и зашуршал кульком с конфетами."
+    mc "Ох, прости..."
+    "Чтобы открыть его, я ненадолго выпустил книгу."
+    mc "Можешь брать сколько угодно."
+    y 2s "Ах, это..."
+    y "Спасибо, но я не буду..."
+    mc "А? Ты уверена?"
+    y 2v "Ум-м..."
+    y "Если я возьму, то могу испачкать страницы..."
+    mc "Ох, ты права..."
+    mc "Я об этом даже не подумал."
+    mc "Извини..."
+    y 2a "Не нужно извиняться."
+    y "Я подержу книгу, ладно?"
+    mc "Уверена?.."
+    y "Конечно."
     $ persistent.clear[3] = True
-
-    $ renpy.save_persistent()
-
     scene y_cg2_bg
     show y_cg2_base
     show y_cg2_details
@@ -939,184 +483,98 @@ label yuri_exclusive_2_ch3:
     show y_cg2_dust3
     show y_cg2_dust4
     with dissolve_cg
-
-    "Yuri opens the book with both hands."
-
-    "She holds it so that I don't have any harder of a time reading from it."
-
-    "But as a result, her left arm is practically resting on top of my leg."
-
-    mc "Well, in that case..."
-
-    "Yuri is already totally focused on reading again."
-
-    "I take a chocolate candy and pop it into my mouth."
-
-    "Then, I take another chocolate..."
-
-    "And I hold it up to Yuri."
-
-    "She doesn't even look away from the book."
-
-    "She simply parts her lips, as if this situation was completely natural."
-
-    "But that means I can't stop here!"
-
+    "Юри обеими руками раскрыла книгу."
+    "Она держала её так, что у меня не возникало ни малейших трудностей с чтением."
+    "Но в результате её левая рука практически легла на мою ногу."
+    mc "Ну тогда..."
+    "Юри уже снова сосредоточилась на чтении."
+    "Я взял конфету и отправил её в рот."
+    "Затем взял ещё одну..."
+    "...и поднёс её к лицу Юри."
+    "Она даже не отвела взгляда от книги."
+    "Просто раскрыла губы, будто это была совершенно естественная ситуация."
+    "Но это значит, что я не могу сейчас остановиться!"
     hide y_cg2_nochoc
-
-    "I apprehensively place the chocolate in her mouth."
-
-    "Just like that, Yuri closes her lips over it."
-
-    y "Eh...?"
-
+    "Я с опаской положил конфету ей в рот."
+    "После этого губы Юри снова сомкнулись."
+    y "Э?.."
     show y_cg2_exp2
-
-    "Yuri's expression suddenly breaks."
-
-    y "Did..."
-
-    y "Did I just..."
-
-    "Yuri looks at me like she needs to confirm what just happened."
-
+    "Она вдруг переменилась в лице."
+    y "Я..."
+    y "Я сейчас..."
+    "Юри посмотрела на меня так, будто ей нужно было подтверждение того, что сейчас произошло."
     show y_cg2_exp3
     show y_cg2_nochoc:
         alpha 0
         linear 0.5 alpha 1
     hide y_cg2_exp2
-
-    y "U-Um..."
-
+    y "М-м..."
     y "[player]..."
-
-    mc "S-Sorry!"
-
-    mc "I guess I shouldn't have done that..."
-
-    y "Ah, that's..."
-
-    y "Well..."
-
-    y "Y-You were just helping..."
-
-    y "That's something that...friends do..."
-
-    y "...Right?"
-
-    mc "I mean..."
-
-    "Not really in this kind of context, but..."
-
-    mc "Yeah..."
-
-    mc "...That's all it was."
-
-    y "Yeah..."
-
-    y "Then..."
-
-    y "You don't need to stop or anything..."
-
-    mc "I-I see..."
-
+    mc "П-прости!"
+    mc "Наверное, мне не стоило этого делать..."
+    y "Ах, это..."
+    y "Ум-м..."
+    y "Т-ты ведь просто помогал..."
+    y "Для друзей это... в порядке вещей..."
+    y "...Верно?"
+    mc "Э-эм..."
+    "Не совсем в таком контексте, но..."
+    mc "Да..."
+    mc "...В этом нет ничего такого."
+    y "Верно..."
+    y "Тогда..."
+    y "Не нужно останавливаться..."
+    mc "П-понятно..."
     hide y_cg2_exp3
-
-    "The situation has gotten really tense..."
-
-    "Yuri tries to return to the book."
-
-    "But I can tell just by her expression that even she can't focus now."
-
-    "My heart is pounding..."
-
-    "I nervously take another chocolate between my fingers."
-
-    "But this time, Yuri's eyes meet mine."
-
+    "Ситуация стала крайне напряжённой..."
+    "Юри попыталась вернуться к книге."
+    "Но по её лицу было ясно видно, что теперь даже она не может сосредоточиться."
+    "Сердце бешено стучало..."
+    "Я нервно сжал пальцами очередную конфету."
+    "Но на этот раз мы с Юри встретились взглядами."
     show y_cg2_exp3
-
     y "..."
-
-    "How did it even come to this...?"
-
-    "Yuri doesn't avert her gaze."
-
-    "I notice her chest rising and falling to the rhythm of her breaths."
-
-    "I raise my arm..."
-
-    y "Ah..."
-
-    "Like before, Yuri parts her lips."
-
-    "But...it's different this time."
-
+    "Как вообще до такого дошло?.."
+    "Юри не отвела взгляд."
+    "Я заметил, как вздымается и опадает в ритм дыхания её грудь."
+    "Я поднял руку..."
+    y "Ах..."
+    "Как и в прошлый раз, Юри разомкнула губы."
+    "Но... на этот раз по-другому."
     hide y_cg2_nochoc
-
-    "I take the chocolate and place it in her mouth."
-
-    "I feel her hot breath on my fingers."
-
+    "Я вложил конфету ей в рот."
+    "Ощутил на пальцах её дыхание."
     stop music
-
     window hide(None)
-
     scene bg club_day
-
     window show(None)
     window auto
-
     show monika 4b zorder 2 at l31
-
-    m "Okay, everyone!"
-
-    mc "Uwa--"
-
+    m "Итак, друзья!"
+    mc "Уа-а—"
     show yuri 3p zorder 2 at t11
-
-    y "A-Ah!"
-
+    y "А-ах!"
     play music t3
-
-    "Yuri jolts back."
-
+    "Юри отпрянула."
     show yuri 3n
     show monika zorder 3 at f31
-
-    m "It's time to share poems!"
-
-    m "[player], you can help Yuri put away the tea stuff, right?"
-
+    m "Пришло время поделиться стихами!"
+    m "[player], поможешь Юри с посудой?"
     show monika zorder 2 at t31
-
-    mc "Y-Yeah...of course."
-
+    mc "Д-да... конечно."
     show monika zorder 3 at f31
-
-    m "Okay, thanks!"
-
+    m "Хорошо, спасибо!"
     show monika zorder 1 at thide
     hide monika
-
-    "The spell is abruptly broken."
-
-    y 4c "I'll..."
-
-    y "I'll take care of the cups..."
-
-    mc "Yeah..."
-
+    "От волшебства момента не осталось и следа."
+    y 4c "Я..."
+    y "Я позабочусь о чашках..."
+    mc "Да..."
     show yuri zorder 1 at thide
     hide yuri
-
-    "Yuri picks up the teacups from the floor."
-
-    "I pick up the bag of chocolates."
-
-    "In the end, we hastily clean up without so much as a word between us."
-
-    "I get the feeling this is something neither of us will have the courage to bring up..."
-
+    "Юри подняла чашки с пола."
+    "Я убрал кулёк с конфетами."
+    "Мы торопливо прибрались, не обменявшись ни словом."
+    "Я чувствовал, что никому из нас не хватит мужества заговорить о случившемся..."
     return
-
+# Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

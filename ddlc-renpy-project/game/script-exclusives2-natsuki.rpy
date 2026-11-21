@@ -7,30 +7,28 @@ init python:
             self.numRects = numRects
             self.areaWidth = areaWidth
             self.areaHeight = areaHeight
-
+            
             for i in range(self.numRects):
                 self.add(self.displayable)
-
+        
         def add(self, d):
             s = self.sm.create(d)
             s.x = (random.random() - 0.5) * self.areaWidth * 2
             s.y = (random.random() - 0.5) * self.areaHeight * 2
             s.width = random.random() * self.areaWidth / 2
             s.height = random.random() * self.areaHeight / 2
-
             self.rects.append(s)
-
+        
         def update(self, st):
             for s in self.rects:
                 s.x = (random.random() - 0.5) * self.areaWidth * 2
                 s.y = (random.random() - 0.5) * self.areaHeight * 2
                 s.width = random.random() * self.areaWidth / 2
                 s.height = random.random() * self.areaHeight / 2
-
             return 0
 
 image n_rects_ghost1:
-    RectCluster(Solid("#000"), 4, 15, 5).sm
+    RectCluster(Solid('#000'), 4, 15, 5).sm
     pos (580, 270)
     size (20, 25)
     alpha 0.0
@@ -38,7 +36,7 @@ image n_rects_ghost1:
     easeout 12 alpha 1.0
 
 image n_rects_ghost2:
-    RectCluster(Solid("#000"), 4, 15, 5).sm
+    RectCluster(Solid('#000'), 4, 15, 5).sm
     pos (652, 264)
     size (20, 25)
     alpha 0.0
@@ -46,7 +44,7 @@ image n_rects_ghost2:
     easeout 12 alpha 1.0
 
 image n_rects_ghost3:
-    RectCluster(Solid("#000"), 4, 15, 5).sm
+    RectCluster(Solid('#000'), 4, 15, 5).sm
     pos (616, 310)
     size (25, 15)
     alpha 0.0
@@ -54,467 +52,257 @@ image n_rects_ghost3:
     easeout 12 alpha 1.0
 
 image n_rects_ghost4:
-    RectCluster(Solid("#000"), 4, 15, 5).sm
+    RectCluster(Solid('#000'), 4, 15, 5).sm
     pos (735, 310)
     size (25, 20)
     0.5
     easeout 0.25 zoom 4.5 xoffset 250 yoffset -250
 
 image n_rects_ghost5:
-    RectCluster(Solid("#000"), 4, 15, 5).sm
+    RectCluster(Solid('#000'), 4, 15, 5).sm
     pos (740, 376)
     size (25, 20)
     0.5
     easeout 0.25 zoom 4.5 xoffset 250 yoffset -100
 
 label natsuki_exclusive2_1:
-
     scene bg club_day
     with wipeleft_scene
-
-    n "Ugh...!"
-
-    "I hear Natsuki utter an exasperated sigh from within the closet."
-
-    "She seems to be annoyed by something."
-
-    "I approach her, in case she needs a hand."
-
+    n "Ух!.."
+    "Я услышал донёсшийся из кладовки сердитый вздох Нацуки."
+    "Кажется, она чем-то раздражена."
+    "Я подошёл к ней с намерением помочь."
     play music t6 fadeout 1
-
     scene bg closet
     show natsuki 4r zorder 2 at t11
     with wipeleft_scene
-
     $ style.say_dialogue = style.normal
-
-    mc "You looking for something in there?"
-
+    mc "Ты что-то потеряла?"
     $ style.say_dialogue = style.edited
-
-    n 4x "fucking monikammmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm"
-
+    n 4x "чёртова моникамммммммммммммммммммммммммммммммммммммммммммммм"
     $ style.say_dialogue = style.normal
-
-    $ _history_list[-1].what = "Freaking Monika..."
-
-    n "She never puts my stuff back in the right spot!"
-
-    n "What's the point in keeping your collection organized if someone else is just gonna mess it up?"
-
-    "Natsuki slides a bunch of stacked books and boxes across the shelf."
-
-    mc "Manga..."
-
-    n 2c "You read manga, right?"
-
-    mc "Ah--"
-
-    mc "...Sometimes..."
-
-    "Manga is one of those things where you can't admit you're really into it until you figure out where the other person stands."
-
-    mc "...How did you know, anyway?"
-
-    n 2k "I heard you bring it up at some point."
-
-    n "Besides, it's kind of written on your face."
-
-    "What's that supposed to mean...?"
-
-    mc "I-I see..."
-
-    "There's a lone volume of manga amidst a stack of various books on the side of one of the shelves."
-
-    "Curious, I pull it out of the stack."
-
-    n 1b "{i}There{/i} it is!"
-
-    "Natsuki snatches it out of my hand."
-
-    "She then turns to a box of manga and slips the volume right into the middle of the rest."
-
-    n 4d "Aah, much better!"
-
-    n "Seeing a box set with one book missing is probably the most irritating sight in the world."
-
-    mc "I know that feel..."
-
-    "I get a closer look at the box set she's admiring."
-
-    mc "Parfait Girls...?"
-
-    "It's a series I've never heard of in my life."
-
-    "That probably means it's either way out of my demographic, or it's simply terrible."
-
-    n 5g "If you're gonna judge, you can go do it through the glass on that door."
-
-    "She points to the classroom door."
-
-    mc "H-Hey, I wasn't judging anything...!"
-
-    mc "I didn't even say anything."
-
-    n 5c "It was the tone of your voice."
-
+    $ _history_list[-1].what = "Чтоб тебя, Моника..."
+    n "Она никогда не возвращает мои вещи на место!"
+    n "Какой смысл поддерживать здесь порядок, если кто-то постоянно устраивает бардак?!"
+    "Нацуки двигала по полке стопки книг и коробки."
+    mc "Манга..."
+    n 2c "Ты ведь читаешь мангу, да?"
+    mc "Э..."
+    mc "...Иногда..."
+    "Чтение манги – то, в чём не стоит признаваться человеку до тех пор, пока не выяснишь, как он к этому относится."
+    mc "...Но как ты узнала?"
+    n 2k "Ты как-то об этом упомянул, а я услышала."
+    n "Кроме того, это у тебя на лице написано."
+    "Что бы это значило?.."
+    mc "Ясно..."
+    "На краю одной из полок, по соседству с книгами разных жанров, приютился одинокий томик манги."
+    "Он бросался в глаза, и я вытащил его оттуда."
+    n 1b "{i}Вот{/i} ты где!"
+    "Нацуки выхватила его из моей руки."
+    "После чего повернулась к коробке с мангой и впихнула томик в неё."
+    n 4d "Ах, так гораздо лучше!"
+    n "Зияющая дыра в полном издании – это, наверное, самое раздражающее зрелище на свете."
+    mc "Мне знакомо это чувство..."
+    "Я пригляделся к коллекции, которой она так любовалась."
+    mc "«Ванильные девочки»?.."
+    "Никогда ничего не слышал об этой манге."
+    "Это может означать, что она либо не соответствует моей возрастной группе, либо она просто ужасна."
+    n 5g "Если ты собираешься меня осуждать, можешь делать это вон за той дверью."
+    "Она показала пальцем на дверь класса."
+    mc "Эй, я никого осуждать не собирался!.."
+    mc "Я ведь и слова не сказал."
+    n 5c "Я поняла это по твоей физиономии."
     $ style.say_dialogue = style.normal
-
-    n "But I'll tell you one thing, [player]."
-
-
-    n 4l "Consider this a lesson straight from the Literature Club:{nw}"
-
-    $ _history_list[-1].what = "Consider this a lesson straight from the Literature Club: Don't judge a book by its cover!"
-
+    n "Но я скажу тебе одно, [player]."
+    n 4l "Считай это уроком от литературного клуба:{nw}"
+    $ _history_list[-1].what = "Считай это уроком от литературного клуба: не суди книгу по обложке!"
     $ style.say_dialogue = style.edited
-
-    n "don't judge a bookkkkkkkkkkkkkkkkk kkkkk kk{space=20}k{space=40}k{space=120}k{space=160}k{space=200}k"
-
+    n "не суди книггггггггггггггггггггггг ггггг гг{space=20}г{space=40}г{space=120}г{space=160}г{space=200}у"
     $ style.say_dialogue = style.normal
-
     $ _history_list.pop()
-
-    n "In fact--"
-
-    "Natsuki pulls out the first volume of Parfait Girls from the box."
-
-    n "I'm gonna show you exactly why!"
-
-    "She shoves the book right into my hands."
-
-    mc "Ah..."
-
-    "I stare at the cover."
-
-    "It features four girls in colorful attire striking animated feminine poses."
-
-    "It's...exceedingly \"moe\"."
-
-    n 4b "Don't just stand there!"
-
-    mc "Uwa--"
-
+    n "А вообще..."
+    "Нацуки вытащила из коробки первый томик «Ванильных девочек»."
+    n "Я сейчас покажу тебе почему!"
+    "Она сунула книгу прямо мне в руки."
+    mc "Э..."
+    "Я уставился на обложку."
+    "На ней изображены четыре девушки в ярких одеждах и в характерных девчачьих позах."
+    "Выглядит... чрезвычайно «моэшно»."
+    n 4b "Не стой как истукан!"
+    mc "Уа..."
     show natsuki zorder 1 at thide
     hide natsuki
-
-    "Natsuki grabs my arm and pulls me out of the closet."
-
-    "She then takes a seat against the wall, beneath the windowsills."
-
-    "She pats on the ground next to her, signaling me to sit there."
-
+    "Нацуки схватила меня за руку и оттащила от кладовки."
+    "Затем подошла к окну и села спиной к стене."
+    "Она похлопала рукой рядом, приглашая меня к ней присоединиться."
     show bg club_day
     show natsuki 2a zorder 2 at t11
     with wipeleft
-
-    mc "Wouldn't chairs be more comfortable...?"
-
-    "I take my seat."
-
-    n 2k "Chairs wouldn't work."
-
-    n "We can't read at the same time like that."
-
-    mc "Eh? Why's that?"
-
-    mc "Ah...I guess it's easier to be close together like this..."
-
-    n 2o "--!"
-
-    n 5r "D-Don't just say that!"
-
-    n "You'll make me feel weird about it!"
-
-    "Natsuki crosses her arms and scootches an inch away from me."
-
-    mc "Sorry..."
-
+    mc "На стульях разве не удобнее?.."
+    "Я уселся рядом с Нацуки."
+    n 2k "Стулья не катят."
+    n "Так мы не сможем читать вместе."
+    mc "Э? Почему это?"
+    mc "А... Так будет проще быть ближе друг к другу..."
+    n 2o "...!"
+    n 5r "Н-не говори об этом так!"
+    n "Ты заставляешь меня чувствовать себя странно!"
+    "Нацуки скрестила руки и немного от меня отодвинулась."
+    mc "Извини..."
     show natsuki 5g
-
-    "I didn't exactly expect to be sitting this close to her, either..."
-
-    "Not that I can say it's a particularly bad thing."
-
-    "I open the book."
-
-    "It's only a few seconds before Natsuki once again inches closer, reclaiming the additional space while she hopes I won't notice."
-
-    "I can feel her peering over my shoulder, much more eager to begin reading than I am."
-
-    n 1k "Wow, how long has it been since I read the beginning...?"
-
-    mc "Hm?"
-
-    mc "You don't go back and flip through the older volumes every now and then?"
-
-    n 2k "Not really."
-
-    n "Maybe sometimes after I've already finished the series."
-
-    n 2c "Hey, are you paying attention?"
-
-    mc "Uh..."
-
-    "I am, but nothing's really happened yet, so I can talk at the same time."
-
-    "It looks like it's about a bunch of friends in high school."
-
-    "Typical slice-of-life affair."
-
-    "I kind of grew out of these, since it's rare for the writing to be entertaining enough to make up for the lack of plot."
-
+    "Хотя я и не собирался садиться к ней так близко, однако..."
+    "Не могу сказать, что в этом есть что-то плохое."
+    "Я открыл книгу."
+    "Прошло всего несколько секунд, и Нацуки обратно пододвинулась ко мне, думая, что я этого не замечу."
+    "Когда она заглянула мне через плечо, я резко ощутил её желание начать читать, куда более сильное, чем моё собственное."
+    n 1k "Эх, сколько времени прошло с тех пор, как я читала первый том..."
+    mc "А?"
+    mc "Ты не пролистываешь порой уже прочитанные тома?"
+    n 2k "Да нет."
+    n "Разве что иногда, после того как прочту всё до конца."
+    n 2c "Эй, не отвлекайся!"
+    mc "Эх..."
+    "Так как в сюжете ничего интересного не происходило, я мог одновременно читать и поддерживать диалог."
+    "Похоже, манга повествует о группе друзей, учащихся в старшей школе."
+    "Типичная повседневность."
+    "Я в некотором роде уже вырос из подобного, потому что обилие картинок всё же недостаточно для компенсации недостатков сюжета."
     $ persistent.clear[0] = True
-
-    $ renpy.save_persistent()
-
     scene n_cg1_bg
     show n_cg1_base
     with dissolve_cg
-
-    mc "...Are you sure this isn't boring for you?"
-
-    n "It's not!"
-
-    mc "Even though you're just watching me read?"
-
-    n "Well...!"
-
-    n "I'm...fine with that."
-
-    mc "If you say so..."
-
-    mc "...I guess it's fun sharing something you like with someone else."
-
-    mc "I always get excited when I convince any of my friends to pick up a series I enjoy."
-
-    mc "You know what I mean?"
-
+    mc "...Тебе не скучно?"
+    n "Совсем нет!"
+    mc "Хотя ты просто смотришь, как я читаю?"
+    n "Ну..."
+    n "Мне... этого достаточно."
+    mc "Как скажешь..."
+    mc "...Полагаю, это весело – делиться с кем-то любимыми вещами."
+    mc "Я всегда немного волнуюсь, когда убеждаю кого-нибудь из своих друзей почитать понравившуюся мне мангу."
+    mc "Понимаешь, что я имею в виду?"
     n "...?"
-
-    mc "Hm?"
-
-    mc "You don't?"
-
+    mc "Хм?"
+    mc "Нет?"
     show n_cg1_exp2 at cgfade
-
-    n "Um..."
-
-    n "That's not..."
-
-    n "Well, I wouldn't really know."
-
-    mc "...What do you mean?"
-
-    mc "Don't you share your manga with your friends?"
-
+    n "М-м-м..."
+    n "Это не..."
+    n "Мне-то откуда знать."
+    mc "...Что ты хочешь этим сказать?"
+    mc "Разве ты не делишься мангой со своими друзьями?"
     hide n_cg1_exp2
     show n_cg1_exp3 at cgfade
-
-    n "Could you not rub it in?"
-
-    n "Jeez..."
-    mc "Ah... Sorry..."
-
-    n "Hmph."
-
-    n "Like I could ever get my friends to read this..."
-
-    n "They just think manga is for kids."
-
-    n "I can't even bring it up without them being all like..."
-
-    n "'Eh? You still haven't grown out of that yet?'"
-
-    n "Makes me want to punch them in the face..."
-
-    mc "Urgh, I know those kinds of people..."
-
-    mc "Honestly, it takes a lot of effort to find friends who don't judge, much less friends who are also into it..."
-
-    mc "I'm already kind of a loser, so I guess I gravitated toward the other losers over time."
-
-    mc "But it's probably harder for someone like you..."
-
+    n "Не мог бы ты не сыпать соль на рану?"
+    n "Блин..."
+    mc "Ой... Прости..."
+    n "Хмф."
+    n "Будто мои друзья согласились бы это прочитать..."
+    n "Они считают, что манга – для детей."
+    n "Стоит мне только завести об этом речь, как они такие..."
+    n "«А? Ты что, ещё не выросла из всего этого?»"
+    n "Так и хочется дать им ногой с разворота..."
+    mc "Эх, я знаю таких людей..."
+    mc "Честно говоря, довольно сложно найти друзей, которые не осуждали бы тебя за это и уж тем более сами этим увлекались."
+    mc "В некотором роде я неудачник, поэтому со временем обзавёлся такими же друзьями-неудачниками."
+    mc "Но, видимо, для такой, как ты, всё гораздо сложнее."
     hide n_cg1_exp3
-
-    n "Hm."
-
-    n "Yeah, that's pretty accurate."
-
-    "{i}...Wait, which part??{/i}"
-
+    n "Хм..."
+    n "Да, пожалуй ты прав."
+    "{i}...Постой, в каком именно месте???{/i}"
     $ style.say_dialogue = style.normal
-
-    n "I mean, I feel like I can't even keep it in my own room..."
+    n "Я ведь даже не могу хранить мангу у себя дома..."
 
     $ style.say_dialogue = style.edited
-
-    n "My dad would beat the shit out of me if he found this."
-
+    n "Мой отец изобьёт меня до полусмерти, если найдёт её."
     $ style.say_dialogue = style.normal
-
-    $ _history_list[-1].what = "I don't even know what my dad would do if he found this."
-
-    n "At least it's safe here in the clubroom."
-
+    $ _history_list[-1].what = "Страшно представить, что сделает мой отец, если найдёт её."
+    n "Но хотя бы в клубе можно спокойно её читать."
     show n_cg1_exp3 at cgfade
-
-    n "'Cept Monika's kind of a jerk about it..."
-
-    n "Ugh! I just can't win, can I?"
-
-    mc "Well, it paid off in the end, didn't it?"
-
-    mc "I mean, here I am, reading it."
-
-    n "Well, it's not like that solves any of my problems."
-
-    mc "Maybe..."
-
-    mc "But at least you're enjoying yourself, right?"
-
+    n "Разве что Моника иногда гундит..."
+    n "Уф! Всё против меня!"
+    mc "Да, но в итоге ты добилась своего, верно?"
+    mc "Вот, я читаю её с тобой."
+    n "Увы, это не решает все мои проблемы."
+    mc "Возможно..."
+    mc "Но тебе ведь сейчас весело, да?"
     hide n_cg1_exp3
     show n_cg1_exp2 at cgfade
-
-    n "--"
-
+    n "—"
     n "..."
-
-    n "...So?"
-
-    mc "Ahaha."
-
+    n "...Правда?"
+    mc "А-ха-ха."
     hide n_cg1_exp2
     show n_cg1_exp3 at cgfade
-
-    n "Jeez, that's enough!"
-
-    n "Are you gonna keep reading, or what?"
-
-    mc "Yeah, yeah..."
-
-    "I flip the page."
-
+    n "Боже, хватит!"
+    n "Ты будешь уже читать или как?"
+    mc "Да, да..."
+    "Я перевернул страницу."
     show black with dissolve_cg
-
     "..."
-
     "..."
-
     "....."
-
     "......."
-
     "........."
-
-    "Time passes."
-
+    "Время шло."
     hide n_cg1_exp3
     show n_cg1_exp4 behind black at cgfade
-
-    "Natsuki is strangely quiet now."
-
-    "I glance over at her."
-
+    "Нацуки подозрительно хранила молчание."
+    "Я посмотрел на неё."
     hide black with dissolve_cg
-
-    "It looks like she's started to fall asleep."
-
-    mc "Hey, Natsuki..."
-
+    "Похоже, её клонит в сон."
+    mc "Эй, Нацуки..."
     hide n_cg1_exp4
     show n_cg1_exp5 at cgfade
-
-    n "Y-Yeah...?"
-
-    "Suddenly, Natsuki collapses straight into me."
-
+    n "Д-да?.."
+    "Внезапно Нацуки завалилась на меня."
     play sound fall
-
     $ style.say_dialogue = style.normal
-
-    mc "H-Hey--"
-
+    mc "Эй..."
     show n_cg1_exp5
     hide n_cg1_exp5
+
     show n_cg1b
     hide n_cg1_base
 
     $ currentpos = get_pos()
-
-    $ audio.t6g = "<from " + str(currentpos) + " loop 10.893>bgm/6g.ogg"
-
+    $ audio.t6g = '<from ' + str(currentpos) + ' loop 10.893>bgm/6g.ogg'
     play music t6g
-
     $ ntext = glitchtext(96)
-
     $ style.say_dialogue = style.edited
-
     n "{color=#000}[ntext]{/color}"
-
     $ ntext = glitchtext(96)
-
     n "{color=#000}[ntext]{/color}"
-
     $ style.say_dialogue = style.normal
 
     stop music
-
     window hide(None)
     window auto
-
     scene bg club_day
-
     show monika 1r zorder 2 at t11
-
-    m "Oh jeez..."
-
-    m 1d "Natsuki, are you okay?"
-
+    m "Ох ты ж..."
+    m 1d "Нацуки, ты в порядке?"
     show monika zorder 2 at t21
     show natsuki 12b zorder 3 at f22
-
     n "..."
-
     show natsuki zorder 2 at t22
     show monika zorder 3 at f21
-
-    m 1a "Here..."
-
+    m 1a "Вот..."
     show monika zorder 2 at t21
-
-    "Monika reaches into her bag and pulls out some kind of protein bar."
-
-    "She throws it in Natsuki's direction."
-
-    "Natsuki's eyes suddenly light up again."
-
-    "She snatches the bar from the floor and immediately tears off the wrapper."
-
+    "Моника запустила руку в портфель и вытащила оттуда протеиновый батончик."
+    "Она бросила его Нацуки."
+    "В глазах Нацуки снова загорелся огонь."
+    "Она схватила с пола батончик и молниеносно сорвала обёртку."
     show natsuki zorder 3 at f22
-
-    n 1s "I told you not to give mmph..."
-
+    n 1s "Я говорила тебе не давать ом-ном-ном..."
     show natsuki zorder 2 at t22
-
-    "She doesn't even finish her sentence before stuffing it into her mouth."
-
+    "Не успела она договорить, как уже жевала его."
     show natsuki zorder 1 at thide
     hide natsuki
     show monika 3b zorder 2 at t11
-
-    m "Don't worry, [player]."
-
-    m "She's fine."
-
-    m "It just happens every now and then."
-
-    m 1a "That's why I always keep a snack in my bag for her."
-
-    m 5a "Anyway...!"
-
-    m "Why don't we all share poems now?"
+    m "Не беспокойся, [player]."
+    m "С ней всё в порядке."
+    m "Время от времени такое случается."
+    m 1a "Поэтому у меня в портфеле всегда есть что-нибудь перекусить."
+    m 5a "А теперь..."
+    m "Почему бы нам не почитать друг другу стихи?"
 
     return
-
+# Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

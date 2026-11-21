@@ -1,16 +1,16 @@
-image exception_bg = "#dadada"
-image fake_exception = Text("An exception has occurred.", size=40, style="_default")
-image fake_exception2 = Text("File \"game/script-ch5.rpy\", line 307\nSee traceback.txt for details.", size=20, style="_default")
+image exception_bg = '#dadada'
+image fake_exception = Text("An exception has occurred.", size=40, style='_default')
+image fake_exception2 = Text("File \"game/script-ch5.rpy\", line 307\nSee traceback.txt for details.", size=20, style='_default')
 
 image splash_glitch:
     subpixel True
-    "images/bg/splash-glitch.png"
+    'images/bg/splash-glitch.png'
     alpha 0.0
     pause 0.5
     linear 0.5 alpha 1.0
     pause 2.5
     linear 0.5 alpha 0.0
-    "gui/menu_bg.png"
+    'gui/menu_bg.png'
     topleft
     alpha 0.0
     parallel:
@@ -25,7 +25,7 @@ image splash_glitch:
         easeout 1.0 ypos -500
 image splash_glitch2:
     subpixel True
-    "gui/menu_bg.png"
+    'gui/menu_bg.png'
     topleft
     block:
         xoffset 0 yoffset 0
@@ -34,7 +34,7 @@ image splash_glitch2:
 
 image splash_glitch_m:
     subpixel True
-    "gui/menu_art_m.png"
+    'gui/menu_art_m.png'
     zoom 0.5
     xpos 0.5 ypos 0.5
     pause 0.1
@@ -48,7 +48,7 @@ image splash_glitch_m:
 
 image splash_glitch_n:
     subpixel True
-    "gui/menu_art_n.png"
+    'gui/menu_art_n.png'
     zoom 0.5
     pause 0.2
     xpos 0.8 ypos 0.8
@@ -69,7 +69,7 @@ image splash_glitch_n:
 
 image splash_glitch_y:
     subpixel True
-    "gui/menu_art_y.png"
+    'gui/menu_art_y.png'
     zoom 0.5
     ypos 1.3
     block:
@@ -79,287 +79,162 @@ image splash_glitch_y:
         pause 0.02
         repeat
 
+
 label ch5_main:
-
     stop music fadeout 2.0
-
     scene bg residential_day
     with dissolve_scene_full
 
-    "It's the day of the festival."
-
-    "Of all days, I expected this to be the one where I'd be walking to school with Sayori."
-
-    "But Sayori isn't answering her phone."
-
-    "I considered going to her house to wake her up, but decided that's a little too much."
-
-    "Meanwhile, the preparations for the event should be nearly complete."
-
-    if ch4_scene == "natsuki":
-        "I managed to carry all the cupcakes myself by carefully stacking two trays."
-
-        "Natsuki is already texting up a storm, but I can't respond, thanks to my hands being full."
+    "Наступил день фестиваля."
+    "Я был уверен, что из всех возможных дней именно в этот мы с Саёри пойдём в школу вместе."
+    "Но она не отвечала на звонки."
+    "Я думал зайти к ней домой, чтобы разбудить, но решил, что это немного чересчур."
+    "Между тем подготовка к мероприятию должна близиться к завершению."
+    if ch4_scene == 'natsuki':
+        "Мне удалось в одиночку дотащить все кексы, аккуратно уложенные на двух подносах."
+        "Нацуки уже завалила меня шквалом сообщений, но из-за того, что у меня были заняты руки, я не мог ей ответить."
     else:
-        "The banner Yuri and I painted is dry, and I gently rolled it up to take with me."
-
-        "She sent me a pleasant text reminding me not to forget anything, and I reassured her."
-
-    "Funnily enough, I probably feel the same way as Natsuki about the event."
-
-    "I'm more excited for it to be over so I can spend time with Sayori and [ch4_name] at the festival."
-
-    "But knowing Monika, I'm sure the event will be great, too."
+        "Плакат, который мы с Юри нарисовали, высох, и я осторожно свернул его, чтобы забрать с собой."
+        "Она прислала мне сообщение, в котором вежливо просила ничего не забыть, и я её успокоил."
+    "Забавно, но, думаю, у нас с Нацуки схожие чувства относительно нашего выступления."
+    "Я больше жду того, когда мероприятие закончится, чтобы провести время вместе с Саёри и [ch4_name]."
+    "Но, зная Монику, уверен, что и оно выйдет отменным."
 
     scene bg club_day with wipeleft_scene
     show monika 5 zorder 2 at t11
-
     m "[player]!"
-
-    m "You're the first one here."
-
-    m "Thanks for being early!"
-
-    mc "That's funny, I thought at least Yuri would be here by now."
-
-    "Monika is placing little booklets on each of the desks in the classroom."
-
-    "They must be the ones she prepared that have all the poems we're performing."
-
-    "In the end, I found a random poem online that I thought Monika would like, and submitted it."
-
-    "So, that's the one I'll be performing."
-
-    m 1d "I'm surprised you didn't bring Sayori with you."
-
-    mc "Yeah, she overslept again..."
-
-    mc "That dummy."
-
-    mc "You'd think that on days this important, she'd try a little harder..."
-
-    "I say that, but I suddenly remember what Sayori told me yesterday..."
-
-    "And I suddenly feel awful, knowing it's not nearly that simple for her."
-
-    "I only said it because it's the way I'm used to thinking."
-
-    "But..."
-
-    "Maybe I should have gone to wake her up after all?"
-
-    m 1k "Ahaha."
-
-    m 4b "You should take a little responsibility for her, [player]!"
-
-    m "I mean, especially after your exchange with her yesterday..."
-
-    m "You kind of left her hanging this morning, you know?"
-
+    m "Ты пришёл первым."
+    m "Молодец, что так рано!"
+    mc "Странно, я думал, что здесь уже будет хотя бы Юри."
+    "Моника раскладывает по партам маленькие буклетики."
+    "Наверное, это те, что она готовила: со всеми стихотворениями, которые мы будем читать."
+    "В конце концов я просто отыскал в сети какое-то стихотворение, которое, как мне показалось, понравится Монике."
+    "Его-то я и зачитаю."
+    m 1d "Я удивлена, что Саёри не с тобой."
+    mc "Она опять проспала..."
+    mc "Вот ведь соня."
+    mc "Я-то думал, что в такой важный день она могла бы приложить немного больше усилий..."
+    "Тут я вспомнил о том, что Саёри сказала мне вчера..."
+    "Мне стало стыдно, ведь для неё всё далеко не так просто."
+    "Я сказал это только потому, что привык так думать."
+    "Но..."
+    "Может, всё-таки нужно было пойти разбудить её?"
+    m 1k "А-ха-ха."
+    m 4b "[player], тебе следовало бы взять на себя хоть какую-то ответственность за неё!"
+    m "В смысле, после того вашего вчерашнего разговора..."
+    m "Ты понимаешь, что оставил её в подвешенном состоянии?"
     show monika 4a
-
-    mc "Exchange...?"
-
-    mc "Monika-- You know about that??"
-
-    m 2a "Of course I do."
-
-    m "I'm the club president, after all."
-
-    mc "But--!"
-
-    "I stammer, embarrassed."
-
-    "Did Sayori really tell her about it that quickly?"
-
+    mc "Разговора?.."
+    mc "Моника... тебе о нём известно?"
+    m 2a "Разумеется."
+    m "Я ведь президент клуба."
+    mc "Но!.."
+    "Я запнулся от смущения."
+    "Саёри что, правда так быстро ей разболтала?"
     if sayori_confess:
-        "That we're...a couple now?"
-
-        "I didn't really plan on bringing it up with anyone yet..."
+        "Что мы теперь... пара?"
+        "Я пока не собирался никого в это посвящать..."
     else:
-        "About how I basically turned down her confession?"
-
-        "That makes me really seem like the bad guy here..."
-
-        "But I'm the one who knows what's best for her, right?"
-
-    mc "Jeez..."
-
-    mc "You don't know the full story at all, so..."
-
-    m 2j "Don't worry."
-
-    m "I probably know a lot more than you think."
-
-    mc "Eh...?"
-
-    "Monika is being as friendly as usual, but for some reason I felt a chill down my spine after hearing that."
-
-    m 5 "Hey, do you want to check out the pamphlets?"
-
-    m "They came out really nice!"
-
-    mc "Yeah, sure."
-
-    "I grab one of the pamphlets laid out on the desks."
-
-    mc "Oh yeah, they really did."
-
-    mc "Something like this will definitely help people take the club more seriously."
-
-    m "Yeah, I thought so too!"
-
+        "Что я, по сути, отверг её признание?"
+        "Это выставляет меня в плохом свете..."
+        "Но мне виднее, как будет лучше для неё, ведь так?"
+    mc "Блин..."
+    mc "Ты не знаешь всей ситуации, так что..."
+    m 2j "Не волнуйся."
+    m "Пожалуй, я знаю куда больше, чем ты думаешь."
+    mc "Э?.."
+    "Моника столь же дружелюбна, как и всегда, но от её слов у меня по спине почему-то пробежали мурашки."
+    m 5 "Эй, хочешь посмотреть наши буклеты?"
+    m "Получилось просто замечательно!"
+    mc "Конечно."
+    "Я взял один из разложенных на партах буклетов."
+    mc "Да, они действительно хороши."
+    mc "Подобное обязательно поможет заставить людей серьёзно относиться к нашему клубу."
+    m "Да, я тоже так думаю!"
     show monika zorder 1 at thide
     hide monika
-
-    "I flip through the pages."
-
-    "Each member's poem is neatly printed on its own page, giving it an almost professional feel."
-
-    "I recognize Natsuki's and Yuri's poems from the ones they performed during our practice."
-
-    mc "What's this...?"
-
-    "I flip to Sayori's poem."
-
-    "It's different from the one she practiced."
-
-    "It's one that I haven't read before..."
-
+    "Я полистал страницы."
+    "Стихотворение каждого участника напечатано на отдельной странице, что придавало буклету почти профессиональный вид."
+    "Я узнаю стихотворения, которые читали на репетиции Нацуки и Юри."
+    mc "Что это?.."
+    "Я нашёл стихотворение Саёри."
+    "Не то, которое она читала на репетиции."
+    "Этого я ещё не видел..."
     call showpoem (poem_s3, music=False)
-
-    mc "Ah--"
-
-    "What is this...?"
-
-    "Reading the poem, I get a pit in my stomach."
-
+    mc "Ах..."
+    "Что такое?.."
+    "После того как я его прочитал, мне стало жутко не по себе."
     show monika 1d zorder 2 at t11
-
     m "[player]?"
-
-    m "What's wrong?"
-
-    mc "Ah, nothing..."
-
-    "This poem feels completely different from everything else Sayori's written."
-
-    "But more than that..."
-
-    mc "I-I changed my mind!"
-
-    mc "I'm going to go get Sayori, so..."
-
-    m "Ah--"
-
-    m 1b "Well, alright!"
-
-    m "Try not to take too long, okay?"
-
+    m "Что случилось?"
+    mc "А, нет, ничего..."
+    "Это стихотворение кажется совершенно непохожим на все остальные, написанные Саёри."
+    "Кроме того..."
+    mc "Я-я передумал!"
+    mc "Я всё же пойду за Саёри..."
+    m "А..."
+    m 1b "Ну, ладно!"
+    m "Постарайся сильно не задерживаться, хорошо?"
     scene bg corridor with wipeleft
-
-    "I quickly leave the classroom."
-
-    m "Don't strain yourself~"
-
-    "Monika calls that out after me."
-
-    "I quicken my pace."
+    "Я быстро вышел из класса."
+    m "Не напрягайся так~"
+    "Сказала мне вслед Моника."
+    "Я прибавил шагу."
 
     scene bg residential_day with wipeleft_scene
-
-    "What was I thinking?"
-
-    "I should have tried a little bit harder for Sayori."
-
-    "It's not a big deal to at least wait for her, or help her wake up."
-
-    "Even the simple gesture of walking her to school makes her really happy."
-
-    "Besides..."
-
-    "I told her yesterday that things will be the same as they always have been."
-
-    "That's all she needs, and what I want to give her."
+    "О чём я только думал?"
+    "Я должен хоть немного стараться ради Саёри."
+    "Подождать её или же разбудить – не такое уж большое дело."
+    "Даже такая мелочь, как совместный поход в школу, сильно её обрадовал бы."
+    "Кроме того..."
+    "Вчера я сказал ей, что всё останется так же, как и прежде."
+    "Это всё, что ей нужно, и то, что я хочу ей дать."
 
     scene bg house with wipeleft
-
-    "I reach Sayori's house and knock on the door."
-
-    "I don't expect an answer, since she's not picking up her phone, either."
-
-    "Like yesterday, I open the door and let myself in."
-
+    "Я дошёл до дома Саёри и постучал в дверь."
+    "Я не ожидал, что она ответит, ведь её телефон тоже молчал."
+    "Как и вчера, я открыл дверь и вошёл без приглашения."
     scene black with wipeleft
-
-    mc "Sayori?"
-
-    "She really is a heavy sleeper..."
-
-    "I swallow."
-
-    "I can't believe I ended up doing this after all."
-
-    "Waking her up in her own house..."
-
+    mc "Саёри?"
+    "Она спит очень крепко..."
+    "Я сглотнул."
+    "Не верится, что я действительно это делаю."
+    "Бужу её в её собственном доме..."
     if sayori_confess:
-        "That really is something that a boyfriend would do, isn't it?"
+        "Но ведь парень и должен делать для своей девушки что-то такое, разве не так?"
     else:
-        "Isn't that more like something a boyfriend would do?"
+        "Слишком уж смахивает на то, что сделал бы парень для своей девушки, разве не так?"
+    "В любом случае..."
+    "Мне просто кажется это правильным."
 
-    "In any case..."
-
-    "It just feels right."
-
-    "Outside Sayori's room, I knock on her door."
-
-    mc "Sayori?"
-
-    mc "Wake up, dummy..."
-
-    "There's no response."
-
-    "I really didn't want to have to enter her room like this..."
-
-    "Isn't it kind of a breach of privacy?"
-
-    "But she really leaves me no choice."
-
-    "I gently open the door."
-
-    mc "{cps=30}.......Sayo--{/cps}{nw}"
-
+    "Я постучал в дверь комнаты Саёри."
+    mc "Саёри?"
+    mc "Подъём, соня..."
+    "Ответа не последовало."
+    "Мне очень не хотелось вот так вламываться в её комнату..."
+    "Разве это не вторжение в личную жизнь?"
+    "Но она просто не оставила мне иного выбора."
+    "Я медленно открыл дверь."
+    mc "{cps=30}...Саё—{/cps}{nw}"
     $ persistent.playthrough = 1
     $ persistent.anticheat = renpy.random.randint(100000, 999999)
-    $ renpy.save_persistent()
-    $ delete_character("sayori")
+    $ delete_character('sayori')
     $ in_sayori_kill = True
-
     window hide(None)
     window auto
-
     play music td
-
     show s_kill_bg2
     show s_kill2
     show s_kill_bg as s_kill_bg at s_kill_bg_start
     show s_kill as s_kill at s_kill_start
-
-    $ pause(3.75)
-
+    pause 3.75
     show s_kill_bg2 as s_kill_bg
     show s_kill2 as s_kill
-
-    $ pause(0.01)
-
+    pause 0.01
     show screen tear(20, 0.1, 0.1, 0, 40)
-
-    play sound "sfx/s_kill_glitch1.ogg"
-
-    $ pause(0.25)
-
+    play sound 'sfx/s_kill_glitch1.ogg'
+    pause 0.25
     stop sound
-
     hide screen tear
     hide s_kill_bg
     hide s_kill
@@ -373,52 +248,34 @@ label ch5_main:
         zoom 2.0 xalign 0.5 yalign 0.05
         pause 0.5
         dizzy(1, 1.0)
-
-    $ pause(2.0)
-
+    pause 2.0
     show noise zorder 3:
         alpha 0.0
         linear 3.0 alpha 0.25
     show vignette zorder 3:
         alpha 0.0
         linear 3.0 alpha 0.75
-
-    $ pause(1.5)
-
+    pause 1.5
     show white zorder 2
     show splash_glitch zorder 2
-
-    $ pause(1.5)
-
+    pause 1.5
     show screen tear(20, 0.1, 0.1, 0, 40)
-
-    play sound "sfx/s_kill_glitch1.ogg"
-
-    $ pause(0.2)
-
+    play sound 'sfx/s_kill_glitch1.ogg'
+    pause 0.2
     stop sound
-
     hide screen tear
-
-    $ pause(4.0)
-
+    pause 4.0
     show screen tear(20, 0.1, 0.1, 0, 40)
-
-    play sound "sfx/s_kill_glitch1.ogg"
-
-    $ pause(0.2)
-
+    play sound 'sfx/s_kill_glitch1.ogg'
+    pause 0.2
     stop sound
-
     hide screen tear
     hide splash_glitch
     show splash_glitch2 zorder 2
     show splash_glitch_m zorder 2
     show splash_glitch_n zorder 2
     show splash_glitch_y zorder 2
-
-    $ pause(0.75)
-
+    pause 0.75
     hide white
     hide splash_glitch2
     hide splash_glitch_m
@@ -429,132 +286,76 @@ label ch5_main:
         xpos 0.1 ypos 0.05
     show fake_exception2 zorder 2:
         xpos 0.1 ypos 0.15
-
     python:
-        try:
-            sys.modules['renpy.error'].report_exception("Oh jeez...I didn't break anything, did I? Hold on a sec, I can probably fix this...I think...\nActually, you know what? This would probably be a lot easier if I just deleted her. She's the one who's making this so difficult. Ahaha! Well, here goes nothing.", False)
-        except:
-            pass
+        try: sys.modules['renpy.error'].report_exception("О боже... Я ведь ничего не сломала, надеюсь? Подожди пару секунд, я всё исправлю... наверное...\nА вообще, знаешь что? Будет куда проще просто её удалить. Это из-за неё у нас такие сложности. А-ха-ха! Что ж, была не была.", False)
+        except: pass
+    pause 6.0
 
-    $ pause(6.0)
 
     "..."
-
     hide fake_exception
     hide fake_exception2
     hide exception_bg
-
-    "What the hell...?"
-
-    "{i}What the hell??{/i}"
-
-    "Is this a nightmare?"
-
-    "It...has to be."
-
-    "This isn't real."
-
-    "There's no way this can be real."
-
-    "Sayori wouldn't do this."
-
-    "Everything was normal up until a few days ago."
-
-    "That's why I can't believe what my eyes are showing me...!"
-
+    "Какого чёрта?.."
+    "{i}Какого чёрта???{/i}"
+    "Мне снится кошмар?"
+    "Да... так и есть."
+    "Это не взаправду."
+    "Такого просто не может быть."
+    "Саёри не сделала бы этого."
+    "Ещё несколько дней назад всё было в полном порядке."
+    "Поэтому я не мог поверить тому, что предстало перед моими глазами!.."
     scene black with dissolve_cg
-
-    "I suppress the urge to vomit."
-
-    "Just yesterday..."
-
-    "I told Sayori I would be there for her."
-
-    "I told her I know what's best, and that everything will be okay."
-
-    "Then why...?"
-
-    "Why would she do this...?"
-
-    "How could I be so helpless?"
-
-    "What did I do wrong?"
-
+    "Я подавил позыв к рвоте."
+    "Только вчера..."
+    "Я сказал Саёри, что буду с ней."
+    "Я сказал ей, что знаю, как лучше, и что всё будет хорошо."
+    "Так почему?.."
+    "Как она могла это сделать?.."
+    "Как мог я оказаться настолько бесполезным?"
+    "Что я сделал неправильно?"
     if sayori_confess:
-        "Confessing to her..."
-
-        "I shouldn't have confessed to her."
-
-        "That's not what Sayori needed at all."
-
-        "She even told me how painful it is for others to care about her."
-
-        "Then why did I confess to her, and make her feel even worse?"
+        "Признание..."
+        "Я не должен был ей признаваться."
+        "Это не то, что было нужно Саёри."
+        "Она даже рассказала мне, как ей тяжело, когда другие беспокоятся о ней."
+        "Значит, признавшись ей, я заставил её почувствовать себя ещё хуже?"
     else:
-        "Turning down her confession..."
-
-        "That has to have been what pushed her over the edge."
-
-        "Her agonized scream still echoes in my ears."
-
-        "Why did I do that to her when she needed me the most?"
-
-    "Why was I so selfish?"
-
-    "This is my fault--!"
-
-    "My swarming thoughts keep telling me everything I could have done to prevent this."
-
-    "If I just spent more time with her."
-
-    "Walked her to school."
-
+        "Отверг её признание..."
+        "Должно быть, именно это столкнуло её в пропасть."
+        "Её мучительный вопль до сих пор эхом отдаётся у меня в голове."
+        "Почему я сделал это с ней, когда она нуждалась во мне больше всего?"
+    "Почему я был столь эгоистичен?"
+    "Это полностью моя вина!"
+    "В голове роились мысли о том, что я мог бы сделать, чтобы предотвратить это."
+    "Если бы я просто проводил с ней больше времени."
+    "Провожал её в школу."
     if sayori_confess:
-        "And remained friends with her, like it always has been..."
+        "И вёл себя с ней по-дружески, как и прежде..."
     else:
-        "And gave her what I know she wanted out of our relationship..."
-
-    "...Then I could have prevented this."
-
-    "I know I could have prevented this!"
-
-    "Screw the Literature Club."
-
-    "Screw the festival."
-
-    "I just...lost my best friend."
-
-    "Someone I grew up with."
-
-    "She's gone forever now."
-
-    "Nothing I do can bring her back."
-
-    "This isn't some game where I can reset and try something different."
-
-    "I had only one chance, and I wasn't careful enough."
-
-    "And now I'll carry this guilt with me until I die."
-
-    "Nothing in my life is worth more than hers..."
-
-    "But I still couldn't do what she needed from me."
-
-    "And now..."
-
-    "I can never take it back."
-
-    "Never."
-
-    "Never."
-
-    "Never."
-
-    "Never."
-
-    "Never..."
-
+        "Дал ей то, чего, как я знал, она хотела от наших отношений..."
+    "...Тогда я мог бы это предотвратить."
+    "Знаю, что мог бы!"
+    "К чёрту литературный клуб."
+    "К чёрту фестиваль."
+    "Я... потерял лучшую подругу."
+    "Подругу, с которой вместе рос."
+    "Её больше нет."
+    "Что бы я ни сделал, её не вернуть."
+    "Это ведь не какая-то игра, где я мог бы загрузить сохранение и попробовать изменить выбор."
+    "У меня был всего один шанс, и я оказался недостаточно внимателен."
+    "И мне не избавиться от этой вины до самой смерти."
+    "В моей жизни не было ничего важнее неё..."
+    "И всё же я не смог сделать того, что ей было от меня нужно."
+    "И теперь..."
+    "Мне уже никогда этого не изменить."
+    "Никогда."
+    "Никогда."
+    "Никогда."
+    "Никогда."
+    "Никогда."
     $ in_sayori_kill = False
 
-    return
 
+    return
+# Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc

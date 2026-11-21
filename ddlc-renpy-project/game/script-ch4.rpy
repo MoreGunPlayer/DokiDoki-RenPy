@@ -1,2804 +1,1446 @@
 label ch4_main:
-
     stop music fadeout 2.0
-
     scene bg residential_day
     with dissolve_scene_full
 
     play music t6
 
-    "It's already Sunday."
-
-    if ch4_scene == "natsuki":
-        "I've been getting increasingly anxious about Natsuki's upcoming visit."
-
-        "I keep telling myself there's no reason to be nervous, but it doesn't help much."
-
-        "I wonder if she'll act any different when it's just the two of us?"
-
-        "Meanwhile, she's been texting me a lot."
-
-        "We sent each other one after exchanging numbers to double-check, but it turned into conversation."
-
-        "She's almost a different personality on the phone, using tons of emoji and cute language."
-
-        "She also really likes complaining about things, but I kind of saw that one coming."
-
-        "But putting Natsuki aside..."
+    "Наступило воскресенье."
+    if ch4_scene == 'natsuki':
+        "Я всё больше и больше нервничал при мысли о скором визите Нацуки."
+        "Я продолжал убеждать себя, что беспокоиться не о чем, но это не помогало."
+        "Интересно, она будет вести себя иначе, если мы останемся наедине?"
+        "Она много мне писала."
+        "Обменявшись телефонами, мы написали друг другу, чтобы ещё раз всё проверить, и это перетекло в диалог."
+        "В переписке она словно совершенно другой человек, её сообщения изобиловали смайликами и миленькими фразами."
+        "А ещё она постоянно жаловалась на всё и вся, но это я даже предвидел."
+        "Однако, кроме Нацуки..."
     else:
-        "I've been getting increasingly anxious about Yuri's upcoming visit."
-
-        "I keep telling myself there's no reason to be nervous, but it doesn't help much."
-
-        "Yuri is clearly an introvert and also an intimate person in general."
-
-        "There's no doubt that she'll open up a little bit when it's just the two of us."
-
-        "Meanwhile, we've even been texting occasionally."
-
-        "She was extremely apprehensive at first, but it wasn't long before I was already learning more about her."
-
-        "But putting Yuri aside..."
-
-    "I haven't heard a thing from Sayori since she left club early the other day."
-
-    "It's not like we text each other all the time or anything..."
-
-    "But I've been worried about her in the back of my mind."
-
-    "Between what Sayori said, and what Monika said..."
-
-    "Is it really okay for me to put Sayori's feelings aside when she might need me?"
+        "Я всё больше и больше нервничал при мысли о скором визите Юри."
+        "Я продолжал убеждать себя, что беспокоиться не о чем, но это не помогало."
+        "Совершенно очевидно, что Юри интроверт, но, с другой стороны, она тот человек, с которым приятно общаться."
+        "Я не сомневаюсь, что она станет немного разговорчивее, если мы останемся наедине."
+        "Кстати, время от времени она писала мне смски."
+        "Сперва в них чувствовалась робость, но скоро я уже многое про неё узнал."
+        "Однако, кроме Юри..."
+    "Я и слова не слышал от Саёри, с тех пор как она ушла тогда из клуба пораньше."
+    "Не то чтобы мы постоянно переписывались..."
+    "Но в глубине души я беспокоюсь за неё."
+    "И, даже принимая во внимание слова Саёри и Моники..."
+    "Я действительно правильно поступаю, позволив Саёри самой решать свои проблемы, когда она может во мне нуждаться?"
 
     stop music fadeout 2.0
-
     scene bg house
     with wipeleft_scene
-
-    "I decide to visit Sayori before [ch4_name] comes over."
-
-    "Rather than asking, I simply tell her \"I'm coming over\", much like we've done in the past."
-
-    "Once I reach Sayori's house, I knock on the door before entering it myself."
-
-    "Again, we used to play so often that we've made it a habit of simply entering each other's houses like we were family."
-
+    "Я решил навестить Саёри перед встречей с [ch4_name]."
+    "Вместо того чтобы спрашивать, я поставил её перед фактом: «Я скоро зайду». Впрочем, я всегда так делал."
+    "Подойдя к дому Саёри, я, прежде чем войти, постучал в дверь."
+    "Опять же, мы так часто играли с ней в детстве, что стали входить друг к другу без стука, словно члены одной семьи."
     scene black with wipeleft
-
-    "The house is quiet."
-
-    "Sayori isn't anywhere on the first floor, so I assume she's up in her room."
-
-    "It's already strange of her not to run down and greet me."
-
-    "I head up to her bedroom, where I finally find her."
-
+    "В доме царила тишина."
+    "На первом этаже Саёри не было, я решил поискать её на втором."
+    "Уже странно, что она не прибежала вниз меня встречать."
+    "Я направился в её комнату, где наконец-то её нашёл."
     scene bg sayori_bedroom with wipeleft
-
-    mc "Sayori?"
-
+    mc "Саёри?"
     play music t10
-
     show sayori 1ba zorder 2 at t11
-
-    s "Hi [player]~"
-
+    s "Привет, [player]~"
     show sayori 1by
-
-    "I sit down in her room."
-
-    "Sayori forces a smile, but it's easy to tell that she's different."
-
-    "There's a minute of silence between us."
-
-    s "You haven't come over like this in a long time, have you?"
-
-    mc "Ah... I guess you're right."
-
-    mc "It has been a long time."
-
-    mc "Not much has really changed, has it?"
-
-    "Sayori's room is as messy as it's always been."
-
-    "I also recognize the same stuffed animals and wall decorations that she's had for years now."
-
-    s 2bl "Ehehe~"
-
-    s "If you came over more often, it wouldn't be such a mess."
-
-    mc "That's because I end up cleaning it for you..."
-
-    s 1bb "How come you suddenly wanted to come over today?"
-
-    s "Aren't you supposed to see [ch4_name] today?"
-
-    mc "Yeah, but..."
-
-    mc "...Wait, how did you know that?"
-
-    "Sayori had already left by the time we decided that last meeting."
-
-    s 1ba "Monika told me."
-
-    s "It's only natural for her to keep me informed about the festival preparations, right?"
-
-    mc "Ah, that's true..."
-
-    mc "But what about you?"
-
-    mc "Aren't you going to be helping Monika today?"
-
-    s 4bb "Of course!"
-
-    s "But I'm just helping her online."
-
-    s "We didn't plan to meet up or anything."
-
-    mc "Ah, so it's just me and [ch4_name], then..."
-
-    s 1ba "Yep~"
-
-    "There's more silence between us."
-
+    "Я присел на стул."
+    "Саёри вымучила улыбку, и во мне укрепилась уверенность, что с ней что-то не так."
+    "Между нами повисла минута молчания."
+    s "Давненько ты ко мне вот так не заходил, да?"
+    mc "Да... Пожалуй, ты права."
+    mc "Уже много времени прошло."
+    mc "Но не слишком много изменилось с тех пор, правда?"
+    "В комнате Саёри, как обычно, царил беспорядок."
+    "Я узнаю тех же плюшевых животных и постеры на стенах, которые видел много лет назад."
+    s 2bl "Э-хе-хе~"
+    s "Если бы ты заходил почаще, тут было бы почище."
+    mc "Это потому, что я всегда убирал за тобой..."
+    s 1bb "С чего ты сегодня вдруг решил заглянуть?"
+    s "Разве ты не встречаешься с [ch4_name]?"
+    mc "Да, просто..."
+    mc "...Постой, откуда ты об этом знаешь?"
+    "Саёри уже ушла к тому моменту, как мы условились о встрече на выходных."
+    s 1ba "Моника сказала."
+    s "Это же естественно, она держит меня в курсе того, как движется подготовка к фестивалю."
+    mc "А, ну да..."
+    mc "А что насчёт тебя?"
+    mc "Разве ты не собиралась сегодня помогать Монике?"
+    s 4bb "Конечно!"
+    s "Просто я помогаю ей онлайн."
+    s "Мы не планировали встречаться."
+    mc "Хм, получается, встречаемся только мы с [ch4_name]..."
+    s 1ba "Угу~"
+    "И снова повисла неловкая тишина."
     show sayori 1bk
-
-    "Sayori stares in a random direction."
-
-    "Everything about her behavior is really uncharacteristic."
-
-    "I finally get to the point."
-
-    mc "I just...wanted to see how you were doing."
-
-    mc "After you left on Friday."
-
-    mc "When something's wrong, you can't hide it from me!"
-
-    mc "I know you too well."
-
-    mc "So..."
-
-    "Sayori smiles, shaking her head."
-
-    s 1bd "That's no good, [player]."
-
-    mc "Eh?"
-
-    s "Why can't it just be like it's always been?"
-
-    s 1by "This is all my fault."
-
-    s "If I didn't get so weak and accidentally express my feelings..."
-
-    s 1bk "If I didn't make that stupid mistake..."
-
-    s "Then you wouldn't have been worried about me at all."
-
-    s "You wouldn't have come here."
-
-    s 1bd "You wouldn't have even been thinking about me right now."
-
-    s "But this...is just my punishment, isn't it?"
-
-    s "I'm getting punished for being so selfish."
-
-    s "I think that's why the world decided to have you come over today."
-
-    s "It just wants to torture me."
-
-    s 4bq "Ehehe~"
-
-    mc "Sayori!"
-
+    "Саёри глядела куда угодно, но не на меня."
+    "Всё в её поведении выдавало некую фальшь."
+    "Я решил перейти к сути дела."
+    mc "Я просто... хотел посмотреть, как у тебя дела."
+    mc "После твоего раннего ухода в пятницу."
+    mc "Что толку скрывать это от меня, ведь я же вижу, что что-то не так!"
+    mc "Я слишком хорошо тебя знаю."
+    mc "Поэтому..."
+    "Саёри грустно улыбнулась и покачала головой."
+    s 1bd "Так не пойдёт, [player]."
+    mc "А?"
+    s "Почему всё не может быть как раньше?"
+    s 1by "Это я виновата."
+    s "Не будь я такой слабой, не вырази я случайно свои чувства..."
+    s 1bk "Если б только я не сделала такой глупой ошибки..."
+    s "Тебе не пришлось бы из-за меня волноваться."
+    s "Не пришлось бы приходить сюда."
+    s 1bd "Не пришлось бы думать обо мне прямо сейчас."
+    s "Но это... это моё наказание, да?"
+    s "Моя кара за то, что была такой эгоисткой."
+    s "Наверное, сам мир решил привести тебя сюда сегодня."
+    s "Просто чтобы помучить меня."
+    s 4bq "Э-хе-хе~"
+    mc "Саёри!"
     show sayori 4bb
-
-    "I grab Sayori by the shoulders."
-
-    mc "What on Earth are you saying?!"
-
-    mc "Are you listening to yourself right now?"
-
-    mc "I know something happened to you."
-
-    mc "There's no other explanation for you to be like this."
-
-    mc "So tell me, already...!"
-
-    mc "Until I know, I won't be able to stop thinking about it!"
-
-    s 4bl "Ah..."
-
-    s "Ahaha..."
-
-    "Sayori gives me an empty smile."
-
-    s 4by "You really put me in a trap, [player]."
-
-    s "But..."
-
-    s 1ba "You're wrong."
-
-    s "Nothing happened to me."
-
-    s "I've always been like this."
-
-    s "You're just seeing it for the first time."
-
-    mc "Seeing what?"
-
-    mc "What are you talking about, Sayori?"
-
-    s 1bq "Ehehe~"
-
-    s 1ba "You're really just going to make me say it, aren't you, [player]?"
-
-    s "I guess I have no choice this time."
-
-    s 1bc "The thing is..."
-
-    s "I've had really bad depression my whole life."
-
-    s 1bb "Did you know that?"
-
-    s "Why do you think I'm late to school every day?"
-
-    s "Because most days, I can't even find a reason to get out of bed."
-
-    s 1by "What reason is there to do anything when I fully know how worthless I am?"
-
-    s "Why go to school?"
-
-    s "Why eat?"
-
-    s "Why make friends?"
-
-    s "Why make other people put their energy and caring to waste by having them spend it on me?"
-
-    s "That's what it feels like."
-
-    s "And that's why I just want to make everyone happy..."
-
-    s "Without anyone worrying about me."
-
+    "Я схватил Саёри за плечи."
+    mc "Что ты, чёрт возьми, такое говоришь?!"
+    mc "Ты себя сейчас вообще слышишь?"
+    mc "Я знаю, что с тобой что-то случилось."
+    mc "Другого объяснения твоему состоянию я найти просто не могу."
+    mc "Откройся уже мне!.."
+    mc "Пока ты не скажешь, я не смогу перестать думать об этом!"
+    s 4bl "Ах..."
+    s "А-ха-ха..."
+    "На лице Саёри появилась пустая улыбка."
+    s 4by "[player], ты действительно загнал меня в угол."
+    s "Но..."
+    s 1ba "Ты не прав."
+    s "Ничего со мной не случилось."
+    s "Я всегда была такой."
+    s "Просто ты впервые это видишь."
+    mc "Вижу что?"
+    mc "Саёри, о чём ты говоришь?"
+    s 1bq "Э-хе-хе~"
+    s 1ba "Ты и правда заставишь меня это сказать, да, [player]?"
+    s "Что ж, похоже, у меня нет выбора."
+    s 1bc "Дело в том, что..."
+    s "Всю жизнь меня терзает глубокая депрессия."
+    s 1bb "Ты знал об этом?"
+    s "Почему, ты думаешь, я каждый день опаздываю в школу?"
+    s "Потому что не могу даже найти причину встать с постели."
+    s 1by "Зачем мне вообще что-то делать, когда я полностью осознаю свою бесполезность?"
+    s "Зачем идти в школу?"
+    s "Зачем есть?"
+    s "Зачем заводить друзей?"
+    s "Зачем заставлять окружающих растрачивать силы и энергию на заботу обо мне?"
+    s "Вот как это выглядит."
+    s "И именно поэтому я хочу, чтобы все были счастливы..."
+    s "Не утруждая себя заботой обо мне."
     mc "..."
-
-    "I'm in shock."
-
-    "I can't even figure out how to respond."
-
-    "How is it possible that Sayori kept this from me the entire time that I've known her?"
-
-    "Did she really want so badly for me to just not think about her?"
-
-    mc "...Why, Sayori?"
-
-    s 1bg "Eh...?"
-
-    mc "Why is it that you've never told me about this?"
-
-    mc "It almost feels like I've been betrayed as your close friend."
-
-    mc "Because if I knew, I would have done everything I could to support you!"
-
-    mc "Even if there's only so much that I could do..."
-
-    mc "I would have tried a little bit harder to make every day a little better for you."
-
-    mc "That's why I'm your friend!"
-
-    mc "All you had to do was tell me!"
-
-    s 1bk "You don't understand at all, [player]."
-
-    s "Why do you think I didn't tell you?"
-
-    s 1bd "Because if I told you, then you would have to waste effort caring about me instead of doing important things."
-
-    s "I don't want to be cared about."
-
-    s "It's bittersweet, when people try to care about me."
-
-    s 1ba "It feels nice sometimes."
-
-    s "But it also feels like a bat being swung against my head."
-
-    s 4bq "Ahaha~"
-
-    s 4ba "That's why I wanted so badly for you to make friends with everyone else..."
-
-    s "Helping everyone be happy together is the best thing for me."
-
-    s 1bb "But then, I discovered something else, too."
-
-    s "Seeing you make friends and get closer with everyone in the club..."
-
-    s 1bk "It feels like a spear going through my heart."
-
-    s "So, that's why."
-
-    s "That's why I decided the world just wants to torture me."
-
-    s 1by "Every path leads to nothing but hurt."
-
-    s "Ahaha~"
-
-    mc "You're right that I don't understand..."
-
-    mc "I don't understand your feelings at all, Sayori."
-
-    mc "But I don't need to understand."
-
-    mc "Whatever it takes for me to help you stop hurting..."
-
-    mc "That's what I'll do."
-
-    s 1bd "No, [player]."
-
-    s "There's nothing."
-
-    s "Nothing at all."
-
-    s "The only thing that could have helped is if everything could be like it always was."
-
-    s 1bk "But I was selfish."
-
-    s "I finally showed you what a horrible person I am."
-
-    "Tears streak down Sayori's face."
-
-    s 1bv "I made you join the literature club because I was selfish."
-
-    s "And I was punished by my heart hurting in a way that I couldn't understand."
-
-    s "And now you came here and I made you hurt, too."
-
-    s 1bt "I'm just weak and selfish."
-
-    s "That's all I am."
-
-    s "And that's why I'm going to accept these punishments."
-
-    s 1bv "Because I deserve every last one...!"
-
-    "Without thinking, I once again grab Sayori's shoulders."
-
-    "This time, I pull her into a tight embrace."
-
+    "Я в шоке."
+    "Я совершенно потерялся и не знал, что ответить."
+    "Как Саёри удавалось хранить это в тайне от меня всё то время, что мы знакомы?"
+    "Неужели она так сильно хотела, чтобы я просто не думал о ней?"
+    mc "...Почему, Саёри?"
+    s 1bg "А?.."
+    mc "Почему ты никогда не рассказывала мне об этом?"
+    mc "Как твой близкий друг, я чувствую себя почти что преданным."
+    mc "Если б я только знал, то сделал бы всё возможное, чтобы поддержать тебя!"
+    mc "Даже если я могу сделать лишь немногое..."
+    mc "Я постарался бы сделать каждый твой день немного лучше."
+    mc "Ведь для этого и нужны друзья!"
+    mc "Тебе просто нужно было поделиться со мной!"
+    s 1bk "Ты так ничего и не понял, [player]."
+    s "Почему, по-твоему, я тебе не рассказала?"
+    s 1bd "Потому что в этом случае ты бы растрачивал свои силы на заботу обо мне, вместо того чтобы заниматься более важными вещами."
+    s "Я не хочу, чтобы обо мне беспокоились."
+    s "Когда люди это делают, мне одновременно и хорошо, и плохо."
+    s 1ba "Иногда мне приятно."
+    s "Но порой бывает ощущение, будто бьют битой по голове."
+    s 4bq "А-ха-ха~"
+    s 4ba "Именно поэтому я так сильно хотела, чтобы ты со всеми подружился..."
+    s "Мне больше подходит роль сводить людей вместе, чтобы они были счастливы."
+    s 1bb "А потом я обнаружила кое-что ещё."
+    s "Когда я смотрела, как ты заводишь друзей и как легко ладишь со всеми..."
+    s 1bk "У меня возникло чувство, словно сердце пронзает копьё."
+    s "Вот в чём причина."
+    s "Вот почему я решила, что миру нравится мучить меня."
+    s 1by "Какой путь ни выбери, он приведёт к боли."
+    s "А-ха-ха~"
+    mc "Ты права, я не понимаю..."
+    mc "Я совсем не понимаю твоих чувств, Саёри."
+    mc "Но мне и не нужно понимать."
+    mc "Я сделаю всё, что только смогу..."
+    mc "Чтобы унять твою боль."
+    s 1bd "Нет, [player]."
+    s "Это бесполезно."
+    s "Ничего с этим не сделаешь."
+    s "Единственное, что могло бы помочь, – если бы всё снова стало так, как раньше."
+    s 1bk "Но я эгоистка."
+    s "Я всё-таки показала тебе, какой я ужасный человек."
+    "Ручейки слёз побежали по лицу Саёри."
+    s 1bv "Я притащила тебя в литературный клуб из-за своего эгоизма."
+    s "И за это была наказана болью в сердце, которую не могла понять."
+    s "И вот я уже делаю больно тебе, когда ты пришёл меня утешить."
+    s 1bt "Я просто слабый и корыстный человек."
+    s "Вот моя суть."
+    s "И вот почему я приму своё наказание."
+    s 1bv "Потому что я всё это заслужила, до последней капли!.."
+    "Не задумываясь, я снова схватил Саёри за плечи."
+    "Но на этот раз я притянул её к себе и крепко обнял."
     scene black with dissolve_cg
-
-    s "A-Ah--"
-
+    s "А-ах—"
     s "[player]..."
-
-    mc "Sayori."
-
-    mc "I don't care if you feel selfish."
-
-    mc "I'm really happy that you convinced me to join the club."
-
-    mc "Seeing you every day makes it worthwhile enough."
-
-    mc "If I make friends with everyone else, then that's just a bonus."
-
-    mc "But please never underestimate how much I care about you."
-
-    mc "I wouldn't have it any other way."
-
+    mc "Саёри."
+    mc "Мне плевать, считаешь ли ты себя эгоисткой."
+    mc "Я очень рад, что ты убедила меня вступить в клуб."
+    mc "Хотя бы потому, что смогу каждый день видеться с тобой."
+    mc "Если я подружусь со всеми остальными, это будет просто приятным дополнением."
+    mc "Но, пожалуйста, никогда не недооценивай того, как сильно я о тебе беспокоюсь."
+    mc "Я просто не могу иначе."
     s "[player]..."
-
-    "Sayori isn't hugging me back."
-
-    "Despite my arms being wrapped around her, Sayori's arms remain at her sides."
-
-    "She starts sobbing next to my ear."
-
-    s "No..."
-
-    s "Don't do this...to me..."
-
-    s "Please don't do this..."
-
+    "Саёри не ответила на мои объятия."
+    "Хотя мои руки крепко обнимали Саёри, её – безвольно висели вдоль тела."
+    "Я услышал её тихие всхлипы."
+    s "Нет..."
+    s "Не поступай так... со мной..."
+    s "Пожалуйста, не делай этого..."
     s "[player]..."
-
-    s "I..."
-
-    "Sayori barely manages to speak between her sobs."
-
-    "I don't know if I'm doing the right thing."
-
-    "But all I want is for her to know that I care."
-
-    mc "If you have it in you to call yourself selfish, then you have to let me be selfish too."
-
-    mc "No matter what it takes, I'll figure out what needs to change."
-
-    mc "I'll make these feelings go away."
-
-    mc "And if there's anything that you need me to do..."
-
-    mc "Then you'd better tell me."
-
-    mc "I'll get mad if you don't."
-
+    s "Я..."
+    "Саёри едва удаётся говорить между приступами плача."
+    "Не знаю, правильно ли я поступаю."
+    "Я просто хочу, чтобы она знала, что мне не всё равно."
+    mc "Если ты можешь называть себя эгоисткой, тогда уж позволь и мне побыть эгоистом."
+    mc "Чего бы мне это ни стоило, я смогу всё исправить."
+    mc "Я прогоню эти чувства прочь."
+    mc "И, если ты хочешь, чтобы я что-то сделал..."
+    mc "Уж лучше тебе сообщить мне об этом."
+    mc "Иначе я очень сильно рассержусь."
     s "..."
-
-    s "I...don't know..."
-
-    s "I don't know..."
-
-    s "I don't know."
-
-    "Gently, Sayori finally puts her arms around me in return."
-
-    s "I don't know anything."
-
-    s "It's all really scary..."
-
-    s "I don't understand any of my feelings, [player]..."
-
-    s "The only time I'm not feeling nothing is when I'm feeling pain."
-
-    s "But..."
-
-    s "Your hugs are so warm..."
-
-    s "...And that's really scary, too."
-
+    s "Я... не знаю..."
+    s "Я не знаю..."
+    s "Я не знаю."
+    "Наконец-то Саёри нежно обняла меня в ответ."
+    s "Ничегошеньки я не знаю."
+    s "Всё это действительно страшно..."
+    s "Я не понимаю, что чувствую, [player]..."
+    s "А если я что-то и чувствую, то только боль."
+    s "Но..."
+    s "Твои объятия такие тёплые..."
+    s "...И это тоже сильно пугает."
     scene bg sayori_bedroom
     show sayori 1bv zorder 2 at i11
     with dissolve_cg
-
-    "Sayori lets me go."
-
-    "As she does so, I let her go as well."
-
-    mc "The festival is tomorrow."
-
-    s 1bk "Yeah..."
-
-    mc "It's going to be fun, right?"
-
-    s "Yeah."
-
-    mc "How would you like for me to spend it all with you?"
-
-    s 1bh "U-Um..."
-
-    s "Ah--"
-
-    mc "It's what I want."
-
-    mc "I promise."
-
-    s 1bk "I..."
-
-    s "I think that would be nice, then..."
-
-    mc "Yeah."
-
-    "Sayori wipes her eyes."
-
-    "If I could spend the whole day here, I would."
-
-    mc "Of all days, this has to be the one where I have other plans..."
-
-    mc "Maybe I should cancel--"
-
-    s 1bh "No, don't--!"
-
-    s 1bg "Please don't..."
-
-    s "If you did that...then I really wouldn't forgive you."
-
-    mc "But..."
-
-    mc "It's almost time for [ch4_name] to meet me at my house..."
-
-    mc "At the very least, do you want to come along and help out?"
-
-    mc "It would be fun."
-
-    "To my surprise, Sayori shakes her head."
-
-    s 1bd "I'm sorry."
-
-    s "I don't know if that would be very good for me today."
-
-    s "You understand, right?"
-
-    mc "Ah..."
-
-    mc "It's...kind of hard for me to fully understand."
-
-    mc "But I'm trying my hardest."
-
-    s "It's okay."
-
-    s "Don't worry too much about it."
-
-    s 4ba "I'll see you tomorrow, okay?"
-
-    mc "...Alright."
-
-    mc "I look forward to it."
-
+    "Саёри опустила руки."
+    "После этого я тоже отпустил её."
+    mc "Фестиваль завтра."
+    s 1bk "Угу..."
+    mc "Это будет весело, да?"
+    s "Угу..."
+    mc "Хочешь, мы весь фестиваль проведём вместе?"
+    s 1bh "М-м-м..."
+    s "Ах..."
+    mc "Это то, чего я хочу."
+    mc "Честно-честно."
+    s 1bk "Я..."
+    s "Думаю, было бы здорово..."
+    mc "Ага."
+    "Саёри протёрла глаза."
+    "Если бы я мог провести тут целый день, то несомненно сделал бы это."
+    mc "Чёрт, вот именно сегодня у меня должны были появиться другие планы..."
+    mc "Может, стоит их отменить—"
+    s 1bh "Нет, не надо—!"
+    s 1bg "Прошу, не нужно их отменять..."
+    s "Если ты так поступишь... я тебя не прощу."
+    mc "Но..."
+    mc "Уже скоро [ch4_name] подойдёт к моему дому..."
+    mc "А не хочешь пойти со мной и помочь нам?"
+    mc "Вместе веселее."
+    "К моему удивлению, Саёри покачала головой."
+    s 1bd "Прости."
+    s "Я не уверена, что это хорошая идея, учитывая моё состояние."
+    s "Ты понимаешь, да?"
+    mc "Эм..."
+    mc "Боюсь... что не до конца."
+    mc "Хотя очень стараюсь."
+    s "Всё нормально."
+    s "Не забивай этим голову."
+    s 4ba "Увидимся завтра, идёт?"
+    mc "...Да."
+    mc "С нетерпением буду ждать."
     scene bg residential_day with wipeleft_scene
-
-    "I say goodbye to Sayori and exit her house."
-
-    "On the way home, I find myself still feeling uneasy."
-
-    "But it's hard for me to keep thinking about it when [ch4_name] is about to come over, too..."
-
-    "I think Sayori is right."
-
-    "I shouldn't be worrying too much, and we're definitely going to have a great time tomorrow."
-
-    "I should just focus on what's ahead of me!"
-
-    call expression "ch4_exclusive_" + ch4_scene
-
+    "Я попрощался с Саёри и вышел на улицу."
+    "По дороге домой меня всё ещё не оставляло щемящее чувство."
+    "Однако мне сложно постоянно об этом думать, когда ко мне скоро придёт в гости [ch4_name]..."
+    "Наверное, Саёри права."
+    "Мне не стоит слишком переживать по этому поводу, и мы обязательно завтра хорошенько повеселимся."
+    "Мне просто нужно сконцентрироваться на текущих задачах!"
+    call expression 'ch4_exclusive_' + ch4_scene
     call ch4_end
 
     return
 
+
 label ch4_exclusive_natsuki:
-
     play music t6 fadeout 2.0
-
     scene bg house with wipeleft_scene
-
-    "I spend only a few minutes back at home anxiously awaiting Natsuki's arrival."
-
-    "Before I know it, she texts me to let me know she's outside the front door."
-
-    "Without delay, I open the front door to let her in."
-
+    "Я провёл дома всего несколько тревожных минут, ожидая визит Нацуки."
+    "Но не успел я опомниться, как она уже написала мне смску, сообщив, что ждёт снаружи."
+    "Не мешкая, я открыл дверь и впустил её."
     show natsuki 2bj zorder 2 at t11
-
     mc "..."
-
-    n "'Sup?"
-
-    mc "...Hey."
-
-    "I don't know what I was expecting, but seeing Natsuki in something other than her school uniform totally threw me off."
-
-    "Seeing her in such cute clothes makes the uniform seem totally unfitting in comparison."
-
-    n 4bc "Jeez, don't make it feel so awkward already!"
-
-    n "It's gonna be a long afternoon, so don't be weird just because you're not used to seeing me outside of school."
-
-    n "Anyway, I'm coming in."
-
+    n "Как дела?"
+    mc "...Нормально."
+    "Не знаю, чего я ожидал, но к виду Нацуки в обычной одежде я был психологически не готов."
+    "Увидев её в такой милой одежде, во мне закрепилась уверенность, что её школьный наряд совсем ей не к лицу."
+    n 4bc "Боже, вот только не заставляй меня смущаться ещё больше!"
+    n "День будет долгим, так что хватит бросать эти странные взгляды – ты всего лишь увидел меня вне школы."
+    n "В общем, я захожу."
     scene bg kitchen
     show natsuki 1bj zorder 2 at t11
     with wipeleft
-
-    mc "I see you brought a lot of stuff..."
-
-    "Natsuki is carrying a large bag that is probably full of baking supplies."
-
-    n 2bj "Well, I didn't want to come all this way to find out that your kitchen isn't equipped for the job."
-
-    n "You bought everything I asked you to, right?"
-
-    mc "Yeah, I did."
-
-    "Yesterday, Natsuki asked me to buy a bunch of ingredients if I didn't already have them at home."
-
-    n 2bl "Good!"
-
-    n "Glad I could count on you to do your part."
-
-    mc "Well...of course."
-
-    "I'm surprised to hear Natsuki suddenly say that, rather than something snarky like she usually does."
-
-    "Could it be that she is a little different outside of school after all?"
-
-    mc "Anyway, let's go to the kitchen..."
-
-    n 2by "What, you're not even gonna offer to take this heavy bag from me?"
-
-    n "Where's your hospitality, [player]?"
-
-    mc "Come on..."
-
-    mc "Since when did I need to be a gentleman?"
-
-    "I grab the bag Natsuki holds out to me."
-
-    mc "Ghk--"
-
-    mc "This is ridiculously heavy--!"
-
-    n 4bz "Ahaha!"
-
-    n "I carried that all the way here."
-
-    n 4bl "Are you impressed?"
-
-    mc "I see now..."
-
-    mc "Yeah, I am impressed, Natsuki."
-
-    mc "It seems like I always underestimate you."
-
-    n 4by "Ehehe~"
-
-    n "It's because I'm so small, isn't it?"
-
-    n 4ba "You jerk."
-
-    "Natsuki hits a fist into my chest."
-
-    mc "Hey, hey."
-
-    mc "Your size has nothing to do with it."
-
-    mc "Do you really hate being small that much?"
-
-    n 1bk "Eh?"
-
-    n "Um..."
-
-    n 1bc "It's not like I hate it..."
-
-    n "I mean, sometimes I like proving people wrong when they only think I'm worth my size."
-
-    n 1ba "It's fun when I get to be small and also better than other people."
-
-    n "But..."
-
-    n 5bw "...Jeez, never mind!"
-
-    n "What are you making me say?"
-
-    n 5bq "Don't think you can make me talk about weird things just because we're not at school!"
-
-    n "Are we getting started, or what? There's a lot of stuff I gotta teach you."
-
-    mc "Ahaha."
-
-    n 5bn "What??"
-
-    mc "That's a little bit more like you."
-
-    mc "You're more fun when you just speak your mind like that."
-
-    n 1bm "H-Hey!"
-
-    n "Now you {i}are{/i} treating me like a kid!"
-
-    n "I was just trying to be a little nicer to you, you know."
-
-    n 1br "And just because I don't have a mature and sexy figure like Yuri doesn't mean you should treat me like--"
-
-    n 1bo "A-Ah--"
-
-    "Natsuki catches her words, and her face turns red."
-
-    mc "Natsuki..."
-
-    n 1bp "Forget it!"
-
-    n "I didn't say anything!"
-
-    mc "I should apologize."
-
-    n 1bh "Eh?"
-
-    mc "I appreciate that you were trying to be nicer."
-
-    mc "I should have been a little more considerate, too."
-
-    mc "But also..."
-
-    mc "If that's what you're thinking, then you should know that there are tons of guys who are into body types like yours."
-
-    n 1bq "Ah..."
-
-    n "How would...you know that, anyway?"
-
-    mc "Just trust me on this one."
-
+    mc "Вижу, ты много всего с собой принесла..."
+    "Нацуки держала в руках большую сумку, скорее всего забитую ингредиентами для выпечки."
+    n 2bj "Хмф, я не хотела тащиться всю дорогу сюда, чтобы в итоге обнаружить, что у тебя на кухне нет всего необходимого для готовки."
+    n "Ты купил всё, что я просила?"
+    mc "Да, конечно."
+    "Вчера Нацуки попросила меня купить целый список ингредиентов, которых у меня дома не было."
+    n 2bl "Отлично!"
+    n "Я рада, что на тебя можно положиться."
+    mc "Э-э-э... спасибо."
+    "Я удивился, услышав от Нацуки похвалу, а не что-нибудь колкое, что было бы в её духе."
+    "Неужели вне стен школы она действительно немного меняется?"
+    mc "Тогда давай пойдём на кухню..."
+    n 2by "Что, даже не предложишь взять у девушки тяжёлую сумку?"
+    n "[player], где твоё гостеприимство?"
+    mc "Да ладно..."
+    mc "С каких пор я обязан быть джентльменом?"
+    "Я взял протянутую мне сумку."
+    mc "Гхк!"
+    mc "Она невероятно тяжёлая!"
+    n 4bz "А-ха-ха!"
+    n "И тем не менее до твоего дома я её дотащила."
+    n 4bl "Впечатлён?"
+    mc "Ничего себе..."
+    mc "Да, я впечатлён, Нацуки."
+    mc "Похоже, я вечно тебя недооцениваю."
+    n 4by "Э-хе-хе~"
+    n "Это всё потому, что я маленькая, так?"
+    n 4ba "Ну ты и нахал."
+    "Нацуки ударила меня кулачком в грудь."
+    mc "Эй, не делай поспешных выводов."
+    mc "Твой рост тут ни при чём."
+    mc "Тебе так не нравится быть маленькой?"
+    n 1bk "А?"
+    n "М-м-м..."
+    n 1bc "Не то чтобы не нравится..."
+    n "То есть иногда я люблю указывать людям на их неправоту, когда они судят обо мне лишь по росту."
+    n 1ba "Весело, когда ты меньше всех ростом, а делаешь всё лучше остальных."
+    n "С другой стороны..."
+    n 5bw "...Боже, просто забей!"
+    n "Что ты от меня хочешь услышать?"
+    n 5bq "Не думай, что сможешь втянуть меня в свои странные разговоры, раз мы не в школе!"
+    n "Ну, мы начнём уже или как? Мне ещё нужно многому тебя научить."
+    mc "А-ха-ха."
+    n 5bn "Что?"
+    mc "Вот теперь ты на себя похожа."
+    mc "С тобой куда веселее, когда ты прямо говоришь то, что думаешь."
+    n 1bm "Эй!"
+    n "Теперь ты обращаешься со мной как с {i}ребёнком{/i}!"
+    n "Я просто хотела быть с тобой помягче."
+    n 1br "Просто то, что у меня нет такого взрослого и сексуального тела, как у Юри, не означает, что ты должен относиться ко мне как—"
+    n 1bo "Ах—"
+    "Нацуки запнулась и покраснела."
+    mc "Нацуки..."
+    n 1bp "Забудь!"
+    n "Я ничего не говорила!"
+    mc "Я должен извиниться."
+    n 1bh "Э?"
+    mc "Я оценил то, как ты старалась быть приветливее."
+    mc "Мне тоже следовало бы вести себя более тактично."
+    mc "И, кстати..."
+    mc "Если тебя это так беспокоит, то знай, что многим парням нравится именно такая фигура, как у тебя."
+    n 1bq "Ах..."
+    n "Да... откуда тебе знать?"
+    mc "Просто поверь на слово."
     n "..."
-
-    n 5bx "...Gross."
-
-    mc "Hey!"
-
-    mc "Was that to me?"
-
-    n 5bw "Who else?"
-
-    mc "Man..."
-
-    mc "Let's just get started already."
-
-    n 2bl "Ahaha!"
-
-    n "You get all sour when a girl calls you gross."
-
-    n 2bd "I finally found your weakness, [player]."
-
-    "Natsuki smiles deviously."
-
-    mc "Please spare me..."
-
-    "Well, if Natsuki decides to dish out more insults like that, there's no way I'm not fighting back."
-
-    "But she's satisfied enough for now, finally starting to pull things out of her bag so we can get started."
+    n 5bx "...Извращенец."
+    mc "Эй!"
+    mc "Это мне адресовалось?"
+    n 5bw "Ты видишь кого-то ещё?"
+    mc "Чёрт..."
+    mc "Давай уже начинать."
+    n 2bl "А-ха-ха!"
+    n "Видел бы ты свою кислую мину!"
+    n 2bd "Наконец-то я нашла твою слабость, [player]."
+    "Нацуки озорно улыбнулась."
+    mc "Пощади..."
+    "Что ж, если Нацуки решит кидаться подобными оскорблениями, я в долгу не останусь."
+    "Но она, похоже, уже успокоилась и стала вытаскивать продукты из сумки, чтобы начать готовку."
 
     scene bg kitchen
     with wipeleft_scene
-
-    "Before long, the whole kitchen is a mess."
-
-    "Spoons, dirty bowls, flour, spilled fluid, and plastic bags are strewn about every countertop."
-
-    "The mixer isn't big enough to make all the batter at once, so we've had to do it several times."
-
-    "Meanwhile, Natsuki is babysitting all of my movements to make sure I don't mess up her precious baking."
-
+    "Всего через каких-нибудь двадцать минут кухня выглядела так, словно по ней ураган прошёлся."
+    "Ложки, грязные миски, мука, разлитая жидкость и пластиковые пакеты усеяли всю столешницу."
+    "Миксер был не такой большой, чтобы взбить сразу всё тесто, и нам пришлось сделать это в несколько подходов."
+    "Всё это время Нацуки внимательно следила за моими действиями, чтобы я не напортачил с её любимым делом."
     show natsuki 2bk zorder 2 at t11
-
-    n "[player], where did you put the food coloring?"
-
-    n "The batter's going in the oven soon, so I need to fill the trays."
-
-    mc "I think it's still in the bag next to the table."
-
-    mc "What are you using it for?"
-
-    n 4bl "To color the batter, of course!"
-
-    n 4bj "I'm making each tray a different color."
-
-    n "That way, even if the flavors aren't different, everyone can still pick their favorite."
-
-    mc "Ah, that's a cute idea."
-
-    mc "Are we doing anything like that with the icing?"
-
-    n 4bk "Do you want to?"
-
-    mc "Ah..."
-
-    mc "You're asking me?"
-
-    mc "I don't really have a preference, so..."
-
-    n 1bm "Come on..."
-
-    n "You're not putting any heart into this at all!"
-
-    n "Can't you at least try to have fun?"
-
-    mc "I'm having fun..."
-
-    "I'm not really sure what Natsuki is trying to get out of me."
-
-    "Meanwhile, I see her separate the batter into smaller bowls and put a few drops of food coloring into each."
-
-    mc "Ah, that does look pretty cool."
-
-    n 2bj "See?"
-
-    n "It's not like baking is just about following instructions."
-
-    n "The presentation is where you get to be creative and have the most fun."
-
-    n "It's a million times more worth it in the end if just looking at it makes everyone's eyes lighten up."
-
-    mc "Like the ones you made on my first day, huh?"
-
-    "I recall Natsuki proudly presenting her cat-shaped cupcakes, and Sayori and Monika's delighted expressions."
-
-    "I wonder if I can make Natsuki proud like that, too."
-
-    mc "Yeah..."
-
-    mc "Maybe I will use the food coloring, then."
-
-    n "Sounds like you're starting to understand."
-
-    n "Just make sure you completely finish mixing the icing before you mess with the food coloring."
-
-    mc "Yeah, it's getting there."
-
-    "We were using the electric mixer for the batter, so I got stuck with a whisk and a huge bowl for the icing."
-
-    n 4bc "Eh?"
-
-    n "The icing's still all lumpy!"
-
-    n "Are you even trying?"
-
-    mc "Well, yeah..."
-
-    mc "It'll just take a little longer."
-
-    n 4bg "Jeez, I'll be here all night if you do it like that."
-
-    n "Here, look."
-
-    "Natsuki grabs the whisk from me and uses her other hand to tilt the bowl back."
-
-    n 4be "You really need to...beat...the crap out of it!"
-
-    "After a few seconds, the consistency of the icing has already improved."
-
-    n 4ba "See?"
-
-    "As if to emphasize, Natsuki sticks a finger in the icing and pops it in her mouth."
-
-    "I reluctantly start to do the same."
-
-    n 1bh "Hey!"
-
-    "Natsuki suddenly grabs my wrist."
-
-    n 4bh "I don't want {i}your{/i} gross fingers in my icing."
-
-    mc "Your icing, eh?"
-
-    mc "Are you forgetting who did all the work?"
-
-    "I start to fight back, trying to inch my finger toward the bowl."
-
-    n 4by "Don't make me beat the crap out of you next!"
-
-    mc "I'd like to see you try!"
-
-    "I push harder, just enough for my finger to reach the icing."
-
-    "I triumphantly scoop some with my finger just as Natsuki tugs with all her might."
-
-    mc "Ah--!"
-
-    "The force of Natsuki pulling me causes me to stumble, making her stumble in turn."
-
-    n 1bx "Gross!"
-
-    n "You got it on my face!"
-
-    mc "Whose fault is that?!"
-
-    "There's a big glob of icing on Natsuki's cheek."
-
-    n 1bw "Nnn--"
-
-    "She tries to reach it with her tongue, but it's too far away."
-
-    n 1br "Jeez..."
-
-    n "You know what?"
-
-    n 4bd "Take this!"
-
-    "Natsuki instead wipes it off with her finger before shoving her finger toward my own face."
-
-    mc "You wish--!"
-
-    "I'm faster."
-
-    "I grab her wrist with my hand before it reaches my face."
-
-    "Natsuki tries to use her other hand to fight back, but I grab that one as well."
-
+    n "[player], где ты оставил красители?"
+    n "Тесто скоро надо будет класть в печь, пора заливать формочки."
+    mc "Кажется, они ещё лежат в сумке у стола."
+    mc "Для чего они тебе?"
+    n 4bl "Чтобы красить тесто, разумеется!"
+    n 4bj "В каждой формочке будет свой цвет."
+    n "Так получатся разные вкусы и каждый сможет выбрать свой любимый."
+    mc "О, классная идея."
+    mc "А глазурью мы так же можем сделать?"
+    n 4bk "Ты бы хотел?"
+    mc "А?.."
+    mc "Ты спрашиваешь меня?"
+    mc "У меня, в общем-то, нет предпочтений, так что..."
+    n 1bm "Ну же..."
+    n "Ты совсем не вкладываешь в это душу!"
+    n "Ты можешь хотя бы притвориться, что тебе весело?"
+    mc "Мне весело..."
+    "Не совсем понимаю, чего от меня хочет добиться Нацуки."
+    "В это время она стала заливать тесто в формочки, добавляя в каждую несколько капель пищевого красителя."
+    mc "Ого, выглядит и правда здорово."
+    n 2bj "Видишь?"
+    n "Кулинария – это не бездумное следование рецептам."
+    n "Презентация блюд – это апогей твоего творчества и веселья при их приготовлении."
+    n "Невозможно описать словами, насколько оправданными кажутся твои усилия, когда ты видишь, как загораются глаза людей просто от их вида."
+    mc "Как когда ты испекла кексы в мой первый день в клубе?"
+    "Я вспоминаю, как гордо Нацуки сорвала скатерть с кексов в форме котят и восхищённые взгляды Саёри и Моники."
+    "Интересно, получится ли у меня сделать так, чтобы Нацуки испытала завтра ту же гордость?.."
+    mc "Ясно..."
+    mc "Пожалуй, я тоже использую пищевой краситель."
+    n "Звучит так, будто ты начинаешь понимать."
+    n "Только для начала убедись, что хорошенько перемешал глазурь, прежде чем использовать краситель."
+    mc "Уже почти закончил."
+    "Электрический миксер мы используем для теста, так что мне достался венчик и здоровенная миска глазури."
+    n 4bc "Э?"
+    n "Здесь всё ещё полно комков!"
+    n "Ты вообще стараешься?"
+    mc "Да, конечно..."
+    mc "Просто это займёт немного больше времени."
+    n 4bg "Боже, с твоим темпом мы тут всю ночь проторчим."
+    n "Вот, учись."
+    "Нацуки выхватила у меня венчик, а другой рукой чуть наклонила миску к себе."
+    n 4be "Ты должен... дух из неё... вышибить!"
+    "Через несколько секунд консистенция глазури заметно улучшилась."
+    n 4ba "Видишь?"
+    "Словно подтверждая свои слова, Нацуки сунула палец сперва в глазурь, а затем – в рот."
+    "Я потянулся сделать то же самое."
+    n 1bh "Эй!"
+    "Нацуки схватила меня за запястье."
+    n 4bh "Не хочу, чтобы {i}твои{/i} похотливые пальцы лезли в {i}мою{/i} глазурь."
+    mc "Твою глазурь, значит?"
+    mc "А ты не забыла, кто сделал всю работу?"
+    "Я стал с ней бороться, пытаясь засунуть палец в глазурь."
+    n 4by "Только не заставляй из тебя тоже дух вышибать!"
+    mc "О, погляжу, как ты справишься!"
+    "Я чуть подался вперёд, как раз чтобы дотянуться до глазури."
+    "Я с триумфом зачерпнул пальцем немного глазури, пока Нацуки изо всех сил пыталась меня оттащить."
+    mc "Ай!.."
+    "Из-за того, что Нацуки тянула меня, я споткнулся и потащил её за собой."
+    n 1bx "Мерзость!"
+    n "Ты мне всё лицо измазал!"
+    mc "И чья это, по-твоему, вина?!"
+    "На щеке Нацуки красовалось здоровенное пятно из глазури."
+    n 1bw "Н-н-н—"
+    "Она попыталась слизать его языком, но не доставала."
+    n 1br "Боже..."
+    n "А знаешь что?"
+    n 4bd "Вот тебе!"
+    "Сдавшись и вытерев пятно пальцем, Нацуки направила его в сторону моего лица."
+    mc "Разбежалась!"
+    "Я был быстрее."
+    "Я схватил её за запястье, моё лицо было спасено."
+    "Нацуки попыталась бороться другой рукой, но я схватил и её."
     $ persistent.clear[4] = True
-    $ renpy.save_persistent()
-
     scene n_cg3_base
     show n_cg3_exp1
     show n_cg3_cake
     with dissolve_cg
-
-    n "Ahahaha! Stop!"
-
-    mc "Not until you apologize for calling me gross!"
-
-    n "Fine, fine!"
-
-    n "I'm sorry for calling you gross."
-
-    n "You know I don't mean it."
-
-    n "It's just fun seeing you react to it."
-
-    n "...You do that to me all the time, you know!"
-
-    n "Saying dumb things just to get a reaction out of me."
-
-    n "You really shouldn't tease girls like that."
-
-    mc "Is that so?"
-
-    mc "In that case, I probably shouldn't do this, either..."
-
+    n "А-ха-ха! Прекрати!"
+    mc "Нет, пока ты не извинишься за то, что назвала меня извращенцем!"
+    n "Ладно, ладно!"
+    n "Извини, что назвала тебя извращенцем."
+    n "Ты же знаешь, я несерьёзно."
+    n "Просто забавно было смотреть на твою реакцию."
+    n "...Ты со мной такое постоянно проделываешь!"
+    n "Говоришь всякие глупости, добиваясь моей реакции."
+    n "Тебе и правда не стоит так дразнить девушек."
+    mc "Вот как?"
+    mc "В таком случае этого мне делать тоже не следует..."
     show n_cg3_cake at cgfade
     hide n_cg3_cake
-
-    "I take Natsuki's finger and put it in my mouth, licking off the icing."
-
+    "Я схватил палец Нацуки и слизал с него глазурь."
     show n_cg3_exp1 at cgfade
     show n_cg3_exp2 at cgfade
     hide n_cg3_exp1
-
-    n "W-W-What--?"
-
-    n "D-Did you seriously just--"
-
-    n "A-Ah--"
-
-    "Natsuki is so surprised that she can't even figure out how to get mad at me."
-
-    "Her face is entirely red."
-
+    n "Ч-ч-что—?"
+    n "Т-ты серьёзно только что—"
+    n "А-ах—"
+    "Нацуки настолько растерялась, что даже не знала, как на меня разозлиться."
+    "Её лицо стало пунцовым."
     hide n_cg3_exp2
-
     n "[player]..."
-
-    n "You really shouldn't do that kind of thing to girls...unless you really like them..."
-
-    n "You know that...right?"
-
+    n "Тебе не стоит делать такое... разве что девушка тебе сильно нравится..."
+    n "Ты ведь понимаешь это... верно?"
     mc "..."
-
-    "What kind of question is she asking me, just like that?"
-
-    "How did the mood turn to this so quickly?"
-
-    mc "I..."
-
-    "Natsuki gazes at me in silence."
-
-    "I notice her shallow breaths."
-
-    "Why am I starting to feel dizzy...?"
-
-    n "Eh?!"
-
+    "Что это за вопрос вдруг такой?"
+    "Как за секунду настроение так кардинально изменилось?"
+    mc "Я..."
+    "Нацуки молча смотрела на меня."
+    "Я ощутил её частое дыхание."
+    "Почему у меня вдруг закружилась голова?.."
+    n "Э?!"
     scene bg kitchen with dissolve_cg
-
-    "Out of nowhere, the fire alarm starts going off."
-
-    "Natsuki rushes over to the oven."
-
-    mc "Is something burning?"
-
-    mc "I thought you didn't put the cupcakes in yet."
-
+    "Внезапно раздался звонок пожарной тревоги."
+    "Нацуки метнулась к духовке."
+    mc "Что-то подгорело?"
+    mc "Я думал, ты ещё не поставила печься кексы."
     show natsuki 1bw zorder 2 at t11
-
-    n "{i}*Cough*{/i}"
-
-    n "No wonder..."
-
-    n 1bb "You left a dirty tray in here, dummy!"
-
-    n "How could you make a mistake like that?"
-
-    mc "You should have checked before turning the oven on!"
-
-    n 1bs "Don't blame me for your mistakes!"
-
-    n "Jeez..."
-
-    "Natsuki uses an oven mitt to grab the blackened tray out of the oven."
-
-    "She sets it on top of the stove."
-
-    "In another moment, the fire alarm stops."
-
-    n 1bq "Anyway..."
-
-    n "I'm...putting them in the oven now."
-
-    mc "Yeah..."
-
-    "The tension from the moment before still lingers over our heads."
-
-    "But the moment has already been lost."
-
-    "I watch as Natsuki slides the cupcake trays into the oven."
-
-    "Then, I reluctantly pick up the whisk and continue with the icing, like nothing ever happened."
+    n "{i}*Кхм*{/i}"
+    n "Неудивительно..."
+    n 1bb "Ты оставил там грязный противень, болвашка!"
+    n "Как ты мог так напортачить?"
+    mc "Ты же не проверила духовку, прежде чем её включить!"
+    n 1bs "Не перекладывай на меня свои косяки!"
+    n "Боже..."
+    "Нацуки надела рукавицу, чтобы вытащить почерневший противень."
+    "Достав противень, она поставила его сверху на плиту."
+    "В тот же момент пожарная сирена затихла."
+    n 1bq "Ладно..."
+    n "Сейчас... загрузим тесто в духовку."
+    mc "Ага..."
+    "Мы всё ещё не отошли от недавнего неловкого момента."
+    "Но он был уже утерян."
+    "Я наблюдаю за тем, как Нацуки отправляет кексы в духовку."
+    "Затем, нехотя взяв в руку венчик, я как ни в чём не бывало продолжил взбивать глазурь."
 
     scene bg kitchen
     show natsuki 4bz zorder 2 at t11
     with wipeleft_scene
-
-    n "Ahh, that smells so good!"
-
-    "The cupcakes are ready to be pulled out of the oven."
-
-    "As soon as Natsuki opens the oven door, a blast of sweet-smelling warm air fills the room."
-
-    n 4bl "Look at how cute they all look!"
-
-    "She proudly shows off the different-colored cupcakes in each of the trays."
-
-    mc "They'll look even better once we add the icing."
-
-    n 2ba "Not like you need to tell {i}me{/i} that!"
-
-    n "I brought decorating stuff, so I hope you can get creative."
-
-    n "Here, scoop the icing into these bags."
-
-    "Natsuki hands me some plastic bags."
-
-    n 2bj "I have these nozzles that will make it look nice and fluffy."
-
-    n "This one can even make flowers!"
-
-    n "We probably won't be using it this time, though."
-
-    mc "What's this one for?"
-
-    "I pick up one of the nozzles that has a much thinner tip than the others."
-
-    n 4bk "That one's really thin, so you can use it to make stripes or other patterns."
-
-    n "But you can also use it to write stuff on a cake."
-
-    n "Like, 'happy birthday!' or whatever."
-
-    mc "Huh, I see..."
-
-    mc "That gives me an idea, actually."
-
-    n "Eh?"
-
-    mc "Well, it's a literature event, right?"
-
-    mc "We could make it more literature-themed by writing a different word on each of the cupcakes."
-
-    mc "It would be fun to see people choose their cupcake based on a word they like."
-
-    n 1bq "Uu..."
-
-    mc "Hm?"
-
-    n "I was kind of expecting you to say something really stupid..."
-
-    n 1bs "But that's actually...a really cute idea, so..."
-
-    mc "Ahaha."
-
-    mc "Maybe I'm getting it from you."
-
-    n 5bh "W-What's that supposed to mean?"
-
-    n "I'm not cute!"
-
-    mc "Come on..."
-
-    mc "We're not at school, nobody's judging."
-
-    mc "You can't dress and act like this and not expect me to think you're cute."
-
-    n 5bs "W-Well..."
-
-    "Natsuki's voice trails off."
-
-    n "Same with you..."
-
-    mc "Eh?"
-
-    mc "Did you say something?"
-
-    n 1bw "N-No, nothing!"
-
-    n "Let's just do the icing!"
-
-    "Natsuki picks up the pace and fastens a nozzle onto each of the bags."
-
-    n 1bh "There's a lot to do, so we shouldn't be wasting time!"
-
-    n "Here, I'll show you how to do it."
-
-    "Without giving me a chance to think about before, Natsuki quickly moves on."
-
-    "She shows me how to apply the icing, and then we each get to work."
+    n "А-а-ах, как вкусно пахнет!"
+    "Кексы зарумянились, и их можно было вытаскивать."
+    "Как только Нацуки открыла дверцу духовки, в кухню ворвался сладко-жаркий воздух."
+    n 4bl "Смотри, как прелестно они все выглядят!"
+    "Она с гордостью показала находящиеся в отдельных формочках разноцветные кексы."
+    mc "После того как мы польём их глазурью, они станут выглядеть ещё лучше."
+    n 2ba "Будто бы я {i}без тебя{/i} не знаю!"
+    n "Я принесла инструменты для их оформления, надеюсь ты сможешь проявить свои творческие способности."
+    n "Вот, нужно наполнить глазурью эти мешочки."
+    "Нацуки передала мне несколько пластиковых мешочков."
+    n 2bj "У меня есть несколько насадок, они позволят сделать глазурь более красивой и пышной."
+    n "А с этой можно даже цветы делать!"
+    n "Хотя сейчас мы её, наверное, использовать не будем."
+    mc "А эта для чего?"
+    "Я взял одну из насадок, она была гораздо тоньше остальных."
+    n 4bk "Это специальная насадка, чтобы из тонких полосок делать затейливые узоры."
+    n "А ещё ей можно что-нибудь написать на торте."
+    n "Например, «С Днём рождения!» или типа того."
+    mc "А, понятно..."
+    mc "У меня тут возникла идея."
+    n "А?"
+    mc "Наше мероприятие связано с литературой, так?"
+    mc "Мы могли бы добавить в него атмосферности, написав на каждом кексе разные слова."
+    mc "Будет забавно наблюдать, как люди выбирают кексы в зависимости от понравившегося слова."
+    n 1bq "М-м-м..."
+    mc "Хм?"
+    n "А я-то ожидала услышать от тебя очередную глупость..."
+    n 1bs "Но мысль и в самом деле... довольно миленькая, так что..."
+    mc "А-ха-ха."
+    mc "Может, ты меня навела на такую мысль."
+    n 5bh "И что это, вообще, значит?"
+    n "Я не миленькая!"
+    mc "Да ладно..."
+    mc "Мы же не в школе, никто косо не посмотрит."
+    mc "Если ты так одеваешься и ведёшь себя, как я могу не думать, что ты мило выглядишь?"
+    n 5bs "Ну-у-у..."
+    "Голос Нацуки медленно затих."
+    n "{size=-7}С тобой то же самое...{/size}"
+    mc "А?"
+    mc "Ты что-то сказала?"
+    n 1bw "Н-ничего!"
+    n "Давай поливать глазурью!"
+    "Нацуки взяла инициативу и стала крепить насадки к мешочкам."
+    n 1bh "У нас ещё куча дел, нам нельзя терять время!"
+    n "Вот, смотри, как это делается."
+    "Не дав мне возможности подумать о том, что она сказала, Нацуки стремительно продолжила готовить."
+    "Она показала мне, как поливать кексы глазурью, и мы принялись за работу."
 
     scene bg kitchen with wipeleft_scene
-
-    "When we're finally finished, Natsuki puts them all side by side to admire our work."
-
+    "Когда мы наконец закончили, Нацуки выставила кексы в линию, чтобы полюбоваться результатом."
     show natsuki 4bl zorder 2 at t11
-
-    n "Look at how pretty they are together!"
-
-    mc "Yeah, they are, aren't they?"
-
-    n 1bm "Uu... I wish I could have one now!"
-
-    mc "Well, there's no reason you can't, right?"
-
-    mc "I don't see any harm in that."
-
-    n 1bc "Well, yeah, but..."
-
-    n "My dad's making dinner tonight, so I really need to save my appetite."
-
-    mc "Ahaha."
-
-    mc "Sayori's the exact opposite in that regard."
-
-    mc "If she was here, we'd probably be down ten cupcakes already."
-
-    mc "And she would still eat dinner."
-
-    n 4bg "Come on, that's just unhealthy!"
-
-    n 4bs "Besides, when my dad cooks, I need to eat as much of it as I can..."
-
-    n 4bq "...Well, anyway!"
-
-    n 4bc "I was hoping we would have time for manga, but I need to be home for dinner..."
-
-    mc "Ah, already?"
-
-    mc "That's a shame."
-
-    n 1bg "It's your fault for working so slowly!"
-
-    n "You should have thought about that."
-
-    n "It's not like you'll always have this chance."
-
-    mc "Man..."
-
-    "As usual, Natsuki places the blame on me."
-
-    n 2bk "You can bring the cupcakes tomorrow, right?"
-
-    n "If you and Sayori each carry some, then you can probably do it in one trip."
-
-    mc "Yeah, I can do that."
-
-    mc "And don't worry, I won't let her eat any."
-
-    n 2ba "Ahaha."
-
-    n "I wish she would listen to me the way she listens to you."
-
-    mc "Ah..."
-
-    mc "Yeah."
-
+    n "Смотри, как прелестно они смотрятся вместе!"
+    mc "Да, согласен."
+    n 1bm "Ух... Так и хочется съесть один прямо сейчас!"
+    mc "Так почему бы и нет?"
+    mc "Не вижу в этом ничего предосудительного."
+    n 1bc "Ну да, но..."
+    n "Папа сегодня готовит ужин, так что мне нельзя портить аппетит."
+    mc "А-ха-ха."
+    mc "Саёри в этом плане прямая противоположность."
+    mc "Будь она здесь, наши запасы мигом сократились бы кексов на десять."
+    mc "Она бы ещё и поужинать не отказалась."
+    n 4bg "Да брось, это нездоровое питание!"
+    n 4bs "К тому же, когда папа готовит, мне нужно съесть как можно больше..."
+    n 4bq "...Неважно!"
+    n 4bc "Я надеялась, что у нас ещё останется время почитать мангу, но мне нужно успеть домой до ужина..."
+    mc "Что, уже?"
+    mc "Очень жаль."
+    n 1bg "Нечего было так медленно работать!"
+    n "Тебе следовало заранее позаботиться об этом."
+    n "Нечасто выпадает такой шанс."
+    mc "Блин..."
+    "Как обычно, Нацуки свалила всю вину на меня."
+    n 2bk "Ты сможешь завтра принести кексы?"
+    n "Если тебе поможет Саёри, то вы, скорее всего, управитесь за один заход."
+    mc "Да, справимся."
+    mc "И не волнуйся, я не позволю Саёри их схрумкать."
+    n 2ba "А-ха-ха."
+    n "Хотела бы я, чтобы она слушалась меня так же, как слушается тебя."
+    mc "Ах..."
+    mc "Да."
     show natsuki zorder 1 at thide
     hide natsuki
-
-    "I again think back to the conversation I had with Sayori earlier today."
-
-    "I felt so helpless."
-
-    "Sayori always does listen to me, but at that point it felt like she couldn't listen to me at all."
-
+    "Мои мысли снова вернулись к утреннему разговору с Саёри."
+    "Я чувствовал себя совершенно беспомощным."
+    "Саёри действительно прислушивается ко мне, но тогда у меня было ощущение, что она была неспособна меня услышать."
     show natsuki 4bl zorder 2 at t11
-
-
-    n "Okay, I'm all packed up."
-
-    n "Good work today!"
-
-    mc "You too."
-
-    mc "I'll walk you out...I guess."
+    n "Ладно, я вроде всё взяла."
+    n "Ты отлично сегодня постарался!"
+    mc "Ты тоже."
+    mc "Я, наверное... провожу тебя до двери."
 
     scene bg house with wipeleft_scene
-
-    "Just like that, Natsuki is already about to leave."
-
-    "It feels like the afternoon went by in a flash."
-
-    "More than that..."
-
-    "Did I even take the opportunity to get closer to her, like I wanted?"
-
+    "И вот Нацуки уже собралась уходить."
+    "Казалось, всё произошло в мгновение ока."
+    "Но, что важнее..."
+    "Смог ли я стать с ней ближе, как того хотел?"
     show natsuki 1bh zorder 2 at t11
-
-    n "Well..."
-
-    n "I guess I'll be off, then..."
-
-    n 1bq "Thanks for all the help and everything..."
-
-    n "I'll see you tomorrow."
-
-    mc "Wait, Natsuki."
-
-    n 1bh "Eh?"
-
-    mc "What you said before...about not always having this chance."
-
-    mc "It doesn't have to be that way at all!"
-
-    mc "I had fun today."
-
-    mc "You showed me how fun baking can be, like you wanted."
-
-    mc "But aside from that..."
-
-    mc "You can come over anytime, okay?"
-
-    mc "I think that if possible, I'd like to spend more time like this."
-
-    mc "If you want to read manga, or go out somewhere--"
-
-    n 1bm "Um--"
-
-    n "Do you...really mean that?"
-
-    "Natsuki looks at me tensely, like she's trying to hide her expression."
-
-    mc "Yeah."
-
-    mc "I want to spend more time with you."
-
+    n "Ладно..."
+    n "Я, пожалуй, пойду..."
+    n 1bq "Спасибо за помощь, все дела..."
+    n "Увидимся завтра."
+    mc "Постой, Нацуки."
+    n 1bh "А?"
+    mc "Насчёт того, что ты сказала... что такой шанс предоставляется нечасто."
+    mc "Я считаю, что так быть не должно!"
+    mc "Мне сегодня было очень весело."
+    mc "Ты и правда смогла показать мне, каким увлекательным занятием может быть готовка."
+    mc "Но, кроме того..."
+    mc "Знаешь, ты можешь заходить ко мне когда захочешь."
+    mc "Потому что, если возможно, я хотел бы ещё раз так провести время."
+    mc "Мы можем снова почитать мангу или сходить куда-нибудь—"
+    n 1bm "Эм-м—"
+    n "Ты... сейчас не шутишь?"
+    "Нацуки напряжённо на меня посмотрела, стараясь не выдавать эмоций."
+    mc "Нет."
+    mc "Я хотел бы проводить с тобой больше времени."
     n 1bq "[player]..."
-
-    n "I thought you only cared about getting this done..."
-
-    n 1br "Uu..."
-
-    n 1bn "I'm sorry I had to leave so early today."
-
-    n "I really didn't want to!"
-
-    n "I would really...stay here longer if I could."
-
-    n "I feel the same way as you, so..."
-
+    n "Я думала, тебя заботит только подготовка к фестивалю..."
+    n 1br "М-м-м..."
+    n 1bn "Извини, что сегодня так рано приходится уходить."
+    n "На самом деле я бы не хотела!"
+    n "Я бы осталась... подольше, если б могла."
+    n "Я чувствую то же, что и ты..."
     stop music fadeout 2.0
-
     show natsuki 1bi at face with dissolve
-
-    "Natsuki suddenly gets closer to me."
-
-    mc "Wait, Natsuki--"
-
-    "Standing inches from me, Natsuki looks up at me."
-
-    "I feel her fingers gently clutch at the sides of my shirt, as if holding onto me."
-
-    "Her rose-colored cheeks and matching eyes fill my vision, along with her slightly-parted lips."
-
-    "What is happening...?"
-
-    "My head starts to go dizzy as I feel her soft breaths against me."
-
-    n 1bh "I've felt it..."
-
-    n "For a while now..."
-
-    n 1bo "--!!"
-
+    "Неожиданно Нацуки приблизилась ко мне."
+    mc "Постой, Нацуки—"
+    "Стоя в паре сантиметров от меня, Нацуки пристально смотрела мне в глаза."
+    "Её пальцы осторожно взялись за мою рубашку, она будто держалась за меня."
+    "Я ничего больше не видел, кроме её розовых щёк, такого же цвета глаз и слегка приоткрытых губ."
+    "Что случилось?.."
+    "От её тёплого дыхания у меня начала кружиться голова."
+    n 1bh "Я испытываю это чувство..."
+    n "Уже несколько дней..."
+    n 1bo "—!!!"
     show natsuki zorder 2 at t11
-
-    "Natsuki suddenly jumps back."
-
-    n "S-Sayori?!"
-
-    mc "Eh?!"
-
+    "Внезапно Нацуки отпрыгнула назад."
+    n "С-Саёри?!"
+    mc "А?!"
     show natsuki zorder 2 at t22
     show sayori 1bl zorder 3 at f21
-
-    s "Ah..."
-
-    s "H-Hi, [player]..."
-
-    mc "Sayori--!"
-
-    mc "Just now, we weren't--"
-
-    s 1bq "Ehehe~"
-
-    s "It's okay, [player]."
-
-    s 1ba "I just stopped by to say hi~"
-
+    s "Ах..."
+    s "П-привет, [player]..."
+    mc "Саёри—!"
+    mc "Только что мы не—"
+    s 1bq "Э-хе-хе~"
+    s "Да всё нормально."
+    s 1ba "Я просто заскочила поздороваться~"
     show sayori zorder 2 at t21
     show natsuki zorder 3 at f22
-
-    n 5bq "A-Ah..."
-
-    n "Well..."
-
-    n 5bw "Y-You should have come a little earlier!"
-
-    n "I'm already on my way out, so..."
-
+    n 5bq "А-а..."
+    n "Тогда..."
+    n 5bw "Т-тебе стоило прийти немного раньше!"
+    n "Я уже ухожу, так что..."
     show natsuki zorder 2 at t22
     show sayori zorder 3 at f21
-
-    s 1bh "Aw, really?"
-
-    s "That's too bad..."
-
+    s 1bh "Ой, правда?"
+    s "Печалька..."
     show sayori zorder 2 at t21
     show natsuki zorder 3 at f22
-
-    n 2bq "Yeah, well..."
-
-    n "I'll still see you at the festival tomorrow, so it's fine."
-
-    n 2bb "Just don't eat any cupcakes before then!"
-
-    n "Anyway, later!"
-
+    n 2bq "Да, жаль..."
+    n "Но мы увидимся завтра на фестивале, так что всё нормально."
+    n 2bb "Главное, все кексы не съешь!"
+    n "До завтра!"
     show natsuki at lhide
     hide natsuki
-
-    "Clearly flustered, Natsuki hurries off, and Sayori waves goodbye."
-
+    "Явно смутившись, Нацуки поспешила удалиться, Саёри помахала ей на прощание."
     return
 
 label ch4_exclusive_yuri:
-
     play music t6 fadeout 2.0
-
     scene bg house with wipeleft_scene
-
-    "As I approach my house, I see something that makes me feel a moment of panic."
-
-    mc "Yuri--?"
-
+    "Подойдя к дому, я увидел кое-что, заставившее меня запаниковать."
+    mc "Юри—?"
     show yuri 2bq zorder 2 at t11
-
-    y "Ah..."
-
-    y "Thank goodness..."
-
-    mc "You're a little early..."
-
-    mc "I'm sorry I wasn't home yet!"
-
-    mc "Were you waiting for a long time?"
-
-    y 1bf "No, I just got here."
-
-    y 1bh "But I started to get really nervous when nobody answered the doorbell..."
-
-    mc "You always could have texted me."
-
-    mc "If I had known, I would have reassured you and hurried more on my way home."
-
-    y 2bv "Ah...I suppose that's true..."
-
-    y "I didn't think of that...for some reason."
-
-    "It should be common sense to do that, but I decide to ignore it."
-
-    mc "Anyway...let's go inside."
-
-    mc "I see you brought a lot of stuff with you."
-
-    y 1ba "That's right."
-
-    y "And did you manage to find everything I asked you to buy as well?"
-
-    mc "Yeah, pretty much."
-
-    mc "At least, I hope I got everything right."
-
-    y "I'm sure it will be fine."
-
+    y "Ах..."
+    y "Слава богу..."
+    mc "Ты немного рановато..."
+    mc "Прости, что меня не было дома!"
+    mc "Давно ждёшь?"
+    y 1bf "Нет, я только пришла."
+    y 1bh "Но я очень занервничала, когда никто не ответил на звонок..."
+    mc "Ты могла бы мне написать."
+    mc "Если б я знал, то сразу поспешил бы домой."
+    y 2bv "Ах... Полагаю, так и нужно было сделать..."
+    y "Но я почему-то... об этом не подумала."
+    "«Это же здравый смысл», – подумал я, но решил не развивать тему."
+    mc "Ладно... давай зайдём."
+    mc "Я вижу, ты много всего с собой принесла."
+    y 1ba "Верно."
+    y "А ты смог найти и купить всё, что я просила?"
+    mc "Вроде да."
+    mc "По крайней мере, надеюсь, что ничего не пропустил."
+    y "Уверена, что ты всё сделал правильно."
     scene bg bedroom with wipeleft
-
-    "I take Yuri to my room."
-
-    "The first thing she does is glance around curiously, which makes me feel anxious."
-
+    "Я отвёл Юри в свою комнату."
+    "Она тут же стала с любопытством озираться вокруг, отчего мне стало не по себе."
     show yuri 2bm zorder 2 at t11
-
-    y "It's so clean..."
-
-    mc "Ahaha..."
-
-    mc "I cleaned it before you came over, so..."
-
-    y 2ba "That's very considerate of you to do."
-
-    mc "Ah, no..."
-
-    mc "I would be really embarrassed for my room to be a mess while you were here."
-
-    y 1ba "Hmm..."
-
-    y "Well, I do enjoy cleaning..."
-
-    y "I would have gladly helped you clean."
-
-    mc "Ah--"
-
-    mc "That would be even more embarrassing!"
-
+    y "Здесь так чисто..."
+    mc "А-ха-ха..."
+    mc "Я прибрался перед твоим приходом..."
+    y 2ba "Как деликатно с твоей стороны."
+    mc "А, да нет..."
+    mc "Я бы сгорел со стыда, если б ты увидела то мамаево побоище."
+    y 1ba "Хм-м..."
+    y "На самом деле мне нравится уборка..."
+    y "Я бы с радостью помогла тебе прибраться."
+    mc "Ах—"
+    mc "Я бы сквозь землю провалился!"
     show yuri 1be
-
-    mc "Wait, don't look in there--!"
-
-    "I snatch Yuri's wrist, which was in the process of opening a desk drawer of mine."
-
-    y 3bn "A-Ah..."
-
-    y "I'm sorry...!"
-
-    y 4bb "I wasn't thinking for some reason..."
-
-    y "I was just spacing out!"
-
-    mc "It's fine, it's fine..."
-
-    "I let go of Yuri's wrist."
-
+    mc "Стоп, туда не смотри—!"
+    "Я схватил Юри за руку, когда она попыталась открыть один из ящиков стола."
+    y 3bn "А-ах..."
+    y "Ой, прости, пожалуйста!.."
+    y 4bb "Я почему-то сделала это бессознательно..."
+    y "Я немного ушла в себя!"
+    mc "Всё в порядке..."
+    "Я отпустил руку Юри."
     show yuri 1bl
-
-    "She puts both of her hands firmly in her lap, as if making sure she's keeping track of them."
-
-    mc "So, um..."
-
-    mc "Should we...get started?"
-
-    y 2bu "Ah..."
-
-    y "Yes..."
-
-    y 2bf "Um, I have a few things planned that you can help with..."
-
-    y "Decorations and other atmospheric enhancements."
-
-    mc "Atmospheric enhancements...?"
-
-    y 1ba "You know..."
-
-    y "Mood lighting, aromatherapy candles..."
-
-    mc "Oh, wow."
-
-    mc "I didn't know you planned on taking it that far."
-
-    y 1bc "Of course."
-
-    y "I want to help take our guests to a faraway place."
-
-    y 1ba "Although many will stop by just out of curiosity..."
-
-    y 1bj "And for...cupcakes, I guess..."
-
-    y 1ba "I'm determined to provide an experience that will leave them wanting more."
-
-    mc "That's great."
-
-    mc "It's easy to forget that you're a pretty intense person."
-
-    y 1bt "Ah--"
-
-    y 2bt "Intense...?"
-
-    mc "I guess that's the best way to put it."
-
-    y "Is that...a bad thing?"
-
-    mc "No, not at all."
-
-    mc "It's something that I like about you, actually."
-
-    y 3bu "I-Is that so...?"
-
-    y "That makes me feel relieved..."
-
-    y "And kind of happy..."
-
-    mc "Yeah, no need to be so anxious."
-
-    mc "You can relax a little."
-
-    y 3bl "Relax..."
-
-    y 1bf "I brought some things for relaxation."
-
-    y "I was going to use them during the poetry event..."
-
-    mc "Oh yeah? Like what?"
-
-    y "Let's see..."
-
-    "Yuri rummages through her bag."
-
-    "She pulls out a few candles and a wooden cylinder-shaped object."
-
-    y "I did some shopping on the way here, so I happen to have these in my bag."
-
-    y "I planned to cover the windows in black paper and use the candles to light the room."
-
-    y 1ba "I think that would be amazing, don't you?"
-
-    mc "Yeah, that would be really neat."
-
-    mc "What's that wooden thing, though?"
-
-    y 1bf "Oh, this?"
-
-    y "It's a diffuser for essential oils."
-
-    y "How familiar are you with aromatherapy?"
-
-    mc "Not familiar at all..."
-
-    y 1ba "Ah, is that so?"
-
-    y "It's one of my favorite contributors to a positive atmosphere."
-
-    y "Depending on the oils or herbs you choose, you can change the mood of the air itself."
-
-    y "You can even feel it permeate through your body."
-
-    y 3bm "Relaxation, positive energy, romance, reflection..."
-
-    y "It's almost like magic."
-
+    "Она положила руки на колени и крепко за них схватилась, словно стараясь держать руки под контролем."
+    mc "Так, эм..."
+    mc "Давай начнём... наверное?"
+    y 2bu "Ах..."
+    y "Да..."
+    y 2bf "Ум-м, я тут кое-что запланировала, с чем ты мог бы мне помочь..."
+    y "Декорации и аксессуары для атмосферности."
+    mc "Аксессуары для атмосферности?.."
+    y 1ba "Ну, знаешь..."
+    y "Декоративная подсветка, свечи для ароматерапии..."
+    mc "Ого."
+    mc "Я и не думал, что ты решила зайти так далеко."
+    y 1bc "Конечно."
+    y "Ведь я хочу, чтобы наши гости перенеслись в другой мир."
+    y 1ba "Хотя понимаю, что многие зайдут чисто из любопытства..."
+    y 1bj "А ещё, наверное... ради кексов..."
+    y 1ba "Но я решила подарить им столько впечатлений, что они захотят большего."
+    mc "Круто."
+    mc "Глядя на тебя, легко забыть, что ты очень напористый человек."
+    y 1bt "Ах—"
+    y 2bt "Напористый?.."
+    mc "Более подходящего слова не нашёл."
+    y "Это... дурное качество?"
+    mc "Нет, вовсе нет."
+    mc "Вообще-то, это как раз то, что мне в тебе нравится."
+    y 3bu "В-вот как..."
+    y "Прямо камень с души свалился..."
+    y "И я даже немного счастлива..."
+    mc "Тебе не стоит волноваться по пустякам."
+    mc "Расслабься."
+    y 3bl "Расслабиться..."
+    y 1bf "Я принесла кое-что, что поможет расслабиться."
+    y "Я хотела использовать их во время вечера поэзии..."
+    mc "О, правда? Что это?"
+    y "Посмотрим..."
+    "Юри порылась в сумке."
+    "Она вытащила оттуда несколько свечек и ещё деревянный предмет в форме цилиндра."
+    y "По пути сюда я зашла в магазин и прикупила кое-что."
+    y "Я планировала закрыть окна чёрной бумагой, чтобы комнату освещали только свечи."
+    y 1ba "Атмосфера будет чарующая, не правда ли?"
+    mc "Да, будет то, что надо."
+    mc "А зачем нужна эта деревянная штука?"
+    y 1bf "Ах, это?"
+    y "Это аромараспылитель для масел."
+    y "Ты знаком с ароматерапией?"
+    mc "Боюсь, что нет..."
+    y 1ba "Ах, вот как?"
+    y "Это один из моих любимых создателей позитивной атмосферы."
+    y "В зависимости от выбранных масел и трав, ты можешь менять само настроение праздника."
+    y "Оно буквально разливается по твоему телу."
+    y 3bm "Расслабление, положительная энергия, романтика, рефлексия..."
+    y "Это почти что магия."
     show yuri 3ba
-
-    "Yuri takes the cylinder and pushes a switch on the bottom."
-
-    "In just a moment, a thin ray of vapor begins to spout through a small hole on the top."
-
-    mc "Wow, that smells wonderful."
-
-    mc "What kind of mood is that one for?"
-
-    y 1ba "This is a Jasmine essential oil."
-
-    y "It smells a little sweet and flowery, right?"
-
-    mc "Yeah, that's a good way to describe it."
-
-    y 1bb "I chose Jasmine for the event because it provides more than relaxation."
-
-    y "Jasmine enhances your emotions and helps you feel them flow through your body."
-
-    y 1bu "You feel warmer, and your heart pounds more heavily."
-
-    y 1ba "Don't you think that will be perfect for sharing our poems?"
-
-    mc "It does sound suitable..."
-
-    mc "But you seem to know a lot about this, so I'll trust your opinion with anything."
-
+    "Юри взяла цилиндр и нажала кнопку на донышке."
+    "Через мгновение в воздух брызнула тонкая струя пара через отверстие сверху."
+    mc "Ух ты, чудесный аромат."
+    mc "Какое настроение он создаёт?"
+    y 1ba "Это эфирное масло жасмина."
+    y "У него сладкий цветочный запах, правда?"
+    mc "Да, это довольно точное описание."
+    y 1bb "Для праздника я выбрала жасмин, потому что он даёт гораздо больше, чем просто расслабление."
+    y "Жасмин наполняет тебя эмоциями и позволяет им свободно дрейфовать по твоему телу."
+    y 1bu "Ты ощущаешь тепло, а твоё сердце бьётся чаще."
+    y 1ba "Ты не думаешь, что это идеальная атмосфера, чтобы поделиться своими стихами?"
+    mc "Да, очень подходящая..."
+    mc "Ты, кажется, много знаешь об этом, я поддержу любое твоё мнение."
     show yuri 1bc
-
-    "Yuri smiles gently, clearly enjoying herself."
-
-    "She again reaches into her bag and pulls out several spools of thin ribbon."
-
+    "Юри мило улыбнулась, она явно получала удовольствие."
+    "Она снова полезла в сумку и вытащила несколько катушек красочной ленты."
     show yuri 1ba
-
-    mc "What are those for?"
-
-    y 1bf "Well..."
-
-    y "Did you purchase the origami paper I asked you to get?"
-
-    mc "Yeah, I have it over here..."
-
-    y "We won't be using the paper for folding origami."
-
-    y "What I'd like to do is write a different word on each paper."
-
-    y "We'll need about a hundred of them."
-
-    mc "Oh yeah?"
-
-    mc "What will those be used for?"
-
-    y 2bf "Well, I'm going to cut pieces of ribbon to hang from the doorway of the classroom."
-
-    y "Then, we can fasten the paper onto the ribbons to create a doorway curtain."
-
-    y 2bm "Wouldn't that be beautiful?"
-
-    y "It would also catch the eye of those passing by the room..."
-
-    y 2ba "It may attract some to peek inside."
-
-    mc "That's really creative!"
-
-    mc "I had no idea you'd be so good at this, Yuri."
-
-    y 4ba "Is...that so?"
-
-    y "Well, I suppose I do get a little intense...as you'd put it."
-
-    y 3bu "Uhuhu."
-
-    "Yuri giggles with red cheeks."
-
-    "Is it just me, or is she more relaxed when it's just the two of us?"
-
-    "Or maybe it's the excitement she feels from sharing something that she enjoys."
-
-    y 1ba "Here's a marker, [player]."
-
-    y "You can write any characters you want."
-
-    y "I'll help you once I finish cutting the ribbons."
-
-    mc "Ah, alright."
-
-    "Sitting on the floor together, the two of us get to work."
-
-    "I carefully draw a different character on each paper, doing my best to manage my bad handwriting."
-
-    "Yuri unravels a long strand of red ribbon to her desired length."
-
-    "Then, she reaches into her bag once more and pulls out a pocket knife."
-
-    mc "Eh...?"
-
-    "The knife is strangely beautiful."
-
-    "The silver handle has an intricate pattern of waves etched into it."
-
-    "The blade itself is gently tinted blue."
-
-    mc "That's no ordinary pocket knife..."
-
-    mc "It looks really fancy."
-
-    y 4bb "A-Ah..."
-
-    y "Well..."
-
-    "Embarrassed, Yuri looks away."
-
-    mc "What is it?"
-
-    y "You're going to think it's weird..."
-
-    mc "Yuri, whatever it is, I have no reason to judge."
-
-    mc "To each their own, you know?"
-
-    y "If you promise you won't be weirded out..."
-
-    mc "Yeah, I promise."
-
-    y 2bi "Alright..."
-
-    y "The thing is, I'm kind of into knives..."
-
-    y "They're just...so pretty..."
-
-    y 2bv "I-I can't help it!"
-
-    y "I don't know what it is..."
-
-    y "The combination of craftsmanship and feeling of danger, maybe..."
-
-    y 4bb "Uu, what am I saying...?"
-
-    y "Please don't think I'm weird for this..."
-
-    mc "Ahaha."
-
-    y "You're laughing at me..."
-
-    mc "No, I'm not laughing at you."
-
-    mc "It's just funny how nervous you got about sharing."
-
-    mc "It's...well, it's an interesting thing to be into, I guess."
-
-    mc "But I think it kind of suits you."
-
-    y 2bt "Suits me...?"
-
-    mc "Yeah... It's kind of intense. Ahaha."
-
-    mc "Besides, it's a really cool-looking knife, I can't deny that."
-
-    y 2bu "It is, isn't it...?"
-
-    "Yuri relaxes her expression once again."
-
-    y 1ba "Would you like to hold it?"
-
-    mc "Sure, I'll check it out."
-
-    "Yuri carefully hands me the knife, with the handle facing me."
-
-    "I take it and turn it around in my hands."
-
-    "It feels heavy, and extremely solid."
-
-    "Where do you even get a knife like this...?"
-
-    "Curious of its sharpness, I feel the point of the knife with my index finger."
-
-    mc "Ow--!"
-
-    y 3bn "[player]--!!"
-
-    y "Why did you do that?!"
-
-    mc "I didn't expect it to be that sharp...!"
-
-    mc "I barely touched it at all."
-
-    y "I-It's my fault!"
-
-    y 3bo "I should have warned you..."
-
-    y "This knife is extremely sharp..."
-
-    y "It can cut through skin like it's paper."
-
-    y 2bv "Oh no..."
-
-    "A small drop of blood trickles down the side of my finger."
-
-    "Yuri takes my hand and gives the wound a closer look."
-
-    y 2bt "Ah..."
-
-    "She stares at it and noticeably fidgets."
-
-    mc "If you're squeamish, I'll go wash it off now--"
-
-    mc "A-Ah!"
-
-    "Without warning, Yuri puts my finger in her mouth and licks the wound."
-
-    "I feel her tongue curl around my finger."
-
-    "Startled, I instinctively pull my hand back."
-
-    y "O-Oh..."
-
-    y 3bo "P-Please forgive me!"
-
-    y "I wasn't thinking!"
-
-    y 4bc "I..."
-
-    "Yuri lowers her head, her face burning up."
-
-    mc "Yuri..."
-
-    y "That's the most embarrassing thing I've ever done..."
-
-    y "How could I do something like that??"
-
-    y "I'm sorry, I'm sorry..."
-
-    mc "Ah..."
-
-    "Sure, it was a little weird, and it took me by surprise..."
-
-    "But I guess she was just trying to help, right...?"
-
-    mc "Yuri, I think you're overreacting a little..."
-
-    y "Uuuh..."
-
-    "She doesn't lift her head."
-
-    "What if she doesn't recover from this for the rest of the afternoon?"
-
-    mc "Alright, you know what..."
-
-    "This might be a stupid thing to do, but I do it anyway."
-
-    "I take Yuri's hand and lick her index finger in return."
-
+    mc "А это для чего?"
+    y 1bf "Ум-м..."
+    y "Ты купил бумагу для оригами, как я просила?"
+    mc "Да, она здесь..."
+    y "Нам она понадобится, но не для того, чтобы складывать фигурки."
+    y "Я бы хотела на каждом листке бумаги написать слово."
+    y "Нам понадобится около сотни листков."
+    mc "О, правда?"
+    mc "А для чего они нужны?"
+    y 2bf "Я хочу нарезать лент и повесить в проёме двери клуба."
+    y "Затем я прикреплю листки к лентам и получится импровизированная занавеска."
+    y 2bm "Будет красиво, согласен?"
+    y "А ещё она точно привлечёт внимание всех проходящих мимо людей..."
+    y 2ba "А некоторые наверняка захотят заглянуть внутрь."
+    mc "Вот это я понимаю – творческий подход!"
+    mc "Я и не знал, что ты на такое способна, Юри."
+    y 4ba "П... правда?"
+    y "Полагаю, иногда я действительно бываю, как ты выразился... напористой."
+    y 3bu "Хи-хи-хи."
+    "Покраснев, Юри захихикала."
+    "Мне только кажется, или она стала более расслаблена, когда мы остались наедине?"
+    "А может, так проявляется радость того, что она делится с кем-то тем, что ей нравится?"
+    y 1ba "[player], возьми маркер."
+    y "Ты можешь писать любые слова."
+    y "Я помогу тебе, как только нарежу ленточки."
+    mc "А, хорошо."
+    "Сидя прямо на полу, мы приступили к работе."
+    "Я аккуратно выводил слова на листках бумаги, стараясь сделать хоть что-то приличное из своего неряшливого почерка."
+    "Юри тем временем размотала красную ленту на желаемую длину."
+    "Затем, ещё раз запустив руку в сумку, она достала карманный ножик."
+    mc "А?.."
+    "Нож был на удивление красив."
+    "Серебряная рукоять украшена тиснёным затейливым узором."
+    "Само же лезвие отливало нежно-голубым оттенком."
+    mc "Это необычный нож..."
+    mc "Он выглядит очень изысканным."
+    y 4bb "Ах..."
+    y "Ум-м..."
+    "Смутившись, Юри отвернулась."
+    mc "Ты чего?"
+    y "Ты, наверное, думаешь, что я странная..."
+    mc "Юри, как бы то ни было, у меня нет причин тебя осуждать."
+    mc "Каждому своё, как говорится."
+    y "Обещаешь, что не подумаешь ничего такого?.."
+    mc "Обещаю."
+    y 2bi "Хорошо..."
+    y "Дело в том, что я очень люблю ножи..."
+    y "Они... так манят..."
+    y 2bv "Ничего не могу с собой поделать!"
+    y "Причём не совсем понимаю, чем именно они так привлекательны..."
+    y "Может, сочетанием тонкого искусства и чувства опасности?.."
+    y 4bb "Ох, что я говорю?.."
+    y "Пожалуйста, не подумай, что я странная..."
+    mc "А-ха-ха."
+    y "Ты надо мной смеёшься..."
+    mc "Нет, не совсем так."
+    mc "Просто забавно, как ты нервничаешь, когда делишься чем-то личным."
+    mc "Но... на мой взгляд, это довольно интересное хобби."
+    mc "И, по-моему, оно тебе подходит."
+    y 2bt "Подходит?.."
+    mc "Да... Ведь с ножом куда проще проявлять напористость. А-ха-ха."
+    mc "К тому же выглядит он просто шикарно, тут не поспоришь."
+    y 2bu "О, ты тоже так думаешь?"
+    "Судя по выражению, Юри снова расслабилась."
+    y 1ba "Хочешь подержать?"
+    mc "Конечно, я бы посмотрел на него поближе."
+    "Юри аккуратно передала мне нож рукоятью вперёд."
+    "Я взял его и повертел в руках."
+    "Рука чувствует его тяжесть и невероятную прочность."
+    "Где ты умудрилась такой достать?"
+    "Желая проверить остроту, я коснулся указательным пальцем кончика ножа."
+    mc "Ау—!"
+    y 3bn "[player]—!"
+    y "Зачем ты это сделал?!"
+    mc "Я не ожидал, что он настолько острый!"
+    mc "Я его едва коснулся."
+    y "Это я виновата!"
+    y 3bo "Мне следовало тебя предупредить..."
+    y "Это очень острый нож..."
+    y "Он режет кожу не хуже бумаги."
+    y 2bv "О нет..."
+    "На пальце появилась маленькая капелька крови."
+    "Юри взяла мою руку и осмотрела порез."
+    y 2bt "Ах..."
+    "Она уставилась на него и заметно заёрзала."
+    mc "Если тебе неприятно, я пойду смою—"
+    mc "А-а!"
+    "Неожиданно Юри сунула мой палец в рот и стала зализывать рану."
+    "Я чувствовал, как её язык извивается вокруг моего пальца."
+    "Ошарашенный, я инстинктивно отдёрнул руку."
+    y "Ох..."
+    y 3bo "П-пожалуйста, прости меня!"
+    y "Я не подумала!"
+    y 4bc "Я..."
+    "Юри опустила голову, её лицо горело от стыда."
+    mc "Юри..."
+    y "Это самое постыдное, что я когда-либо делала..."
+    y "Как я могла выкинуть нечто подобное?"
+    y "Мне жаль, мне так жаль..."
+    mc "Ах..."
+    "Да, такая её причуда определённо застала меня врасплох..."
+    "Но она ведь просто пыталась помочь, ведь так?"
+    mc "Юри, я думаю, ты слишком остро на это реагируешь..."
+    y "У-у-ух..."
+    "Она всё ещё не поднимала головы."
+    "Что, если она весь день не выйдет из этого состояния?"
+    mc "Ладно, знаешь что..."
+    "Может, я поступил глупо, но я всё равно это сделал."
+    "Я взял руку Юри и в ответ облизал её палец."
     show yuri 3bn at h11
-
-    y "[player]--!!"
-
-    y "D-Did you really just do that?"
-
-    mc "N-Now we're even..."
-
+    y "[player]—!!!"
+    y "Ч-что ты только что сделал?"
+    mc "Т-теперь мы квиты..."
     y 3bv "..."
-
-    "Yuri just looks at me like I did something wrong."
-
-    mc "Ahaha..."
-
-    mc "I knew that would be a bad idea..."
-
-    "If not for the sweet aroma of the Jasmine oil, the air would be extremely heavy right now."
-
-    y 1bu "You're so weird, [player]."
-
-    "Yuri giggles shyly."
-
-    mc "Eh...?"
-
-    "Yuri calling {i}me{/i} weird?"
-
-    "I have no response to that..."
-
-    y 1bf "Where do you keep your bandages?"
-
-    mc "Ah..."
-
-    mc "I don't think I need one, actually."
-
-    mc "It was a tiny cut."
-
-    mc "Look, it already stopped bleeding."
-
-    y 1ba "I see..."
-
-    y "That's relieving."
-    "The tension is quickly lifted."
-
-    "We each resume our respective activities."
-
-    "I watch Yuri's knife cut through the ribbon like it's nothing but air."
-
-    "Meanwhile, I continue to make progress on the paper."
+    "Юри посмотрела на меня так, словно я сделал то, чего не следовало."
+    mc "А-ха-ха..."
+    mc "Знал же, что это плохая идея..."
+    "Если бы не аромат жасминового масла, атмосфера между нами сейчас была бы очень тяжёлой."
+    y 1bu "Ты такой странный, [player]."
+    "Юри смущённо захихикала."
+    mc "Э?.."
+    "Юри назвала {i}меня{/i} странным?"
+    "Я даже не нашёл, что ответить..."
+    y 1bf "Где у тебя пластыри?"
+    mc "А..."
+    mc "В них нет необходимости."
+    mc "Это просто мелкий порез."
+    mc "Смотри, кровь уже не идёт."
+    y 1ba "Вижу..."
+    y "Слава богу."
+    "Напряжённость как рукой сняло."
+    "Мы продолжили работу."
+    "Я наблюдал, как легко нож проходит сквозь ленту, словно сквозь воздух."
+    "В то же время я занимался листками."
 
     scene bg bedroom with wipeleft_scene
-
-    "After we finish attaching the paper to the ribbons, we lay them all out side by side."
-
-    "It looks better than I expected and will be very effective as a door curtain."
-
-    mc "It looks great."
-
-    mc "Good thinking coming up with this, Yuri."
-
+    "Приклеив листки к лентам, мы разложили последние в ряд."
+    "Они смотрелись ещё лучше, чем я представлял, – из них выйдет очень эффектная занавеска."
+    mc "Выглядит классно."
+    mc "Это ты здорово придумала, Юри."
     show yuri 1bq zorder 2 at t11
-
-    y "Ah, thanks..."
-
-    y "It's just something I saw online, really."
-
-    y 1ba "Are you ready to move onto the next task?"
-
-    mc "Yeah, let's do it."
-
-    mc "What do you have in mind?"
-
-    y "I'd like to create a banner."
-
-    y "That's why I asked you to buy the paint tablets."
-
-    mc "Ah, that's right."
-
-    "One of the items Yuri had asked me to buy was a kit of watercolor paint tablets."
-
-    y 1bf "We'll need about six cups of water to put each of the tablets in."
-
-    y "Do you mind fetching those for us?"
-
-    mc "Of course not."
-
-    mc "Six cups of water..."
-
-    mc "I'll be right back in a minute."
-
-    y 1ba "Thank you very much."
-
-    y 2bf "Oh, and just a little bit of water is okay."
-
-    y "If you fill the cups too much, it will be too diluted."
+    y "Ах, спасибо..."
+    y "На самом деле я прочитала об этом в интернете."
+    y 1ba "Готов перейти к следующей задаче?"
+    mc "Да, поехали."
+    mc "Что задумала?"
+    y "Я бы хотела сделать вывеску."
+    y "Поэтому я попросила тебя купить краски."
+    mc "А, точно."
+    "Одной из вещей, что просила купить Юри, был набор акварельных красок."
+    y 1bf "Нам нужно шесть стаканов воды, в каждый мы положим свой цвет."
+    y "Ты не мог бы принести?"
+    mc "Конечно."
+    mc "Шесть стаканов воды..."
+    mc "Дай мне одну минуту."
+    y 1ba "Большое спасибо."
+    y 2bf "Ой, только не наполняй их доверху, немного воды будет достаточно."
+    y "Иначе краска будет сильно разбавленной."
 
     scene bg bedroom with wipeleft_scene
-
-    "Taking Yuri's advice, I decide to use small plastic bathroom cups rather than full-sized glasses."
-
-    "I put them on a plate to catch any paint that drips, then bring it back into my room."
-
-    mc "Yuri?"
-
+    "Последовав совету Юри, я решил использовать небольшие ванные стаканчики вместо высоких кухонных."
+    "Я поставил их на тарелку, чтобы не налить на пол воды, и пошёл назад."
+    mc "Юри?"
     show yuri 1bd zorder 2 at t11
-
-    y "Yes?"
-
-    "I come in to see Yuri quickly unrolling her sleeve, pulling it back over her arm."
-
-    mc "Ah, nothing..."
-
-    mc "Your face is a little red."
-
-    mc "Is it too hot in here, or anything?"
-
-    y 3bq "Ah--"
-
-    y "No, not at all!"
-
-    y "There's nothing wrong, so..."
-
-    y "Let's mix the paint."
-
-    "Yuri hurriedly dismisses me and takes it upon herself to unwrap the tablets, dropping them into the cups."
-
-    y 1ba "So..."
-
-    y "I thought we would do something simple that would look very nice."
-
-    y "I'd like to paint a gradient across the banner..."
-
-    y "Starting with the colors for a sunrise, then daytime, then sunset and nighttime."
-
-    y "Once it dries, I'll write an inspirational quote across the banner."
-
-    y "We can hang it on the wall behind the podium at the front of the classroom."
-
-    mc "Ah, neat."
-
-    mc "What are you going to write?"
-
-    y 2bm "Well..."
-
-    y "...It will be more fun to surprise you."
-
-    "Yuri smiles at me."
-
-    mc "If you say so..."
-
+    y "Да?"
+    "Войдя в комнату, я увидел, как Юри торопливо спустила засученный рукав."
+    mc "Э-э-э..."
+    mc "У тебя лицо раскраснелось."
+    mc "Тебе жарко?"
+    y 3bq "Ах—"
+    y "Нет-нет, что ты!"
+    y "Всё в порядке, так что..."
+    y "Давай разведём краски."
+    "Юри быстро сменила тему и начала вытаскивать таблетки краски, опуская их затем в стаканы с водой."
+    y 1ba "Вот..."
+    y "Я подумала, мы можем сделать что-нибудь простое, но симпатичное."
+    y "На вывеске я хотела бы нарисовать плавно меняющийся цвет..."
+    y "Начавшись с солнечных тонов, он затем перейдёт в дневные, потом – вечерние и, наконец, ночные."
+    y "Когда краска высохнет, я напишу какую-нибудь вдохновляющую цитату."
+    y "Мы можем повесить её на стене за кафедрой, перед всем классом."
+    mc "О, супер."
+    mc "А что ты хочешь написать?"
+    y 2bm "Ум-м..."
+    y "...Будет интереснее тебя удивить."
+    "Юри улыбнулась мне."
+    mc "Как скажешь..."
     show yuri zorder 1 at thide
     hide yuri
-
-    "After rolling out the banner, Yuri and I kneel on opposite sides so we don't get in the way of each other."
-
-    "Yuri uses a brush and adds a few dots of different colors across the banner to serve as a color guide when we paint."
-
-    mc "This kind of reminds me of elementary school..."
-
-    "Painting on a banner with watercolors feels a lot like the art class projects we had back then."
-
-    "It's relaxing."
-
+    "Развернув рулон бумаги, мы с Юри уселись на противоположных сторонах, чтобы не мешать друг другу."
+    "Кисточкой Юри поставила несколько разноцветных точек по всей поверхности вывески, чтобы обозначить примерную схему цветов."
+    mc "Это навевает воспоминания о начальной школе..."
+    "Тогда мы часто рисовали акварелью разные вывески и плакаты."
+    "Такое занятие расслабляет."
     show yuri 2bt zorder 2 at t11
-
-    y "Ah..."
-
-    y "I'm sorry if this feels too childish...!"
-
-    mc "No, I didn't mean that at all."
-
-    mc "It's kind of fun, you know?"
-
-    y 1bs "...Yeah."
-
-    y "It is fun."
-
-    y "I'm glad you feel that way, too."
-
-    "Yuri stops painting for a moment, thinking to herself."
-
-    y 2bl "For me..."
-
-    y "I don't need to go out and do crazy things to have fun."
-
-    y "In fact, I usually don't even want to."
-
-    y 2bf "I just like when I can spend time with one other person..."
-
-    y "Even if it's something simple, like reading - it doesn't even matter if we don't talk much."
-
-    y 2ba "Just having a friend next to me makes things feel a little bit nicer."
-
-    y "I think that's all it takes for me to be happy."
-
-    mc "Is that so...?"
-
-    "Even if Yuri and I are quite different, I can understand where she's coming from."
-
-    "I feel that way about things like anime and games, where simply sharing the experience with someone can make me happy."
-
-    mc "I think I feel the same way."
-
-    "Yuri smiles gently."
-
-    y 1bm "I knew you'd understand..."
-
-    "Yuri leans over the banner to grab an unused paintbrush."
-
-    "But I move at the same time, causing my head to bump into hers."
-
-    y 3bn "Kya--!"
-
-    mc "S-Sorry!"
-
-    "Yuri reels back, and I quickly lift my hands in surprise."
-
-    mc "Are you hurt?"
-
-    y 2bv "N-No, I'm not hurt."
-
-    y "It just startled me...that's all."
-
-    y "Sorry, I should have asked you to get it for me..."
-
-    mc "It's not your fault."
-
-    mc "Ah, your face..."
-
-    "There are droplets of paint on Yuri's face and neck."
-
-    y 2bt "Is there something on my face?"
-
-    mc "Yeah, I accidentally got paint on you..."
-
-    mc "Sorry, it's totally my fault!"
-
-    mc "I'll get a towel right away."
-
+    y "Ах..."
+    y "Прости, что это выглядит так по-детски!"
+    mc "Нет, я совсем другое имел в виду."
+    mc "Наоборот, это довольно забавно, не находишь?"
+    y 1bs "...Да."
+    y "Это весело."
+    y "Я рада, что ты тоже так думаешь."
+    "Юри перестала рисовать и на минуту задумалась."
+    y 2bl "Что касается меня..."
+    y "Мне обычно не нужно куда-то выбираться или активно отдыхать, чтобы весело провести время."
+    y "Напротив, у меня редко бывает желание заниматься чем-то подобным."
+    y 2bf "Мне больше нравится проводить время вот так, с кем-то вдвоём..."
+    y "Даже если мы занимаемся чем-то обыденным вроде чтения, для меня не важно, разговариваем мы или нет."
+    y 2ba "Мне достаточно того, что рядом находится друг, тогда я чувствую себя немного позитивнее."
+    y "Я думаю, для счастья мне больше ничего не нужно."
+    mc "Хм, даже так?.."
+    "Несмотря на наши различия, я могу понять её чувства."
+    "У меня так же с аниме и играми: радость приносит то, что я делюсь с кем-то своим опытом."
+    mc "Думаю, я тебя понимаю."
+    "На лице Юри показалась нежная улыбка."
+    y 1bm "Я знала, что ты поймёшь..."
+    "Юри наклонилась над вывеской, чтобы взять неиспользованную кисть."
+    "Правда, я в этот момент сделал то же самое, в результате мы столкнулись лбами."
+    y 3bn "Ай—!"
+    mc "П-прости!"
+    "Юри отшатнулась, я рефлекторно поднял руки, извиняясь."
+    mc "Ты в порядке?"
+    y 2bv "Да-да, не волнуйся."
+    y "Я просто немного испугалась... вот и всё."
+    y "Прости, надо было попросить тебя..."
+    mc "В этом нет твоей вины."
+    mc "Ах, твоё лицо..."
+    "На лице Юри осталось несколько капель краски."
+    y 2bt "Что у меня на лице?"
+    mc "Похоже, я ненароком тебя раскрасил..."
+    mc "Прости, это я во всём виноват!"
+    mc "Я за полотенцем, мигом вернусь."
     show yuri zorder 1 at thide
     hide yuri
-
-    "I rush out and fetch a small towel, then I dampen it with hot water."
-
-    "I return to my room and kneel back down in front of her."
-
+    "Я побежал в ванную, взял маленькое полотенце и смочил его горячей водой."
+    "Затем вернулся в комнату и сел перед Юри."
     $ persistent.clear[5] = True
-    $ renpy.save_persistent()
-
     scene y_cg3_base with dissolve_cg
-
-    mc "Here..."
-
-    "I pat down Yuri's face and neck with the towel."
-
+    mc "Вот..."
+    "Полотенцем я вытер пятна на лице и шее Юри."
     show y_cg3_exp1 at cgfade
-
-    y "Ah--"
-
-    mc "Is something wrong?"
-
-    y "It's hot...I just didn't expect it."
-
-    mc "Sorry..."
-
-    mc "I didn't want to use cold water."
-
-    "Having finished, I start to retract my hand."
-
-    "But Yuri suddenly holds my wrist."
-
+    y "Ах—"
+    mc "Что-то не так?"
+    y "Просто не ожидала... что будет так горячо."
+    mc "Прости..."
+    mc "Я не хотел смачивать его холодной водой."
+    "Закончив, я было потянул руку назад..."
+    "Но Юри вдруг схватила меня за запястье."
     hide y_cg3_exp1
-
-    y "Wait--"
-
-    mc "Eh?"
-
+    y "Постой—"
+    mc "А?"
     show y_cg3_exp1 at cgfade
-
-    y "Just...for a little longer."
-
-    y "It feels really nice..."
-
-    mc "Ah..."
-
-    "I keep my hand still against Yuri's neck."
-
+    y "Подержи так... чуть дольше."
+    y "Мне нравится это ощущение на лице..."
+    mc "Ах..."
+    "Моя рука всё ещё касалась шеи Юри."
     hide y_cg3_exp1
-
-    "She looks into my eyes."
-
-    "It's an intense expression that I recognize from when she reads her books..."
-
-    "Almost as if she's lost in a daze, enveloped by her own thoughts."
-
-    "She breathes gently, half through slightly-parted lips."
-
-    "What is happening...?"
-
-    "Is it the aroma of the Jasmine oil giving me this dizzy feeling?"
-
-    "Yuri's gentle fingers, wrapped around my wrist, send a tingling sensation through my arm."
-
-    "And suddenly, her face seems to be much closer to mine than it was just a moment ago..."
-
-    y "Ah..."
-
-    "Yuri slowly pulls away."
-
-    y "Sorry..."
-
-    y "I've been feeling a little light-headed today."
-
-    y "I didn't mean to space out..."
-
-    mc "I-It's fine..."
-
+    "Она посмотрела мне в глаза."
+    "Я узнал то самое напряжённое выражение, что появляется у неё на лице при чтении книг..."
+    "Это похоже на оцепенение, она теряется где-то в своём собственном мире."
+    "Я ощутил её нежное дыхание через чуть приоткрытые губы."
+    "Что случилось?.."
+    "Я так надышался парами жасминового масла, что у меня закружилась голова?"
+    "Нежные пальцы Юри держались за моё запястье, приятно щекоча кожу."
+    "Вдруг её лицо оказалось гораздо ближе к моему, чем было мгновение назад..."
+    y "Ах..."
+    "Юри медленно отстранилась."
+    y "Прости..."
+    y "Сегодня я немного не в себе."
+    y "Я снова забылась..."
+    mc "В-всё нормально..."
     scene bedroom with dissolve_cg
-
-    "The moment is over as soon as it began."
-
-    "Yuri picks up her brush again."
-
-    "But her movements seem clumsier, like she's unable to focus."
-
-    "I remain silent, forced to ignore the event that just transpired."
-
-    "I hesitantly retrieve my own brush and continue following Yuri's example."
+    "Это мгновение прошло так же быстро, как началось."
+    "Юри снова взяла в руку кисть."
+    "Но её движения стали неуклюжими, как будто она не могла сосредоточиться."
+    "Я хранил молчание, стараясь игнорировать недавно произошедшее."
+    "Я неуверенно взял свою кисть и стал помогать Юри."
 
     scene bedroom with wipeleft_scene
-
-    mc "That should do it..."
-
-    "I finish filling the night sky with white dots that look like stars."
-
-    "Looking at the banner as a whole, it's very pretty and natural-looking."
-
+    mc "Готово..."
+    "Я закончил рисовать ночное небо, поставив несколько белых точек, изображающих звёзды."
+    "В целом вывеска получилась хорошо. Она красовалась естественными и приятными цветами."
     show yuri 1ba zorder 2 at t11
-
-    y "I think it came out better than I expected."
-
-    y "I'm really happy with the results."
-
-    mc "Yeah, me too."
-
-    mc "Are you going to add the lettering now?"
-
-    y 1bf "Ah, not yet..."
-
-    y "It needs to dry first."
-
-    mc "That's true, but won't that take a while?"
-
-    y 2bh "Well..."
-
-    y "Perhaps it would be best to leave it here, then have you bring it in the morning."
-
-    y 2bf "I can do the lettering in the classroom before our event starts."
-
-    y "Is that okay?"
-
-    mc "That's totally fine."
-
-    y 1ba "Wonderful."
-
-    y "In that case..."
-
-    y "I don't think there's anything more for us to do here."
-
-    mc "Phew."
-
-    y 1bc "Ahaha."
-
-    y "You say that like you're glad it's over."
-
-    y 1ba "Was I wrong to assume that you were at least enjoying yourself a little bit?"
-
-    mc "Ah, no, it's not that."
-
-    mc "I'm just glad that we managed to get everything done."
-
-    y 2ba "I see."
-
-    y "I am, too."
-
-    y "I was a little concerned about time..."
-
-    y "I need to start making dinner soon."
-
-    mc "Ah..."
-
-    mc "So you don't have any time left?"
-
-    "I was secretly hoping we would have extra time after finishing the work..."
-
-    y 2bl "Well..."
-
+    y "Кажется, она вышла даже лучше, чем я ожидала."
+    y "Я очень довольна результатом."
+    mc "Да, я тоже."
+    mc "Теперь ты будешь писать цитату?"
+    y 1bf "Не сейчас..."
+    y "Сперва пусть высохнет краска."
+    mc "Согласен, но разве это не займёт некоторое время?"
+    y 2bh "Ум-м..."
+    y "Возможно, будет лучше оставить её пока здесь, а ты завтра утром принесёшь."
+    y 2bf "Текст я напишу уже в классе перед началом мероприятия."
+    y "Что думаешь?"
+    mc "Нет проблем."
+    y 1ba "Чудесно."
+    y "В таком случае..."
+    y "На данный момент мы всё сделали."
+    mc "Фух."
+    y 1bc "А-ха-ха."
+    y "У тебя такая реакция, будто ты рад, что всё закончилось."
+    y 1ba "Неужели я ошибалась, полагая, что тебе было хотя бы немного весело?"
+    mc "Ха-ха, нет, дело не в этом."
+    mc "Я просто рад, что мы успели всё закончить."
+    y 2ba "Ясно."
+    y "Я тоже рада."
+    y "Я немного беспокоилась о времени..."
+    y "Скоро нужно начинать готовить ужин."
+    mc "Ах..."
+    mc "То есть тебе уже надо уходить?"
+    "В душе я надеялся, что после работы у нас останется ещё немного свободного времени..."
+    y 2bl "Ум-м..."
     y "..."
-
-    "Yuri thinks to herself."
-
-    y 3bv "I-I think it would be too irresponsible of me to wait much longer..."
-
-    y "I'm sorry!"
-
-    y "I was hoping there would be more time as well..."
-
-    mc "It's probably my fault."
-
-    mc "Sorry for being such a slow worker."
-
-    y 1bt "No, it's not your fault at all."
-
-    y "And...the important thing is that we got everything done, right?"
-
-    mc "Yeah..."
-
-    y 1bu "So..."
-
-    y "I shouldn't be disappointed...or anything."
-
-    "Gathering all her things, Yuri seems to look a little downcast."
-
-    "I understand why."
-
-    "It sounded like she rarely gets the opportunity to spend time with friends in a relaxed environment."
-
-    "But that doesn't mean this is the last time it can happen..."
+    "Юри задумалась."
+    y 3bv "Я-я подумала, что с моей стороны будет безответственно заставлять других ждать..."
+    y "Прости, пожалуйста!"
+    y "Я тоже надеялась, что у нас будет больше времени..."
+    mc "Здесь скорее мой косяк."
+    mc "Извини, что так медленно работал."
+    y 1bt "Нет, ты ни в чём не виноват."
+    y "И потом... важнее всего то, что мы успели всё сделать, правда?"
+    mc "Да..."
+    y 1bu "Поэтому..."
+    y "Тебе не стоит... расстраиваться."
+    "Собирая свои вещи, Юри выглядела довольно удручённой."
+    "И я понимал почему."
+    "Похоже, ей нечасто выпадал шанс провести время в компании друзей в расслабляющей обстановке."
+    "Но это не означает, что сегодня была первая и последняя возможность..."
 
     scene bg house with wipeleft_scene
-
-    "Once Yuri packs up, I walk her out the front door."
-
+    "После того как Юри сложила вещи, я проводил её до двери."
     show yuri 1ba zorder 2 at t11
-
-    y "Thank you very much for having me today."
-
-    mc "No problem, I'm glad I was able to help."
-
-    mc "Just let me know if there's anything else you need me to bring tomorrow."
-
-    y "I will."
-
-    y 1bu "Well, then..."
-
-    "Yuri fidgets."
-
-    y 2bu "I guess...I'll see you tomorrow."
-
-    mc "Wait--"
-
+    y "Большое спасибо за твоё гостеприимство."
+    mc "Да без проблем, был рад помочь."
+    mc "Просто дай знать, если завтра надо будет ещё что-нибудь принести."
+    y "Хорошо."
+    y 1bu "Тогда..."
+    "Юри стояла, переминаясь с ноги на ногу."
+    y 2bu "Наверное... увидимся завтра."
+    mc "Постой—"
     show yuri 2bt
-
-    "I kind of say that without thinking."
-
-    mc "About today..."
-
-    mc "It's fine that we didn't have as much time as we wanted."
-
-    mc "Because we can do this again."
-
-    mc "Whenever you want, you can come over, or we can go out somewhere--"
-
-    mc "Ah, I forgot you don't like going out much--"
-
+    "Произнёс я не задумываясь."
+    mc "Насчёт сегодня..."
+    mc "В том, что у нас не было достаточно времени, нет ничего плохого."
+    mc "Ведь мы снова можем встретиться."
+    mc "Заходи ко мне в любое время, и мы можем вместе куда-нибудь выбраться—"
+    mc "Ой, я забыл, что ты не очень любишь прогулки—"
     show yuri 2bs
-
-    "As I stumble over my words, Yuri simply smiles bashfully."
-
-    mc "Anyway..."
-
-    mc "You know what I'm trying to say, so..."
-
-    y 1bs "You're very thoughtful, [player]."
-
-    "Yuri takes a step closer to me, then briefly squeezes my hand."
-
+    "Пока я неуклюже пытался подобрать слова, Юри сконфуженно улыбнулась."
+    mc "В общем..."
+    mc "Ты понимаешь, что я пытаюсь сказать..."
+    y 1bs "Ты очень внимательный, [player]."
+    "Юри сделала шаг ко мне и на мгновение сжала мою руку."
     show yuri 2bs at face(y=600) with dissolve
-
     stop music fadeout 2.0
-
-    y "I kind of like that about you..."
-
-    mc "Well..."
-
-    "How am I supposed to respond to that?"
-
-    "But I don't even get a chance to, as Yuri suddenly pulls back."
-
+    y "Мне нравится в тебе эта черта..."
+    mc "Э-э-э..."
+    "И как мне на это отвечать?"
+    "Но я так ничего и не успел придумать, так как Юри вдруг резко отстранилась."
     show yuri 3bn zorder 2 at t11
-
-    y "S-Sayori--?"
-
-    mc "Eh?!"
-
+    y "С-Саёри—?"
+    mc "А?!"
     show sayori 1bl zorder 3 at f21
     show yuri zorder 2 at t22
-
-    s "Ah..."
-
-    s "H-Hi, [player]..."
-
-    mc "Sayori--!"
-
-    mc "Just now, we weren't--"
-
-    s 1bq "Ehehe~"
-
-    s "It's okay, [player]."
-
-    s 1ba "I just stopped by to say hi~"
-
+    s "Ах..."
+    s "П-привет, [player]..."
+    mc "Саёри—!"
+    mc "Мы только что не—"
+    s 1bq "Э-хе-хе~"
+    s "Всё в порядке, [player]."
+    s 1ba "Я просто зашла поздороваться~"
     show sayori zorder 2 at t21
     show yuri zorder 3 at f22
-
-    y 3bq "U-Um..."
-
-    y "Well, it's nice to see you..."
-
-    y 3bv "I'm sorry, but I'm already on my way to leave!"
-
+    y 3bq "Ум-м..."
+    y "Рада тебя видеть..."
+    y 3bv "Прости, но я уже собралась уходить!"
     show yuri zorder 2 at t22
     show sayori zorder 3 at f21
-
-    s 1bh "Aw, really?"
-
-    s "That's too bad..."
-
+    s 1bh "Ой, правда?"
+    s "Печалька..."
     show sayori zorder 2 at t21
     show yuri zorder 3 at f22
-
-    y 2bt "I'm sorry..."
-
-    y "But we'll all be together at the festival tomorrow, so..."
-
-    y "So that's fine, right?"
-
+    y 2bt "Мне очень жаль..."
+    y "Но мы все ещё встретимся завтра на фестивале..."
+    y "Так что не переживай, ладно?"
     show yuri zorder 2 at t22
     show sayori zorder 3 at f21
-
-    s 4bq "Of course!"
-
-    "Sayori beams."
-
+    s 4bq "Не буду!"
+    "Саёри лучезарно улыбнулась."
     show sayori 4ba
     show sayori zorder 2 at t21
     show yuri zorder 3 at f22
-
-    y 4bc "Y-Yeah, so..."
-
-    y "I'll see you tomorrow!"
-
+    y 4bc "Х-хорошо, тогда..."
+    y "Увидимся завтра!"
     show yuri at lhide
-
     hide yuri
-
-    "Clearly embarrassed, Yuri hurries off."
-
-    "Sayori waves goodbye after her."
-
+    "Явно смутившись, Юри поспешила ретироваться."
+    "Саёри помахала ей вслед рукой."
     return
 
+
+
 label ch4_end:
-
     play music t10 fadeout 2.0
-
     show sayori 1ba zorder 2 at t11
-
-    mc "Sayori--"
-
-    mc "I thought you didn't want to come over today!"
-
-    s 2bl "Ahaha, well..."
-
-    s "I tried staying in my room..."
-
-    s "But my imagination was being really mean to me..."
-
-    s 1by "So I had to come here and see it for myself."
-
-    mc "See what?"
-
-    mc "What are you talking about?"
-
-    s "You know..."
-
-    s "How much fun you were having with [ch4_name]."
-
-    s "And how close you got to her."
-
-    s 1bt "It makes me...really happy..."
-
-    s "That you've made such good friends."
-
-    s "That's all that matters to me."
-
-    "Tears start to fall down Sayori's face."
-
-    s 4bv "That's all that matters to me--!"
-
-    s "Why am I feeling this way, [player]?"
-
-    s "I'm supposed to be happy for you."
-
-    s 4bw "Why does it feel like my heart is splitting in half?"
-
-    s "It hurts so much..."
-
-    s "Everything hurts so much..."
-
-    s "This would be so much better if I could just disappear!"
-
-    mc "Sayori, don't say that!"
-
-    s 1bw "It's true, [player]!"
-
-    s "If I wasn't here, then you wouldn't have to waste your sympathy on me!"
-
-    s "You wouldn't have to put up with me being selfish!"
-
-    s 1bv "Monika was right..."
-
-    s "I should just..."
-
-    mc "Monika...?"
-
-    mc "Monika was right about what?"
-
+    mc "Саёри—"
+    mc "Я думал, ты не хотела заходить!"
+    s 2bl "А-ха-ха, ну-у..."
+    s "Я пыталась отсидеться в комнате..."
+    s "Но моё воображение играло со мной в жестокие игры..."
+    s 1by "Поэтому я вынуждена была прийти сюда и сама всё увидеть."
+    mc "Что увидеть?"
+    mc "О чём ты говоришь?"
+    s "Ну, знаешь..."
+    s "Как весело тебе было с [ch4_name], например."
+    s "И как сильно вы с ней сблизились."
+    s 1bt "Я хотела... за тебя порадоваться..."
+    s "Ведь у тебя появились такие замечательные друзья."
+    s "Это всё, что для меня важно."
+    "Из глаз Саёри покатились слёзы."
+    s 4bv "Это всё, что имеет значение—!"
+    s "Почему меня терзают эти чувства, [player]?"
+    s "Я должна за тебя радоваться."
+    s 4bw "Почему у меня такое ощущение, будто сердце разрывается напополам?"
+    s "Как больно..."
+    s "Всё так болит..."
+    s "Насколько всё было бы лучше, если б я могла просто исчезнуть!"
+    mc "Саёри, не говори так!"
+    s 1bw "Но это так, [player]!"
+    s "Не будь меня здесь, тебе не пришлось бы растрачивать на меня своё сострадание!"
+    s "Не пришлось бы мириться с моим эгоизмом!"
+    s 1bv "Моника была права..."
+    s "Мне нужно просто..."
+    mc "Моника?.."
+    mc "Насчёт чего была права Моника?"
     s "..."
-
-    mc "Sayori..."
-
-    mc "What I said before is true."
-
-    mc "I'm not going to let this continue."
-
-    mc "Caring about you like this isn't the burden your mind is making it out to be."
-
-    mc "It's something that makes me happy."
-
-    mc "It's something that I wouldn't trade for anything else."
-
-    mc "So, even if it takes an entire lifetime..."
-
-    mc "I'm going to be by your side until you don't feel any more pain."
-
-    s 1bk "B-But..."
-
-    "Sayori looks away."
-
-    "I put a hand on her shoulder to reassure her."
-
-    s "I'm scared, [player]..."
-
-    s "I'm really scared..."
-
-    mc "What are you scared of, Sayori?"
-
-    s "I'm scared that..."
-
-    s "That I might like you more than you like me..."
-
-    mc "Sayori...?"
-
-    s 1bu "It's true, isn't it?"
-
-    s "I was weak and started to like you too much..."
-
-    s "I did this to myself."
-
+    mc "Саёри..."
+    mc "Я тогда говорил всерьёз."
+    mc "Я не собираюсь это так оставлять."
+    mc "Забота о тебе – это вовсе не бремя, как ты можешь думать."
+    mc "Это одна из тех вещей, которые мне только в радость."
+    mc "То, что я никогда ни на что не променяю."
+    mc "Даже если это займёт у меня всю жизнь..."
+    mc "Я буду рядом с тобой до того самого момента, пока боль не уйдёт окончательно."
+    s 1bk "Н-но..."
+    "Саёри отвернулась."
+    "Я положил руку ей на плечо, чтобы придать ей уверенности."
+    s "Мне страшно, [player]..."
+    s "Мне правда очень страшно..."
+    mc "Чего ты боишься, Саёри?"
+    s "Я боюсь, что..."
+    s "Мои чувства к тебе сильнее, чем твои ко мне..."
+    mc "Саёри?.."
+    s 1bu "Всё так, не правда ли?"
+    s "Я была слабой, и мои чувства к тебе продолжали расти..."
+    s "Я сама сделала это с собой."
     s "[player]..."
-
-    s 4bw "I like you so much that I want to die!"
-
-    s "That's how I feel!"
-
-    s 2bv "And...and..."
-
-    mc "That's enough, Sayori..."
-
-    mc "I don't want you to hurt anymore."
-
-    "I slide my hand down Sayori's arm and squeeze her hand in my own."
-
-    mc "Do you remember how I said I always know what's best for you?"
-
-    mc "Do you still believe me?"
-
-    "Wordlessly, Sayori nods."
-
-    mc "Even if you don't understand all of your own feelings..."
-
-    mc "I know what you need the most right now."
-
-    mc "And that's what I'm going to give to you."
-
+    s 4bw "Ты нравишься мне так сильно, что я хочу умереть!"
+    s "Вот что я чувствую!"
+    s 2bv "И... ещё..."
+    mc "Достаточно, Саёри..."
+    mc "Я не хочу, чтобы ты страдала ещё больше."
+    "Я нежно спустил свою руку с плеча Саёри и крепко сжал её ладонь в своей."
+    mc "Помнишь мои слова о том, что я знаю, что для тебя лучше всего?"
+    mc "Ты всё ещё мне веришь?"
+    "Саёри молча кивнула."
+    mc "Даже если ты не понимаешь своих собственных чувств..."
+    mc "Я знаю, что тебе сейчас нужно больше всего."
+    mc "И я собираюсь дать тебе это."
     show black zorder 4 with dissolve_cg
 
     menu:
-
-        mc "Sayori..."
-
-        "I love you.":
+        mc "Саёри..."
+        "Я люблю тебя.":
 
             $ sayori_confess = True
-
             hide black with dissolve_cg
-
             call ch4_end_yes
-
-        "You'll always be my dearest friend.":
-
+        "Ты всегда останешься моей самой близкой подругой.":
             $ sayori_confess = False
-
             hide black with dissolve_cg
-
             call ch4_end_no
 
     return
 
 label ch4_end_yes:
-
-    mc "I love you."
-
-    s 1bv "Eh--?"
-
-    mc "Those are my true feelings."
-
-    mc "So...there's no way you could like me more than I like you."
-
-    mc "I should have realized it sooner."
-
-    mc "But spending time with everyone at the club..."
-
-    mc "Making new friends..."
-
-    mc "And having fun with you every day..."
-
-    mc "It helped me realize that you are truly the most important person to me."
-
-    mc "That's why I'll accept any of your burdens."
-
-    mc "As long as we continue like this every day..."
-
-    mc "With you by my side..."
-
-    mc "Then I know we'll both be happy."
-
+    mc "Я люблю тебя."
+    s 1bv "Э—?"
+    mc "Это мои искренние чувства."
+    mc "Поэтому... получается, что мои чувства всё-таки сильнее твоих."
+    mc "Я должен был понять это раньше."
+    mc "Времяпрепровождение с девчонками в клубе..."
+    mc "Новые друзья..."
+    mc "Весёлые посиделки каждый день..."
+    mc "Всё это помогло мне понять, какой человек для меня поистине важен."
+    mc "Поэтому я разделю с тобой любую ношу."
+    mc "Только ради того, чтобы эти дни продолжались..."
+    mc "Когда ты рядом со мной..."
+    mc "Тогда я буду знать, что мы оба обретём счастье."
     s "[player]..."
-
     $ persistent.clear[8] = True
-    $ renpy.save_persistent()
-
     scene s_cg3 with dissolve_cg
-
-    "Suddenly, Sayori wraps her arms tightly around me."
-
+    "Внезапно Саёри сжала меня в крепких объятиях."
     s "[player]..."
-
-    s "Is this...really okay?"
-
-    mc "Yeah."
-
-    "I hold Sayori in my arms and pull her closer."
-
-    mc "You'll never have to let go of me again."
-
-    s "I love you, [player]..."
-
-    s "I want to be with you forever."
-
-    mc "Me too."
-
+    s "Правда... так можно?"
+    mc "Да."
+    "Я ответил на объятия Саёри и прижал её ближе к себе."
+    mc "Теперь тебе никогда не придётся меня отпускать."
+    s "Я люблю тебя, [player]..."
+    s "Я хочу всегда быть с тобой."
+    mc "Я тоже."
     s "..."
-
-    "I feel Sayori's grip around me weaken a little bit."
-
-    s "What is this...?"
-
-    mc "Sayori...?"
-
-    s "I'm supposed to be happy right now..."
-
-    s "I always thought this would be the happiest moment for me."
-
-    s "But why...?"
-
-    s "Even now..."
-
-    s "Why won't the rainclouds go away?"
-
-    s "They're not going away at all, [player]..."
-
-    mc "It's okay, Sayori..."
-
-    mc "It might take some time for things to get better again."
-
-    mc "But no matter how long it takes, I'll be there every step of the way."
-
-    mc "That's all that matters right now."
-
-    s "O-Okay..."
-
-    s "I...trust you..."
-
+    "Я ощутил, как объятия Саёри чуть ослабли."
+    s "Как же так?.."
+    mc "Саёри?.."
+    s "Я сейчас должна быть счастлива..."
+    s "Я всегда мечтала, что это будет счастливейший момент в моей жизни."
+    s "Но почему?.."
+    s "Даже сейчас..."
+    s "Почему эти чёрные тучи всё так же висят у меня над головой?"
+    s "Они не собираются исчезать, [player]..."
+    mc "Всё будет хорошо, Саёри..."
+    mc "Просто должно пройти некоторое время."
+    mc "Однако, сколько бы времени это ни заняло, я всегда буду рядом с тобой."
+    mc "Это всё, что сейчас имеет для меня значение."
+    s "Х-хорошо..."
+    s "Я... верю тебе..."
     scene bg house
     show sayori 1bv zorder 2 at i11
     with dissolve_cg
-
-    "Sayori and I slowly release each other."
-
-    mc "So..."
-
-    mc "I guess that makes the festival tomorrow...our first date, huh?"
-
-    s 1by "Ehehe..."
-
-    s "What are you saying?"
-
-    s "I don't want to think about those things, you know?"
-
-    s "I want everything to be the same as it always has been."
-
-    s "Even if we really are...a couple."
-
-    s 1bk "I don't know if I could handle anything more right now..."
-
-    s "It's really new and scary to me."
-
-    mc "I understand."
-
-    mc "We'll go at whatever pace suits you best."
-
-    s 1bd "Hey, [player]..."
-
-    "Sayori gazes at me once again, smiling sadly."
-
-    s 4bd "Even if I get really, really sad..."
-
-    s "This is the best thing for me...right?"
-
-    mc "Eh...?"
-
-    "I don't really understand what Sayori means by that."
-
-    mc "Are you saying that this is making you feel sad, Sayori?"
-
-    s 4bk "I-I don't know..."
-    s "I don't understand what I'm feeling."
-
-    s "It felt like a bunch of thorns when you told me you love me..."
-
-    s 4bd "But that's why I want to trust you."
-
-    s "You know what's best for me..."
-
-    mc "...Yeah."
-
-    mc "I do."
-
-    mc "That's my promise."
-
+    "Мы с Саёри медленно отпустили друг друга."
+    mc "Получается..."
+    mc "Завтрашний фестиваль станет... нашим первым свиданием, да?"
+    s 1by "Э-хе-хе..."
+    s "Что ты такое говоришь?"
+    s "Я не хочу это так воспринимать, знаешь ли."
+    s "Я хочу, чтобы всё было так же, как и всегда."
+    s "Даже если мы стали... парой."
+    s 1bk "Не уверена, что сейчас смогу справиться с чем-то большим..."
+    s "Для меня всё это новое и пугающее."
+    mc "Я понимаю."
+    mc "Мы будем развивать наши отношения в комфортном для тебя темпе."
+    s 1bd "Слушай, [player]..."
+    "Саёри снова пристально смотрит на меня с печальной улыбкой."
+    s 4bd "Даже если мне будет очень-очень грустно..."
+    s "Для меня это лучший вариант... правда?"
+    mc "Э?.."
+    "Я не совсем понимаю, что она имеет в виду."
+    mc "Ты хочешь сказать, что эта ситуация печалит тебя, Саёри?"
+    s 4bk "Я-я не знаю..."
+    s "Я не понимаю, что чувствую."
+    s "Когда ты признался в любви, у меня было чувство, словно тысячи шипов пронзают тело..."
+    s 4bd "Но именно поэтому я хочу довериться тебе."
+    s "Ты знаешь, как будет для меня лучше..."
+    mc "...Да."
+    mc "Знаю."
+    mc "Я обещаю, что всё будет хорошо."
     show sayori zorder 1 at thide
     hide sayori
-
-    "I say that, but in reality, I've never felt more uncertain when it comes to Sayori."
-
-    "I know that I love her, and she loves me."
-
-    "But I'm having as much trouble understanding Sayori's feelings as she is."
-
-    "Even though I can comfort her..."
-
-    "I keep wondering if I should be doing something more, or something different."
-
-    "I know these thoughts will continue to plague me until things are back to the way they were."
-
-    "Is that what Sayori meant by not wanting anything to change?"
-
-    "I don't know."
-
-    "But I know that I'll give it everything I've got."
-
-    "Sayori is the most important person to me."
-
-    "And I'll do whatever it takes to have a happy future with her."
-
+    "Хоть я так и сказал, но, по сути, никогда ещё не был настолько не уверен насчёт Саёри."
+    "Я знаю, что люблю её и она любит меня."
+    "Но мне так же трудно понять чувства Саёри, как и ей самой."
+    "Пусть я могу её утешить..."
+    "Но я не могу избавиться от мысли, что мне нужно сделать нечто большее или просто другое."
+    "Эти мысли будут терзать меня, пока всё не станет так, как раньше."
+    "Это ли имела в виду Саёри, сказав, что не хочет ничего менять?"
+    "Не знаю."
+    "Но я приложу все силы."
+    "Саёри – самый важный для меня человек."
+    "И я сделаю всё возможное, чтобы у нас с ней было счастливое будущее."
     return
+
 
 label ch4_end_no:
-
-    mc "You'll always be my dearest friend."
-
-    mc "What you need most is for things to be like they've always been."
-
-    mc "Monika told me the truth..."
-
-    mc "She told me how much happier you seemed after I joined the club."
-
-    mc "I know you're struggling with some really difficult feelings right now."
-
-    mc "But..."
-
-    mc "Please trust me that I know what's best...and what will make you happy in the end."
-
-    mc "I promise I'll help get things back to the way they were."
-
-    s 1bt "I..."
-
-    s "I...see..."
-
-    "Sayori forces a smile through an incredibly pained expression."
-
-    s "Ahaha..."
-
-    s "Is this what it feels like...to get stabbed in the chest?"
-
-    s "I should write a poem about this..."
-
-    mc "Sayori--"
-
-    s "It's okay."
-
-    s "This is just my punishment...remember?"
-
-    s "For being so selfish..."
-
-    s "So please..."
-
-    s "Please don't worry about these stupid feelings."
-
-    s "I know you're right."
-
-    s "I knew this whole time that there's no happiness down that path."
-
-    s "That's why I came here..."
-
-    s "Just so I could get the answer I needed to hear."
-
-    s "And the other thing..."
-
-    s "You're also right that I just want it to go back to the way it was."
-
-    s "I realize that now."
-
-    s "You really do know me better than anyone, [player]."
-
-    s 4bv "I'll trust you with anything..."
-
-    s "Anything at all..."
-
-    s "So..."
-
+    mc "Ты всегда будешь моей самой близкой подругой."
+    mc "Больше всего тебе нужно, чтобы всё было так же, как и всегда."
+    mc "Моника рассказала мне о вашем разговоре..."
+    mc "Она рассказала, насколько счастливее ты стала после моего вступления в клуб."
+    mc "Я понимаю, что сейчас ты борешься с очень сложными чувствами внутри себя."
+    mc "Но..."
+    mc "Пожалуйста, доверься мне, я знаю, как лучше... знаю, что сделает тебя счастливой."
+    mc "Я обещаю, что помогу сделать всё как раньше."
+    s 1bt "Я..."
+    s "...поняла..."
+    "Саёри вымучила улыбку, на её лице читалась боль."
+    s "А-ха-ха..."
+    s "Значит, вот оно какое, это чувство... когда тебя бьют ножом в грудь?"
+    s "Надо бы про это стихотворение написать..."
+    mc "Саёри—"
+    s "Всё нормально."
+    s "Это моё наказание... не забыл?"
+    s "За мой эгоизм..."
+    s "Поэтому..."
+    s "Пожалуйста, не обращай внимания на эти дурацкие чувства."
+    s "Я знаю, что ты прав."
+    s "Всё это время я понимала, что на этом пути мне не найти счастья."
+    s "По этой причине я и пришла сюда..."
+    s "Чтобы получить ответ, который мне нужно было услышать."
+    s "И ещё кое-что..."
+    s "Ты прав в том, что я хочу, чтобы всё было как раньше."
+    s "Теперь я это осознала."
+    s "Ты и правда знаешь меня лучше всех, [player]."
+    s 4bv "Я могу доверить тебе что угодно..."
+    s "Что угодно..."
+    s "Так что..."
     show sayori zorder 1 at thide
     hide sayori
-
-    "Sayori's smile finally breaks."
-
-    "All of a sudden, she turns around and drops to her knees."
-
-    s "{i}AAAAAaaaaAAAAAAAAHH!!!!{/i}"
-
-    "Clutching her head with both hands, she screams as loudly as she can."
-
-    "I'm so shocked that I don't know how to react."
-
+    "Улыбка Саёри вдруг перекосилась."
+    "Она развернулась ко мне спиной и упала на колени."
+    s "{i}А-А-А-А-а-а-а-а-А-А-А-А!!!{/i}"
+    "Схватившись руками за голову, она что есть мочи закричала."
+    "Я был настолько шокирован, что не знал, как отреагировать."
     show sayori 4bt zorder 2 at t11
-
     s "..."
-
     show sayori at lhide
     hide sayori
-
-    "Sayori looks over her shoulder and flashes me one more weak smile before turning around and running off."
-
-    mc "Sayori!"
-
+    "Оглянувшись, Саёри ещё раз улыбнулась мне через плечо и убежала."
+    mc "Саёри!"
     "..."
-
-    "I'm left helplessly standing in the front of my house."
-
-    "Why am I feeling so horrible about this?"
-
-    "There's nothing more that I could have done."
-
-    "The most I can do is support Sayori through her feelings and help her on the path that's right."
-
-    "But I'm having as much trouble understanding Sayori's feelings as she is."
-
-    "Even though I can comfort her..."
-
-    "I keep wondering if I should be doing something more, or something different."
-
-    "I know these thoughts will continue to plague me until things are back to the way they were."
-
-    "I'm going to give it everything I've got."
-
-    "Sayori will always be my dearest friend."
-
-    "And I'll do whatever it takes to put a smile on her face every day."
+    "Я остался беспомощно стоять у своего дома."
+    "Почему я чувствую себя так ужасно?"
+    "Я не смог бы сделать большего."
+    "Максимум, что я могу, – поддержать Саёри в её чувствах и на том пути, что она для себя выбрала."
+    "Но мне понять чувства Саёри не легче, чем ей самой."
+    "Пусть я могу её утешить..."
+    "Но я не могу избавиться от мысли, что мне нужно сделать нечто большее или просто другое."
+    "Эти мысли будут терзать меня, пока всё не станет так, как раньше."
+    "Я приложу все силы."
+    "Саёри навсегда останется моей самой близкой подругой."
+    "И я сделаю всё возможное, чтобы каждый день её лицо украшала улыбка."
 
     return
-
+# Decompiled by unrpyc: https://github.com/CensoredUsername/unrpyc
